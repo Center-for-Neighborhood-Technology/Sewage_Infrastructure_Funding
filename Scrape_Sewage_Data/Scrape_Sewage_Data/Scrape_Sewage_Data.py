@@ -609,19 +609,19 @@ FIX_WRAP_2016 = ['[170 -02] 37916']
 TO_DEL = ["(20)", "Project #      Project Title", "Design/",
              "Construction", "Start  End",
              "Fund", "Source", "2016 2020", "Allocation", "2015 2019",
-             "2017 2021"]
+             "2017 2021", "2018 2022"]
 
 
-#ex_full_pdf = "pdf_documents/2017-2021_cip.pdf"
-#start = 89
-#end = 96
+ex_full_pdf = "pdf_documents/2018-2022_cip.pdf"
+start = 106
+end = 115
 
-#d, f, l = main(ex_full_pdf, start, end, TO_DEL, [])
-#d.to_csv('scraped_data/2017-2021_Sewer_System_Replacement_' +
-#        'Construction_Project_Details.csv')
-#f.to_csv('scraped_data/2017-2021_Sewer_System_Replacement_' +
-#         'Construction_Funding.csv')
-#l.to_csv('scraped_data/2017-2021_Sewer_System_Replacement_' +
-#         'Construction_Locations.csv')
+d, f, l = main(ex_full_pdf, start, end, TO_DEL, [])
+d.to_csv('scraped_data/2018-2022_Sewer_System_Replacement_' +
+        'Construction_Project_Details.csv')
+f.to_csv('scraped_data/2018-2022_Sewer_System_Replacement_' +
+         'Construction_Funding.csv')
+l.to_csv('scraped_data/2018-2022_Sewer_System_Replacement_' +
+         'Construction_Locations.csv')
 
-#gc.collect()
+gc.collect()
