@@ -435,12 +435,27 @@ def project_details_add(df, project_num):
     else:
         details = raw_details
 
+    #We need to make sure that the items come in the correct order
+    date_lst = []
+    project_title = ''
+
+    for item in details:
+        try:
+            datetime.strptime(item, '%b-%y')
+            date_lst.append(item)
+        except ValueError:
+            if not item.startswith('['):
+                project_title = item
+    
+    if len(date_lst) != 2:
+        print("We have too many dates!")
+        print(df)
     #finds which date comes first
-    start_date, end_date = check_dates(details[2], details[3])
+    start_date, end_date = check_dates(date_lst[0], date_lst[1])
     
     #adds our project details to the dataframe
-    DETAILS_DF["Project_#"].append(details[0])
-    DETAILS_DF["Project_Title"].append(details[1])
+    DETAILS_DF["Project_#"].append(project_num)
+    DETAILS_DF["Project_Title"].append(project_title)
     DETAILS_DF["Start_Date"].append(start_date)
     DETAILS_DF["End_Date"].append(end_date)
 
@@ -593,19 +608,20 @@ def project_location_add(df, project_num):
 FIX_WRAP_2016 = ['[170 -02] 37916']
 TO_DEL = ["(20)", "Project #      Project Title", "Design/",
              "Construction", "Start  End",
-             "Fund", "Source", "2016 2020", "Allocation", "2015 2019"]
+             "Fund", "Source", "2016 2020", "Allocation", "2015 2019",
+             "2017 2021"]
 
 
-ex_full_pdf = "pdf_documents/2016-2020_cip.pdf"
-start = 95
-end = 106
+#ex_full_pdf = "pdf_documents/2017-2021_cip.pdf"
+#start = 89
+#end = 96
 
-d, f, l = main(ex_full_pdf, start, end, TO_DEL, FIX_WRAP_2016)
-d.to_csv('scraped_data/2016-2020_Sewer_System_Replacement_' +
-        'Construction_Project_Details.csv')
-f.to_csv('scraped_data/2016-2020_Sewer_System_Replacement_' +
-         'Construction_Funding.csv')
-l.to_csv('scraped_data/2016-2020_Sewer_System_Replacement_' +
-         'Construction_Locations.csv')
+#d, f, l = main(ex_full_pdf, start, end, TO_DEL, [])
+#d.to_csv('scraped_data/2017-2021_Sewer_System_Replacement_' +
+#        'Construction_Project_Details.csv')
+#f.to_csv('scraped_data/2017-2021_Sewer_System_Replacement_' +
+#         'Construction_Funding.csv')
+#l.to_csv('scraped_data/2017-2021_Sewer_System_Replacement_' +
+#         'Construction_Locations.csv')
 
-gc.collect()
+#gc.collect()
