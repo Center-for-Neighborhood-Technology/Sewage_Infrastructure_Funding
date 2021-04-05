@@ -11,8 +11,6 @@ Purpose: Scrape information off publicly avialbe PDF documents to indicate
 Code Inspirations:
     PDF Scraper: https://stackoverflow.com/questions/22898145/how-to-extract-text-and-text-coordinates-from-a-pdf-file
 '''
-
-#import statements
 from pdfminer.pdfparser import PDFParser
 from pdfminer.pdfdocument import PDFDocument
 from pdfminer.pdfpage import PDFPage
@@ -24,10 +22,10 @@ from pdfminer.layout import LAParams
 from pdfminer.converter import PDFPageAggregator
 import pdfminer
 import pandas as pd
-import numpy as np
 from datetime import datetime
 import gc
 import math
+
 
 #initializing the 3 dataframes that we will want to fill in by the end of this 
 #process
