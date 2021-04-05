@@ -1,0 +1,425 @@
+,Project_#,Project_Location
+0,[170 -02] 3204,On E 130th St From S Torrence Ave To S Brandon Ave
+1,[170 -02] 3204,On S Brandon Ave From E 130th St To S Brainard Ave
+2,[170 -02] 32926,On N Wolcott Ave From W Lawrence Ave To W Balmoral Ave
+3,[170 -02] 32926,On W Foster Ave From N Wolcott Ave To N Ravenswood Ave
+4,[170 -02] 32926,On N Wolcott Ave From W Lawrence Ave To W Winnemac Ave
+5,[170 -02] 33346,On N Lavergne Ave From W Lawrence Ave To W Montrose Ave
+6,[170 -02] 33346,N Cicero Ave And W Lawrence Ave
+7,[170 -02] 33467,On W Lawrence Ave From N Oakley Ave To N Leavitt St
+8,[170 -02] 35683,On E 69th St From S Langley Ave To S St Lawrence Ave
+9,[170 -02] 35683,On S Langley Ave From E 68th St To E 67th St
+10,[170 -02] 36040,W 76th St And S Halsted St
+11,[170 -02] 36040,613-700 W 77th St
+12,[170 -02] 36040,W 78th St And S Emerald Ave
+13,[170 -02] 36338,On S Avenue O From E 133rd St To E 135th St
+14,[170 -02] 37792,On S Halsted St From W 75th St To W 78th St
+15,[170 -02] 37792,W Altgeld St And N Keeler Ave
+16,[170 -02] 37792,W 60th St And S Hamlin Ave
+17,[170 -02] 37792,W 52nd St And S Kostner Ave
+18,[170 -02] 37792,S Halsted St And W 77th St
+19,[170 -02] 37792,W Cullom Ave And N Ravenswood Ave
+20,[170 -02] 37792,N Maplewood Ave And W North Shore Ave
+21,[170 -02] 37792,N Hamlin Ave And W Addison St
+22,[170 -02] 37792,E 90th St And S Constance Ave
+23,[170 -02] 37792,N Rockwell St And W Foster Ave
+24,[170 -02] 37792,W Belle Plaine Ave And N Albany Ave
+25,[170 -02] 37792,E 118th St And S Prairie Ave
+26,[170 -02] 37792,N Fairfield Ave And W Albion Ave
+27,[170 -02] 37792,N Keystone Ave And W Glenlake Ave
+28,[170 -02] 37792,N Nordica Ave And W Berwyn Ave
+29,[170 -02] 37792,S Genoa Ave And W 98th St
+30,[170 -02] 37792,S Parnell Ave And W 129th Pl
+31,[170 -02] 37792,W 57th St And S Kedzie Ave
+32,[170 -02] 37792,W 70th St And S Ashland Ave
+33,[170 -02] 37792,W Hunt Ave And S Longwood Dr
+34,[170 -02] 37793,On E 72nd St From S Phillips Ave To S Exchange Ave
+35,[170 -02] 37793,W 116th St And S Western Ave
+36,[170 -02] 37793,S Marshfield Ave And W 88th St
+37,[170 -02] 37793,N Merrimac Ave And W Dickens Ave
+38,[170 -02] 37793,On W North Shore Ave From N Western Ave To N Talman Ave
+39,[170 -02] 37793,On W Belle Plaine Ave From N Whipple St To N Sacramento Ave
+40,[170 -02] 37793,On W Belle Plaine Ave From N Troy St To N Kedzie Ave
+41,[170 -02] 37793,On W Belle Plaine Ave From N Lawndale Ave To N Ridgeway Ave
+42,[170 -02] 37793,On W Altgeld St From N Sawyer Ave To N Kedzie Blvd
+43,[170 -02] 37793,On W 91st St From S Laflin St To S Bishop St
+44,[170 -02] 37793,On W 70th St From S Justine St To S Bishop St
+45,[170 -02] 37793,On W 64th St From S Damen Ave To S Paulina St
+46,[170 -02] 37793,On W 46th St From S Harding Ave To S Hamlin Ave
+47,[170 -02] 37793,On W 18th St From S Racine Ave To S Throop St
+48,[170 -02] 37793,On W 17th St From S Laflin St To S Ashland Ave
+49,[170 -02] 37793,On W 117th St From S Watkins Ave To S Church St
+50,[170 -02] 37793,5400-5482 S Ridgewood Ct
+51,[170 -02] 37793,On S Longwood Dr From W 119th St To W 116th St
+52,[170 -02] 37793,On W 115th St From S St Louis Ave To S Homan Ave
+53,[170 -02] 37793,On E 75th St From S Langley Ave To S Cottage Grove Ave
+54,[170 -02] 37793,On E 87th St From S Constance Ave To S Euclid Ave
+55,[170 -02] 37793,On N Hamlin Ave From W Addison St To W Cornelia Ave
+56,[170 -02] 37793,On N Kilpatrick Ave From W Chicago Ave To W Augusta Blvd
+57,[170 -02] 37793,On N Mulligan Ave From W Grand Ave To W Palmer St
+58,[170 -02] 37793,On N Paulina St From W Montrose Ave To W Cullom Ave
+59,[170 -02] 37793,On N Meade Ave From W Addison St To W Cornelia Ave
+60,[170 -02] 37793,On N Sedgwick St From W Chicago Ave To W Oak St
+61,[170 -02] 37793,On N Whipple St From W Berteau Ave To W Belle Plaine Ave
+62,[170 -02] 37793,On S Christiana Ave From W 82nd St To W 83rd St
+63,[170 -02] 37793,On S Constance Ave From E 87th St To E 90th St
+64,[170 -02] 37793,On S Genoa Ave From W 98th St To W 96th St
+65,[170 -02] 37793,On S Kingston Ave From E 74th St To E 75th St
+66,[170 -02] 37793,On N Rockwell St From W Berwyn Ave To W Foster Ave
+67,[170 -02] 37793,On W 87th St From S Winchester Ave To S Honore St
+68,[170 -02] 37793,On W 18th St From S Loomis St To S Throop St
+69,[170 -02] 37793,On W 25th St From S Pulaski Rd To S Avers Ave
+70,[170 -02] 37793,On W 58th St From S Damen Ave To S Hoyne Ave
+71,[170 -02] 37793,On W 70th St From S Ashland Ave To S Justine St
+72,[170 -02] 37793,On W 96th St From S Genoa Ave To S Carpenter St
+73,[170 -02] 37793,S Paulina St And W 88th St
+74,[170 -02] 37793,On W Belle Plaine Ave From N Sacramento Ave To N Richmond St
+75,[170 -02] 37793,On W Belle Plaine Ave From N Whipple St To N Albany Ave
+76,[170 -02] 37793,On W Cullerton St From S Loomis St To S Throop St
+77,[170 -02] 37793,On W Palmer St From N Mulligan Ave To N Natchez Ave
+78,[170 -02] 37793,S Hermitage Ave And W 88th St
+79,[170 -02] 37793,On W 123rd St From S Carpenter St To S Peoria St
+80,[170 -02] 37793,On W Belle Plaine Ave From N Albany Ave To N Troy St
+81,[170 -02] 37793,On W 116th Pl From S Western Ave To S Bell Ave
+82,[170 -02] 37793,On N Rockwell St From W Berwyn Ave To W Summerdale Ave
+83,[170 -02] 37793,On S Langley Ave From E 69th St To E 67th St
+84,[170 -02] 37793,W North Shore Ave And N Maplewood Ave
+85,[170 -02] 37793,On E 75th St From S Kingston Ave To S Phillips Ave
+86,[170 -02] 37793,On E 75th St From S Rhodes Ave To S Champlain Ave
+87,[170 -02] 37793,On E 88th St From S Constance Ave To S Euclid Ave
+88,[170 -02] 37793,On N Hudson Ave From W Chicago Ave To W Oak St
+89,[170 -02] 37793,On N Marmora Ave From W Addison St To W Newport Ave
+90,[170 -02] 37793,On S Wolcott Ave From W 77th St To W 78th St
+91,[170 -02] 37793,On N Meade Ave From W Belmont Ave To W Henderson St
+92,[170 -02] 37793,On N Ridgeway Ave From W Berteau Ave To N Elston Ave
+93,[170 -02] 37793,On N Washtenaw Ave From W Berwyn Ave To W Foster Ave
+94,[170 -02] 37793,On S Bishop St From W 92nd St To W 91st St
+95,[170 -02] 37793,On S Colfax Ave From E 74th St To E 75th St
+96,[170 -02] 37793,On S Evans Ave From E 74th St To E 75th St
+97,[170 -02] 37793,On S Harding Ave From W 47th St To W 46th St
+98,[170 -02] 37793,On N Olcott Ave From W Palatine Ave To W Devon Ave
+99,[170 -02] 37793,2232-2400 W 116th St
+100,[170 -02] 37794,On E 100th St From S Avenue N To S Ewing Ave
+101,[170 -02] 37794,On W 53rd St From S Richmond St To S Kedzie Ave
+102,[170 -02] 37794,On W 58th St From S Halsted St To S Carpenter St
+103,[170 -02] 37794,On W 73rd St From S Whipple St To S Kedzie Ave
+104,[170 -02] 37794,On W 81st Pl From S Kostner Ave To S Kenneth Ave
+105,[170 -02] 37794,On W 81st St From S Kilpatrick Ave To S Keating Ave
+106,[170 -02] 37794,On W Ardmore Ave From N Austin Ave To N Melvina Ave
+107,[170 -02] 37794,On W Arthur Ave From N Troy St To N Albany Ave
+108,[170 -02] 37794,On W Barry Ave From N Springfield Ave To N Davlin Ct
+109,[170 -02] 37794,On W Carmen Ave From N Ravenswood Ave To N Paulina St
+110,[170 -02] 37794,On W Jackson Blvd From S California Ave To S Francisco Ave
+111,[170 -02] 37794,On W Madison St From N Waller Ave To N Mason Ave
+112,[170 -02] 37794,On W Palmer St From N Cicero Ave To N Kilpatrick Ave
+113,[170 -02] 37794,On W Peterson Ave From N Harlem Ave To N Oconto Ave
+114,[170 -02] 37794,On W Winona St From N Ravenswood Ave To N Paulina St
+115,[170 -02] 37794,N Mayfield Ave And W Madison St
+116,[170 -02] 37794,S Austin Blvd And W Roosevelt Rd
+117,[170 -02] 37794,S Mayfield Ave And W Roosevelt Rd
+118,[170 -02] 37794,On W 18th St From S Wentworth Ave To S Clark St
+119,[170 -02] 37794,On S St Louis Ave From W 81st Pl To W Columbus Ave
+120,[170 -02] 37794,On S St Louis Ave From W 77th St To W 78th St
+121,[170 -02] 37794,On S Scottsdale Ave From W 81st St To S Knox Ave
+122,[170 -02] 37794,On E 88th St From S East End Ave To S Constance Ave
+123,[170 -02] 37794,On E 99th St From S Ewing Ave To S Avenue J
+124,[170 -02] 37794,On N Bernard St From W Grace St To W Irving Park Rd
+125,[170 -02] 37794,On N Davlin Ct From W Barry Ave To N Milwaukee Ave
+126,[170 -02] 37794,On N Leclaire Ave From W Diversey Ave To W Oakdale Ave
+127,[170 -02] 37794,On N Overhill Ave From W Birchwood Ave To W Howard St
+128,[170 -02] 37794,On N Troy St From W Devon Ave To W Arthur Ave
+129,[170 -02] 37794,On S Aberdeen St From W 107th St To W 107th Pl
+130,[170 -02] 37794,S Monitor Ave And W Roosevelt Rd
+131,[170 -02] 37794,On S Carpenter St From W 64th St To W 65th St
+132,[170 -02] 37794,On S Constance Ave From E 88th St To E 90th St
+133,[170 -02] 37794,On S Davol St From W Monterey Ave To W Waseca Pl
+134,[170 -02] 37794,On S Hamlin Blvd From W Wilcox St To W Monroe St
+135,[170 -02] 37794,On S Hoyne Ave From W 71st Pl To W 73rd St
+136,[170 -02] 37794,On S Kildare Ave From W Harrison St To W Flournoy St
+137,[170 -02] 37794,On S Mason Ave From W Arthington St To W Roosevelt Rd
+138,[170 -02] 37794,On S Princeton Ave From W 59th Pl To W 60th Pl
+139,[170 -02] 37794,On S Princeton Ave From W 59th St To W 59th Pl
+140,[170 -02] 37794,On S Clark St From W 18th St To W 19th St
+141,[170 -02] 37794,244-300 W 60th Pl
+142,[170 -02] 37794,On E 61st St From S Langley Ave To S Rhodes Ave
+143,[170 -02] 37794,On W 47th St From S Paulina St To S Honore St
+144,[170 -02] 37794,On W 58th Pl From S Hamlin Ave To S Central Park Ave
+145,[170 -02] 37794,On W 66th St From S Pulaski Rd To S Hamlin Ave
+146,[170 -02] 37794,On W 77th St From S Ashland Ave To S Laflin St
+147,[170 -02] 37794,On W 81st St From S Kenneth Ave To S Kolmar Ave
+148,[170 -02] 37794,On W Addison St From N Elston Ave To N Spaulding Ave
+149,[170 -02] 37794,On W Arthington St From S Karlov Ave To S Keeler Ave
+150,[170 -02] 37794,On W Barry Ave From N Drake Ave To N Gresham Ave
+151,[170 -02] 37794,On W Carmen Ave From N Central Park Ave To N Drake Ave
+152,[170 -02] 37794,On W Chase Ave From N Paulina St To N Clark St
+153,[170 -02] 37794,On W Lexington St From S Kilbourn Ave To S Kolmar Ave
+154,[170 -02] 37794,On W Palatine Ave From N Natoma Ave To N Newcastle Ave
+155,[170 -02] 37794,On W Palmer St From N Kilpatrick Ave To N Knox Ave
+156,[170 -02] 37794,On W Wilcox St From S Hamlin Blvd To S Springfield Ave
+157,[170 -02] 37794,N Keating Ave And W Devon Ave
+158,[170 -02] 37794,N Mcvicker Ave And W Ardmore Ave
+159,[170 -02] 37794,S May St And W 107th St
+160,[170 -02] 37794,On W 107th St From S Morgan St To S Racine Ave
+161,[170 -02] 37794,S Menard Ave And W Roosevelt Rd
+162,[170 -02] 37794,On S St Louis Ave From W 80th Pl To W 81st Pl
+163,[170 -02] 37794,On S Racine Ave From W 108th St To W 110th St
+164,[170 -02] 37794,On E 88th St From S Euclid Ave To S Bennett Ave
+165,[170 -02] 37794,On N Bernard St From W Belmont Ave To W Barry Ave
+166,[170 -02] 37794,On N Clybourn Ave From W Webster Ave To N Greenview Ave
+167,[170 -02] 37794,On N Drake Ave From W Carmen Ave To W Foster Ave
+168,[170 -02] 37794,On N Oconto Ave From W Peterson Ave To W Thorndale Ave
+169,[170 -02] 37794,On N Springfield Ave From W Belmont Ave To W Barry Ave
+170,[170 -02] 37794,On N Washtenaw Ave From W Winona St To W Argyle St
+171,[170 -02] 37794,On S Ashland Ave From W 108th Pl To W 109th Pl
+172,[170 -02] 37794,On S Central Park Ave From W 75th St To W 78th St
+173,[170 -02] 37794,On S Clark St From W 21st St To S Archer Ave
+174,[170 -02] 37794,On S Damen Ave From W 83rd St To W 82nd St
+175,[170 -02] 37794,On S Hamlin Ave From W 66th St To W Marquette Rd
+176,[170 -02] 37794,On S Hermitage Ave From W 47th St To W 46th St
+177,[170 -02] 37794,On S Kenneth Ave From W 81st Pl To W 81st St
+178,[170 -02] 37794,On S Lawndale Ave From W 64th Pl To W 66th St
+179,[170 -02] 37794,On S Perry Ave From W Marquette Rd To W 68th St
+180,[170 -02] 37794,On S Princeton Ave From W 59th Pl To W 60th St
+181,[170 -02] 37794,On S St Louis Ave From W 75th St To W 76th St
+182,[170 -02] 37794,3500-3520 N Reta Ave
+183,[170 -02] 37887,On S Emerald Ave From W 75th St To W 79th St
+184,[170 -02] 37887,On W 77th St From S Union Ave To S Lowe Ave
+185,[170 -02] 37887,S Ashland Ave And W 108th Pl
+186,[170 -02] 37887,S Karlov Ave And W 79th St
+187,[170 -02] 37887,S Perry Ave And W Marquette Rd
+188,[170 -02] 37887,W 52nd St And S Kedzie Ave
+189,[170 -02] 37887,W 58th St And S Halsted St
+190,[170 -02] 37887,W 66th St And S Pulaski Rd
+191,[170 -02] 37887,W 77th St And S Emerald Ave
+192,[170 -02] 37887,W Palmer St And N Cicero Ave
+193,[170 -02] 37887,On S Halsted St From W 78th St To W 79th St
+194,[170 -02] 37887,N Drake Ave And W Foster Ave
+195,[170 -02] 37887,S Emerald Ave And W 79th St
+196,[170 -02] 37887,S Kostner Ave And W 81st Pl
+197,[170 -02] 37887,W 107th St And S Morgan St
+198,[170 -02] 37887,W 58th Pl And S Hamlin Ave
+199,[170 -02] 37887,W 65th St And S Lawndale Ave
+200,[170 -02] 37887,W 73rd St And S Kedzie Ave
+201,[170 -02] 37887,W Ardmore Ave And N Austin Ave
+202,[170 -02] 37918,On N Keystone Ave From W Peterson Ave To W Glenlake Ave
+203,[170 -02] 37918,On W Diversey Pkwy From N Sheffield Ave To N Seminary Ave
+204,[170 -02] 37918,On W Byron St From N Newcastle Ave To N New England Ave
+205,[170 -02] 37918,On W Barry Ave From N Osceola Ave To N Oketo Ave
+206,[170 -02] 37918,On W Barry Ave From N Olcott Ave To N Osceola Ave
+207,[170 -02] 37918,On W 57th St From S Spaulding Ave To S Homan Ave
+208,[170 -02] 37918,N Kenmore Ave And W Diversey Pkwy
+209,[170 -02] 37918,On S Kostner Ave From W 51st St To W 52nd St
+210,[170 -02] 37918,On N Olcott Ave From W Palatine Ave To W Hortense Ave
+211,[170 -02] 37918,On N Olcott Ave From W Devon Ave To W Isham Ave
+212,[170 -02] 37918,On N Oketo Ave From W Isham Ave To N Avondale Ave
+213,[170 -02] 37918,On N Nordica Ave From W Berwyn Ave To W Farragut Ave
+214,[170 -02] 37918,On W 52nd St From S Kostner Ave To S Keeler Ave
+215,[170 -02] 37918,On W Byron St From N Newcastle Ave To N Oak Park Ave
+216,[170 -02] 37918,On W Berwyn Ave From N Nordica Ave To N Newland Ave
+217,[170 -02] 37918,On W Barry Ave From N Oleander Ave To N Oriole Ave
+218,[170 -02] 37918,On W Barry Ave From N Olcott Ave To N Oleander Ave
+219,[170 -02] 37918,On W 57th St From S Kedzie Ave To S Spaulding Ave
+220,[170 -02] 37918,On N Olcott Ave From W Hortense Ave To W Devon Ave
+221,[170 -02] 37918,On N Pulaski Rd From W Glenlake Ave To W Granville Ave
+222,[170 -02] 37918,On N Olcott Ave From W Belmont Ave To W Barry Ave
+223,[170 -02] 37918,On N Oak Park Ave From W Byron St To W Dakin St
+224,[170 -02] 37918,On N Newcastle Ave From W Grace St To W Byron St
+225,[170 -02] 37918,On W Glenlake Ave From N Keystone Ave To N Pulaski Rd
+226,[170 -02] 37918,On W 51st St From S Kilbourn Ave To S Kostner Ave
+227,[170 -02] 37918,N Seminary Ave And W Diversey Pkwy
+228,[170 -02] 38041,On N Neva Ave From W Bryn Mawr Ave To W Talcott Ave
+229,[170 -02] 38041,On W Talcott Ave From N Neva Ave To N Ozanam Ave
+230,[170 -02] 38041,N Harlem Ave And W Talcott Ave
+231,[170 -02] 38041,On W Talcott Ave From N Harlem Ave To N Ozanam Ave
+232,[170 -02] 38041,On W Talcott Ave From N Overhill Ave To N Oriole Ave
+233,[170 -02] 38047,On E 93rd St From S Drexel Ave To S Ellis Ave
+234,[170 -02] 38047,On S Drexel Ave From E 90th St To E 93rd St
+235,[170 -02] 38056,On W 57th St From S La Salle St To S Lafayette Ave
+236,[170 -02] 38056,5600-5659 S Perry Ave
+237,[170 -02] 38056,5600-5659 S Lafayette Ave
+238,[170 -02] 38113,On E 106th St From S Vernon Ave To S Rhodes Ave
+239,[170 -02] 38113,On S Eberhart Ave From E 106th St To E 105th St
+240,[170 -02] 38113,On S Rhodes Ave From E 106th St To E 105th Pl
+241,[170 -02] 38113,On S Vernon Ave From E 107th St To E 106th St
+242,[170 -02] 38113,On E 108th St From S Eberhart Ave To S Rhodes Ave
+243,[170 -02] 38113,On S Eberhart Ave From E 107th St To E 108th St
+244,[170 -02] 38113,On S Vernon Ave From E 106th St To E 105th St
+245,[170 -02] 38307,On S Ada St From W 79th St To W 77th St
+246,[170 -02] 38307,On W 77th St From S Loomis Blvd To S Bishop St
+247,[170 -02] 38307,On W 77th St From S Ada St To S Throop St
+248,[170 -02] 38382,On E Oakwood Blvd From S Langley Ave To S Vincennes Ave
+249,[170 -02] 38382,On S Langley Ave From E 40th St To E Oakwood Blvd
+250,[170 -02] 38383,On W 107th St From S Wood St To S Hale Ave
+251,[170 -02] 38383,10600-10700 S Hale Ave
+252,[170 -02] 38386,On W Montrose Ave From N Narragansett Ave To N Austin Ave
+253,[170 -02] 38386,W Montrose Ave And N Mulligan Ave
+254,[170 -02] 38386,W Montrose Ave And N Mobile Ave
+255,[170 -02] 38390,On S Eggleston Ave From W 124th St To W 126th St
+256,[170 -02] 38390,On W 125th St From S Parnell Ave To S Wentworth Ave
+257,[170 -02] 38390,On W 124th St From S Parnell Ave To S Eggleston Ave
+258,[170 -02] 38390,On W 125th St From S Wentworth Ave To S Harvard Ave
+259,[170 -02] 38406,On S Natoma Ave From W 57th St To W 56th St
+260,[170 -02] 38406,On W 56th St From S Nottingham Ave To S New England Ave
+261,[170 -02] 38406,On W 56th St From S Natoma Ave To S Neva Ave
+262,[170 -02] 38406,On W 57th St From S Nashville Ave To S Natoma Ave
+263,[170 -02] 38407,On N Central Ave From W Berteau Ave To W Sunnyside Ave
+264,[170 -02] 38407,N Central Ave And W Montrose Ave
+265,[170 -02] 38407,On N Central Ave From W Berteau Ave To W Wilson Ave
+266,[170 -02] 38412,On S Bishop St From W 116th St To W 118th St
+267,[170 -02] 38412,On W 116th St From S Bishop St To S Ada St
+268,[170 -02] 38412,On W 118th St From S Bishop St To S Justine St
+269,[170 -02] 38412,On W 116th St From S Ada St To S Elizabeth St
+270,[170 -02] 38412,On W 116th St From S Bishop St To S Justine St
+271,[170 -02] 38784,On W 107th St From S Morgan St To S Racine Ave
+272,[170 -02] 38784,S Aberdeen St And W 107th St
+273,[170 -02] 38786,On N Narragansett Ave From W Roscoe St To W Addison St
+274,[170 -02] 38786,W Newport Ave And N Narragansett Ave
+275,[170 -02] 38786,On W Cornelia Ave From N Nagle Ave To N Narragansett Ave
+276,[170 -02] 38787,On N Octavia Ave From W Jarvis Ave To W Birchwood Ave
+277,[170 -02] 38787,On N Overhill Ave From W Sherwin Ave To W Birchwood Ave
+278,[170 -02] 38787,On W Jarvis Ave From N Ottawa Ave To N Overhill Ave
+279,[170 -02] 38787,On N Ottawa Ave From W Jarvis Ave To W Chase Ave
+280,[170 -02] 38787,On W Jarvis Ave From N Oriole Ave To N Ottawa Ave
+281,[170 -02] 38787,N Oriole Ave And W Birchwood Ave
+282,[170 -02] 38788,On S Karlov Ave From W 62nd St To W 61st St
+283,[170 -02] 38788,On W 61st St From S Karlov Ave To S Komensky Ave
+284,[170 -02] 38788,On W 62nd St From S Keeler Ave To S Kildare Ave
+285,[170 -02] 38788,On W 62nd St From S Komensky Ave To S Karlov Ave
+286,[170 -02] 38788,On W 61st St From S Karlov Ave To S Kedvale Ave
+287,[170 -02] 38788,On W 62nd St From S Karlov Ave To S Keeler Ave
+288,[170 -02] 38788,On W 62nd St From S Kildare Ave To S Kostner Ave
+289,[170 -02] 38788,On W 62nd St From S Pulaski Rd To S Komensky Ave
+290,[170 -02] 38789,On W 53rd St From S Hamlin Ave To S Millard Ave
+291,[170 -02] 38789,On W 53rd St From S Springfield Ave To S Hamlin Ave
+292,[170 -02] 38789,On W 53rd St From S Pulaski Rd To S Springfield Ave
+293,[170 -02] 38790,On N Mobile Ave From W Bloomingdale Ave To W Cortland St
+294,[170 -02] 38790,On W Cortland St From N Mobile Ave To N Mulligan Ave
+295,[170 -02] 38790,On N Mobile Ave From W Bloomingdale Ave To W Wabansia Ave
+296,[170 -02] 38790,On W Wabansia Ave From N Mobile Ave To N Narragansett Ave
+297,[170 -02] 38791,On W 60th St From S Mobile Ave To S Merrimac Ave
+298,[170 -02] 38791,On W 60th St From S Nagle Ave To S Narragansett Ave
+299,[170 -02] 38791,On W 60th St From S Natchez Ave To S Nagle Ave
+300,[170 -02] 38791,On W 60th St From S Normandy Ave To S Natoma Ave
+301,[170 -02] 38791,6434-6534 W 60th St
+302,[170 -02] 38791,On W 60th St From S Mulligan Ave To S Mobile Ave
+303,[170 -02] 38791,On W 60th St From S Narragansett Ave To S Mulligan Ave
+304,[170 -02] 38791,On W 60th St From S Natoma Ave To S Nashville Ave
+305,[170 -02] 38791,On W 60th St From S Rutherford Ave To S Normandy Ave
+306,[170 -02] 38791,6534-6600 W 60th St
+307,[170 -02] 38792,On S Aberdeen St From W 105th St To W 104th Pl
+308,[170 -02] 38792,On W 105th St From S Morgan St To S Sangamon St
+309,[170 -02] 38792,S Aberdeen St And W 103rd St
+310,[170 -02] 38792,On W 105th St From S Green St To S Halsted St
+311,[170 -02] 38792,On W 105th St From S Sangamon St To S Green St
+312,[170 -02] 38794,On W 100th St From S Normal Ave To S Emerald Ave
+313,[170 -02] 38794,On W 101st St From S Morgan St To S Green St
+314,[170 -02] 38795,On S Calumet Ave From E 87th St To E 89th St
+315,[170 -02] 38795,S Calumet Ave And E 89th St
+316,[170 -02] 38795,On S Eberhart Ave From E 87th St To E 89th St
+317,[170 -02] 38796,On E 102nd Pl From S State St To S Michigan Ave
+318,[170 -02] 38796,On W 102nd St From S Perry Ave To S La Salle St
+319,[170 -02] 38796,On W 99th St From S La Salle St To S State St
+320,[170 -02] 38796,E 102nd St And S State St
+321,[170 -02] 38796,On S Perry Ave From W 101st St To W 102nd St
+322,[170 -02] 38796,On W 102nd St From S Perry Ave To S Lafayette Ave
+323,[170 -02] 38796,On W 99th St From S Wentworth Ave To S La Salle St
+324,[170 -02] 38797,On N Keeler Ave From W Augusta Blvd To W Walton St
+325,[170 -02] 38797,On W Augusta Blvd From N Karlov Ave To N Keeler Ave
+326,[170 -02] 38797,N Pulaski Rd And W Augusta Blvd
+327,[170 -02] 38797,On N Keeler Ave From W Thomas St To W Walton St
+328,[170 -02] 38797,On W Augusta Blvd From N Pulaski Rd To N Karlov Ave
+329,[170 -02] 38798,On S Western Ave From W 116th St To W 118th St
+330,[170 -02] 38798,On W 116th St From S Campbell Ave To S Maplewood Ave
+331,[170 -02] 38798,On W 118th St From S Artesian Ave To S Maplewood Ave
+332,[170 -02] 38798,On W 116th St From S Artesian Ave To S Campbell Ave
+333,[170 -02] 38798,On W 116th St From S Western Ave To S Artesian Ave
+334,[170 -02] 38798,On W 118th St From S Western Ave To S Artesian Ave
+335,[170 -02] 38799,On E 96th St From S Luella Ave To S Brennan Ave
+336,[170 -02] 38799,On E 97th St From S Crandon Ave To S Luella Ave
+337,[170 -02] 38799,On E 98th St From S Oglesby Ave To S Crandon Ave
+338,[170 -02] 38799,On S Oglesby Ave From E 98th St To E 99th St
+339,[170 -02] 38799,On E 96th St From S Luella Ave To S Merrion Ave
+340,[170 -02] 38799,On E 97th St From S Oglesby Ave To S Crandon Ave
+341,[170 -02] 38799,On S Luella Ave From E 97th St To E 96th St
+342,[170 -02] 38799,S Oglesby Ave And E 99th St
+343,[170 -02] 38802,2644-2924 E 128th St
+344,[170 -02] 38803,On S Leavitt St From W 101st St To W 102nd St
+345,[170 -02] 38803,On W 101st St From S Hoyne Ave To S Bell Ave
+346,[170 -02] 38803,S Seeley Ave And W 101st Pl
+347,[170 -02] 38803,On W 101st St From S Damen Ave To S Hoyne Ave
+348,[170 -02] 38803,S Damen Ave And W 100th St
+349,[170 -02] 38818,E 95th St And S Cottage Grove Ave
+350,[170 -02] 38832,On E 75th St From S Langley Ave To S Cottage Grove Ave
+351,[170 -02] 38832,On S Evans Ave From E 74th St To E 75th St
+352,[170 -02] 38832,On E 75th St From S Rhodes Ave To S Champlain Ave
+353,[170 -02] 38833,On S Wentworth Ave From W 76th St To W 75th St
+354,[170 -02] 38833,On W 76th St From S Stewart Ave To S Wentworth Ave
+355,[170 -02] 38833,On W 76th St From S Perry Ave To S Lafayette Ave
+356,[170 -02] 38833,S Yale Ave And W 76th St
+357,[170 -02] 38880,On E 96th St From S Avalon Ave To S Woodlawn Ave
+358,[170 -02] 38880,On S Avalon Ave From E 97th St To E 96th St
+359,[170 -02] 38880,On E 97th St From S Dobson Ave To S Avalon Ave
+360,[170 -02] 38880,On S Woodlawn Ave From E 97th St To E 96th St
+361,[170 -02] 38881,On E 92nd St From S Anthony Ave To S Essex Ave
+362,[170 -02] 38881,On E 92nd St From S Saginaw Ave To S Colfax Ave
+363,[170 -02] 38883,On E 95th Pl From S Calhoun Ave To S Oglesby Ave
+364,[170 -02] 38883,2400-2500 E 95th St
+365,[170 -02] 38884,On E 80th St From S Jeffery Blvd To S Chappel Ave
+366,[170 -02] 38884,On E 82nd St From S Chappel Ave To S Euclid Ave
+367,[170 -02] 38884,On S Jeffery Blvd From E 79th St To E 80th St
+368,[170 -02] 38884,On E 80th St From S Jeffery Blvd To S Euclid Ave
+369,[170 -02] 38884,On E 82nd St From S Euclid Ave To S South Chicago Ave
+370,[170 -02] 38884,On S Merrill Ave From E 81st St To E 82nd St
+371,[170 -02] 38885,On E 110th St From S Avenue L To S State Line Rd
+372,[170 -02] 38885,On S Avenue L From E 107th St To E 109th St
+373,[170 -02] 38885,On E 110th St From S Avenue O To S Avenue B
+374,[170 -02] 38889,On E 92nd Pl From S St Lawrence Ave To S Cottage Grove Ave
+375,[170 -02] 38889,On S St Lawrence Ave From E 92nd Pl To E 91st Pl
+376,[170 -02] 38889,On E 92nd St From S Eberhart Ave To S St Lawrence Ave
+377,[170 -02] 38890,On W Peterson Ave From N Kilbourn Ave To N Forest Glen Ave
+378,[170 -02] 38891,On W Devon Ave From N Caldwell Ave To N Spokane Ave
+379,[170 -02] 38893,On N Drake Ave From W Huron St To W Chicago Ave
+380,[170 -02] 38893,On W Chicago Ave From N St Louis Ave To N Central Park Ave
+381,[170 -02] 38893,On W Augusta Blvd From N Trumbull Ave To N Drake Ave
+382,[170 -02] 38894,On S Bishop St From W 85th St To W 86th St
+383,[170 -02] 38894,On W 86th St From S Bishop St To S Justine St
+384,[170 -02] 38894,On W 86th St From S Racine Ave To S Throop St
+385,[170 -02] 38894,On S Racine Ave From W 85th St To W 86th St
+386,[170 -02] 38894,On W 86th St From S Bishop St To S Loomis Blvd
+387,[170 -02] 39054,N Rockwell St And W Catalpa Ave
+388,[170 -02] 39054,W Hollywood Ave And N Rockwell St
+389,[170 -02] 39054,W Bryn Mawr Ave And N Campbell Ave
+390,[170 -02] 39099,On S Cottage Grove Ave From E 41st St To E 43rd St
+391,[170 -02] 39344,6858-7044 N Octavia Ave
+392,[170 -02] 39462,On W Diversey Pkwy From N Sheffield Ave To N Seminary Ave
+393,[170 -02] 39462,N Kenmore Ave And W Diversey Pkwy
+394,[170 -02] 39464,On S Kingston Ave From E 74th St To E 75th St
+395,[170 -02] 39560,On E 104th St From S Avenue O To S Avenue E
+396,[170 -02] 39560,On S Avenue E From E 104th St To E 105th St
+397,[170 -02] 39561,On E 96th St From S Houston Ave To S Marquette Ave
+398,[170 -02] 39562,On S Peoria St From W 128th Pl To W Vermont St
+399,[170 -02] 39562,On W 128th Pl From S Halsted St To S Emerald Ave
+400,[170 -02] 39562,On W Vermont St From S Sangamon St To S Morgan St
+401,[170 -02] 39562,On W 128th Pl From S Emerald Ave To S Lowe Ave
+402,[170 -02] 39562,On W 128th Pl From S Lowe Ave To S Wallace St
+403,[170 -02] 39563,On S Homan Ave From W 53rd Pl To W 54th Pl
+404,[170 -02] 39563,On W 54th St From S Homan Ave To S St Louis Ave
+405,[170 -02] 39564,On E 80th St From S Eberhart Ave To S Rhodes Ave
+406,[170 -02] 39564,On E 80th St From S Rhodes Ave To S St Lawrence Ave
+407,[170 -02] 39564,On E 81st St From S Vernon Ave To S Evans Ave
+408,[170 -02] 39564,On E 80th St From S Evans Ave To S Champlain Ave
+409,[170 -02] 39564,On E 80th St From S Vernon Ave To S Eberhart Ave
+410,[170 -02] 39565,On S Honore St From W 88th St To W 87th St
+411,[170 -02] 39565,S Wood St And W 88th St
+412,[170 -02] 39565,S Winchester Ave And W 88th St
+413,[170 -02] 39566,On W 43rd St From S Drake Ave To S Kedzie Ave
+414,[170 -02] 39567,On N Northwest Hwy From N Oshkosh Ave To N Ozark Ave
+415,[170 -02] 39567,On N Ozark Ave From N Northwest Hwy To N Olmsted Ave
+416,[170 -02] 39567,On N Olympia Ave From N Oketo Ave To N Northwest Hwy
+417,[170 -02] 39567,On W Pratt Ave From N Oliphant Ave To N Oriole Ave
+418,[170 -02] 39568,On S Normal Ave From W 35th St To W Pershing Rd
+419,[170 -02] 39568,On W 37th St From S Parnell Ave To S Normal Ave
+420,[170 -02] 39569,On S Central Park Ave From W 86th St To W 87th St
+421,[170 -02] 39569,On W 86th Pl From S Lawndale Ave To S Central Park Ave
+422,[170 -02] 39569,On S Lawndale Ave From W 86th St To W 85th St
+423,[170 -02] 39575,W Lawrence Ave And N Cicero Ave

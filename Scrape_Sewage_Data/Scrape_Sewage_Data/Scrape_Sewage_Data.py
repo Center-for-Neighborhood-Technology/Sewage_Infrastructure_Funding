@@ -34,6 +34,7 @@ import pandas as pd
 import numpy as np
 from datetime import datetime
 import gc
+import math
 
 #initializing the 3 dataframes that we will want to fill in by the end of this 
 #process
@@ -148,11 +149,13 @@ def scrape_PDF(filepath, start_page, end_page, to_del, fix_wrap):
             df = parse_object(layout._objs, df) #extract text from the object
             df = pd.DataFrame(data=df)  #turn df into a Pandas df
             
+            #return(df)
             #identifies which projects are associated with whcih text
-            df = identify_project_id(df)
+            tf = "2015-2019" in filepath #are we in the 2015-2019 document?
+            df = identify_project_id(df, tf)
             #return(df)
             #puts the test into the appropriate df
-            categorize_text(df, to_del, fix_wrap)
+            categorize_text(df, to_del, fix_wrap, tf)
             del df  #delete the dataframe
 
 def parse_object(layout_objects, df):
@@ -212,7 +215,7 @@ def add_scraped_to_df(df, x, y, text, index):
     df['Index'].append(index)
     return(df)
 
-def identify_project_id(df):
+def identify_project_id(df, in_2015):
     '''
     Takes in a Pandas dataframe and adds a column that indicates if an entry
         belongs to a certain project or not
@@ -229,6 +232,10 @@ def identify_project_id(df):
     proj_num_df = df.loc[df['Text'].str[0] == '[']
     #We will make sure that the dataframe is sorted in descending order
     proj_num_df = proj_num_df.sort_values(by=['Y'], ascending=False)
+
+    #if we are in the 2015-2019 document, we need to readjust
+    if in_2015:
+        proj_num_df['Y'] = proj_num_df['Y'].apply(lambda x: x + 0.1)
 
     all_y = proj_num_df['Y'].tolist() #get a list of all the y values
     all_lowest_y = [] #an empty list where to store the values of the lowest y
@@ -253,6 +260,7 @@ def identify_project_id(df):
     #in order to ensure we get all of the data, we will round the y value to
     #the 2nd decimal place
     df['Project_Number'] = df['Y'].apply(lambda x: round(x, 2))
+
 
     #loops through the projects
     for index, row in proj_num_df.iterrows():
@@ -288,7 +296,7 @@ def in_range(check, high, low):
     else:
         return(False)
 
-def categorize_text(df, to_delete, fix_wrap):
+def categorize_text(df, to_delete, fix_wrap, in_2015):
     '''
     Takes a dataframe and determines what type of data the text refers to and 
         then sends it off to be placed in the appropriate dataset
@@ -316,7 +324,14 @@ def categorize_text(df, to_delete, fix_wrap):
     #now we will delete any of the lines that begin with "Totals"
 
     #round the X and Y values so they are easier to use
-    df['Y'] = df['Y'].apply(lambda x: round(x, 1))
+    if in_2015:
+        #first, adjust some vaues depending on their project number
+        df['Y'] = list(zip(df['Y'], df['Project_Number']))
+        df['Y'] = df['Y'].apply(lambda x: x[0] + 0.11 if x[1] in fix_wrap \
+            else x[0])
+        df['Y'] = df['Y'].apply(lambda x: math.floor(x))
+    else:
+        df['Y'] = df['Y'].apply(lambda x: round(x, 1))
     df['X'] = df['X'].apply(lambda x: round(x, 3))
     #look to see if text contains spaces for future use
     df['Contains_Spaces'] = df['Text'].apply(lambda x: 1 if " " in x else 0)
@@ -335,7 +350,7 @@ def categorize_text(df, to_delete, fix_wrap):
         y_vals = this_proj_df['Y'].unique().tolist()
         #!!!We are hard coding in this value because for 2016-2020 it happens
         #!!!only once and we need to come up with a slicker way of dealing
-        if proj in fix_wrap:
+        if proj in fix_wrap and not in_2015:
             this_proj_df = fix_wraparound(this_proj_df, proj)
         for y in y_vals:
             #creates a new df for the different values of y and ensures the x
@@ -361,7 +376,7 @@ def categorize_text(df, to_delete, fix_wrap):
                     #if none of the entries contain a letter, then we will not
                     #use the data
                     if 1 in this_y_df['Contains_Letters'].values:
-                        project_funding_add(this_y_df, proj)
+                        project_funding_add(this_y_df, proj, in_2015)
             #delete df we are no longer using
             del this_y_df
         #delete df we are no longer using
@@ -423,6 +438,16 @@ def project_details_add(df, project_num):
     '''
     raw_details = df['Text'].tolist()
 
+    #first, we need to check that a location hasn't crept into our data
+    #!!!we are only looking at one spot because this is where the errors have
+    #!!!crept in
+    if len(raw_details[2]) > 6:
+        txt = raw_details[2]
+        new_df = df.loc[df['Text']==txt]
+        project_location_add(new_df, project_num)
+        del new_df
+        raw_details = raw_details[0:2] + raw_details[3:]
+
     #here we will do error handling to ensure we are getting what we expect
     if len(raw_details) != 4:
         details_df = {}
@@ -481,8 +506,9 @@ def check_dates(date1, date2):
     else:
         return(date2, date1)
 
-def project_funding_add(df, project_num):
+def project_funding_add(df, project_num, in_2015):
     '''
+    !!!later, remove the in_2015 because I don't actually use it
     Adds data to the project funding dataframe
 
     Data added:
@@ -503,32 +529,37 @@ def project_funding_add(df, project_num):
     #first, make sure the indices are appropriately labeled
     #gets the number of funding sources
     num_funding = df['Contains_Letters'].sum()
+
     #loop through the different X values
     x_vals = df['X'].unique().tolist()
-    #an empty list where we will store the x values that have indices that
-    #are higher than the number of funding sources
-    error_x_vals = []
-    for x in x_vals:
-        #creates a new df for the different values of x
-        this_x_df = df.loc[df['X'] == x]
-        #if the max value of the index for that x value > number of funding
-        #sources, then we know there is an error with the indices
-        if this_x_df['Index'].max() >= num_funding:
-            error_x_vals.append(x)
-        #delete df we are no longer using
-        del this_x_df
 
-    #creates a new column to indicate if the indices need to be changed
-    if error_x_vals != []:
-        df['Fix Index'] = df['X'].apply\
-            (lambda x: True if x in error_x_vals else False)
-        #creates a list in the index column so we can apply our lambda
-        df['Index'] = list(zip(df['Index'], df['Fix Index']))
-        #change the index
-        #!!!we are hard coding in the subtract by 2 based on the document
-        df['Index'] = df['Index'].apply(lambda x: x[0] - 2 if x[1]\
-            else x[0])
+    #while we still have indices that are too big
+    #we will subtract the indices that are too big by 1 until all
+    #indices are the appropriate size
+    while df['Index'].max() >= num_funding:
+        #an empty list where we will store the x values that have indices that
+        #are higher than the number of funding sources
+        error_x_vals = []
+        for x in x_vals:
+            #creates a new df for the different values of x
+            this_x_df = df.loc[df['X'] == x]
+            #if the max value of the index for that x value > number of funding
+            #sources, then we know there is an error with the indices
+            if this_x_df['Index'].max() >= num_funding:
+                error_x_vals.append(x)
+            #delete df we are no longer using
+            del this_x_df
 
+        #creates a new column to indicate if the indices need to be changed
+        if error_x_vals != []:
+            df['Fix Index'] = df['X'].apply\
+                (lambda x: True if x in error_x_vals else False)
+            #creates a list in the index column so we can apply our lambda
+            df['Index'] = list(zip(df['Index'], df['Fix Index']))
+            #change the index
+            df['Index'] = df['Index'].apply(lambda x: x[0] - 1 if x[1]\
+                else x[0])
+    
     #split the df apart by indices
     indices = df['Index'].unique().tolist()
     for i in indices:
@@ -605,23 +636,25 @@ def project_location_add(df, project_num):
         LOCATION_DF["Project_Location"].append(loc)
         LOCATION_DF["Project_#"].append(project_num)
 
-FIX_WRAP_2016 = ['[170 -02] 37916']
+#FIX_WRAP_2016 = ['[170 -02] 37916']
+FIX_2015 = ['[170 -02] 38786', '[170 -02] 38796', '[170 -02] 38885',
+            '[170 -02] 38891', '[170 -02] 39562']
 TO_DEL = ["(20)", "Project #      Project Title", "Design/",
              "Construction", "Start  End",
              "Fund", "Source", "2016 2020", "Allocation", "2015 2019",
              "2017 2021", "2018 2022", "2019 2023"]
 
 
-ex_full_pdf = "pdf_documents/2019-2023_cip.pdf"
-start = 106
-end = 115
+ex_full_pdf = "pdf_documents/2015-2019_cip.pdf"
+start = 107
+end = 119
 
-d, f, l = main(ex_full_pdf, start, end, TO_DEL, [])
-d.to_csv('scraped_data/2019-2023_Sewer_System_Replacement_' +
+d, f, l = main(ex_full_pdf, start, end, TO_DEL, FIX_2015)
+d.to_csv('scraped_data/2015/2015-2019_Sewer_System_Replacement_' +
         'Construction_Project_Details.csv')
-f.to_csv('scraped_data/2019-2023_Sewer_System_Replacement_' +
+f.to_csv('scraped_data/2015/2015-2019_Sewer_System_Replacement_' +
          'Construction_Funding.csv')
-l.to_csv('scraped_data/2019-2023_Sewer_System_Replacement_' +
+l.to_csv('scraped_data/2015/2015-2019_Sewer_System_Replacement_' +
          'Construction_Locations.csv')
 
 gc.collect()
