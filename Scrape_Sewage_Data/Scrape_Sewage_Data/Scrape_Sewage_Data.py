@@ -12,13 +12,6 @@ Code Inspirations:
     PDF Scraper: https://stackoverflow.com/questions/22898145/how-to-extract-text-and-text-coordinates-from-a-pdf-file
 '''
 
-#!!!In general, I need to remember to add garbage collection and deleteion to 
-#!!!this code
-
-#!!!On page 96/97, there is a project name that wraps around to a 2nd line
-#!!!that is causing an error. I have implemented a hard-coded solution, but
-#!!!I may want to come back to it
-
 #import statements
 from pdfminer.pdfparser import PDFParser
 from pdfminer.pdfdocument import PDFDocument
@@ -57,9 +50,6 @@ def main(filepath, start_page, end_page, to_del, fix_wrap):
     The main of the file. Goes through the entire PDF scraping and analysis 
     process
 
-    !!! I need to fix this so it will NOT output a df, but will instead update 
-    !!!the SQL database
-    
     Inputs: filepath: (string) the path to the PDF we want to scrape
         start_page: the starting page we want to scrape
         end_page: the ending page we want to scrape
@@ -90,8 +80,6 @@ def main(filepath, start_page, end_page, to_del, fix_wrap):
     funding_df = pd.DataFrame(data=FUNDING_DF).drop_duplicates()
     location_df = pd.DataFrame(data=LOCATION_DF).drop_duplicates()
 
-    #!!!Once I have all of the pages in, I will need to remove duplicates for 
-    #!!!the few examples of projects that go onto multiple pages
     return(details_df, funding_df, location_df)
 
     #return(df)
@@ -320,11 +308,6 @@ def categorize_text(df, to_delete, fix_wrap, in_2015):
         and project location
     '''
 
-    #!!! For future pages/documents, we may need to add to the list of things
-    #!!!that need deletion
-    #!!! For future pages/documents, we may need to keep an eye out for the
-    #!!!page number
-
     #first, we are going to delete text we know we do not want, as listed in
     #the to_delete list
     df = df[~df['Text'].isin(to_delete)]
@@ -356,8 +339,6 @@ def categorize_text(df, to_delete, fix_wrap, in_2015):
         this_proj_df = df.loc[df['Project_Number'] == proj]
         #create a list of y values we can split the data on
         y_vals = this_proj_df['Y'].unique().tolist()
-        #!!!We are hard coding in this value because for 2016-2020 it happens
-        #!!!only once and we need to come up with a slicker way of dealing
         if proj in fix_wrap and not in_2015:
             this_proj_df = fix_wraparound(this_proj_df, proj)
         for y in y_vals:
@@ -447,8 +428,8 @@ def project_details_add(df, project_num):
     raw_details = df['Text'].tolist()
 
     #first, we need to check that a location hasn't crept into our data
-    #!!!we are only looking at one spot because this is where the errors have
-    #!!!crept in
+    #!!!for the 2015 document, there are a few cases where a location sneaks
+    #!!!into the list at index 2, so we are removing it here
     if len(raw_details[2]) > 6:
         txt = raw_details[2]
         new_df = df.loc[df['Text']==txt]
