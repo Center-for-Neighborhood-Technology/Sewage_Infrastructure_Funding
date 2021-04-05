@@ -220,7 +220,9 @@ def identify_project_id(df, in_2015):
     Takes in a Pandas dataframe and adds a column that indicates if an entry
         belongs to a certain project or not
 
-    Inputs: df: a pandas dataframe with the raw scraped text from the pdf
+    Inputs: 
+        df: a pandas dataframe with the raw scraped text from the pdf
+        in_2015: (boolean) indicates if we are in the 2015 PDF or not
 
     Outputs: df: a pandas dataframe that indicats what project number 
         the scraped text belongs to
@@ -233,7 +235,9 @@ def identify_project_id(df, in_2015):
     #We will make sure that the dataframe is sorted in descending order
     proj_num_df = proj_num_df.sort_values(by=['Y'], ascending=False)
 
-    #if we are in the 2015-2019 document, we need to readjust
+    #if we are in the 2015-2019 document, we need to readjust our Y values
+    #because in the 2015-2019 PDF, some Y values we want are higher than
+    #the project number Y value
     if in_2015:
         proj_num_df['Y'] = proj_num_df['Y'].apply(lambda x: x + 0.1)
 
@@ -304,8 +308,12 @@ def categorize_text(df, to_delete, fix_wrap, in_2015):
     Inputs:
         df: a pandas dataframe with our scraped information
         to_delete: a list of the strings that we want to delete
-        fix_wrap: a list of project numbers that have project titles that
-            wrap around to a 2nd line
+        fix_wrap: a list of project numbers 
+            for the 2016 PDF: these have project titles that
+                wrap around to a 2nd line
+            for the 2015 PDF: these have project numbers where the Y values
+                need to be readjusted before we round the Y value
+        in_2015: (boolean) indicates if we are in the 2015 PDF or not
 
     Outputs: this does not output anything, but instead adds project
         information to the datasets regarding project details, project funding,
@@ -376,7 +384,7 @@ def categorize_text(df, to_delete, fix_wrap, in_2015):
                     #if none of the entries contain a letter, then we will not
                     #use the data
                     if 1 in this_y_df['Contains_Letters'].values:
-                        project_funding_add(this_y_df, proj, in_2015)
+                        project_funding_add(this_y_df, proj)
             #delete df we are no longer using
             del this_y_df
         #delete df we are no longer using
@@ -506,9 +514,8 @@ def check_dates(date1, date2):
     else:
         return(date2, date1)
 
-def project_funding_add(df, project_num, in_2015):
+def project_funding_add(df, project_num):
     '''
-    !!!later, remove the in_2015 because I don't actually use it
     Adds data to the project funding dataframe
 
     Data added:
@@ -637,24 +644,24 @@ def project_location_add(df, project_num):
         LOCATION_DF["Project_#"].append(project_num)
 
 #FIX_WRAP_2016 = ['[170 -02] 37916']
-FIX_2015 = ['[170 -02] 38786', '[170 -02] 38796', '[170 -02] 38885',
-            '[170 -02] 38891', '[170 -02] 39562']
-TO_DEL = ["(20)", "Project #      Project Title", "Design/",
-             "Construction", "Start  End",
-             "Fund", "Source", "2016 2020", "Allocation", "2015 2019",
-             "2017 2021", "2018 2022", "2019 2023"]
+#FIX_2015 = ['[170 -02] 38786', '[170 -02] 38796', '[170 -02] 38885',
+#            '[170 -02] 38891', '[170 -02] 39562']
+#TO_DEL = ["(20)", "Project #      Project Title", "Design/",
+#             "Construction", "Start  End",
+#             "Fund", "Source", "2016 2020", "Allocation", "2015 2019",
+#             "2017 2021", "2018 2022", "2019 2023"]
 
 
-ex_full_pdf = "pdf_documents/2015-2019_cip.pdf"
-start = 107
-end = 119
+#ex_full_pdf = "pdf_documents/2015-2019_cip.pdf"
+#start = 107
+#end = 119
 
-d, f, l = main(ex_full_pdf, start, end, TO_DEL, FIX_2015)
-d.to_csv('scraped_data/2015/2015-2019_Sewer_System_Replacement_' +
-        'Construction_Project_Details.csv')
-f.to_csv('scraped_data/2015/2015-2019_Sewer_System_Replacement_' +
-         'Construction_Funding.csv')
-l.to_csv('scraped_data/2015/2015-2019_Sewer_System_Replacement_' +
-         'Construction_Locations.csv')
+#d, f, l = main(ex_full_pdf, start, end, TO_DEL, FIX_2015)
+#d.to_csv('scraped_data/2015/2015-2019_Sewer_System_Replacement_' +
+#        'Construction_Project_Details.csv')
+#f.to_csv('scraped_data/2015/2015-2019_Sewer_System_Replacement_' +
+#         'Construction_Funding.csv')
+#l.to_csv('scraped_data/2015/2015-2019_Sewer_System_Replacement_' +
+#         'Construction_Locations.csv')
 
-gc.collect()
+#gc.collect()
