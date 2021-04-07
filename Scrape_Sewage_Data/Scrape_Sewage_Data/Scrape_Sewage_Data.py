@@ -625,22 +625,22 @@ def project_location_add(df, project_num):
 #FIX_WRAP_2016 = ['[170 -02] 37916']
 #FIX_2015 = ['[170 -02] 38786', '[170 -02] 38796', '[170 -02] 38885',
 #            '[170 -02] 38891', '[170 -02] 39562']
+#FIX_2015_REHAB = ['[170 -06] 37890']
+
 #TO_DEL = ["(20)", "Project #      Project Title", "Design/",
-#             "Construction", "Start  End",
+#             "Construction", "Start  End", "Year",
 #             "Fund", "Source", "2016 2020", "Allocation", "2015 2019",
 #             "2017 2021", "2018 2022", "2019 2023"]
 
 
 #ex_full_pdf = "pdf_documents/2015-2019_cip.pdf"
-#start = 107
-#end = 119
 
-#d, f, l = main(ex_full_pdf, start, end, TO_DEL, FIX_2015)
-#d.to_csv('scraped_data/2015/2015-2019_Sewer_System_Replacement_' +
-#        'Construction_Project_Details.csv')
-#f.to_csv('scraped_data/2015/2015-2019_Sewer_System_Replacement_' +
-#         'Construction_Funding.csv')
-#l.to_csv('scraped_data/2015/2015-2019_Sewer_System_Replacement_' +
-#         'Construction_Locations.csv')
+#d, f, l = main(ex_full_pdf, 104, 104, TO_DEL, [])
+#d.to_csv('scraped_data/lining/2015-2019_Sewer_Lining_' +
+#        'Project_Details.csv')
+#f.to_csv('scraped_data/lining/2015-2019_Sewer_Lining_' +
+#         'Funding.csv')
+#l.to_csv('scraped_data/lining/2015-2019_Sewer_Lining_' +
+#         'Locations.csv')
 
 #gc.collect()

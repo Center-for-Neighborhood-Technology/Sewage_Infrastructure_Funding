@@ -1,0 +1,559 @@
+,Project_#,Project_Location
+0,[170 -04] 39029,On E 72nd St From S Kimbark Ave To S Dorchester Ave
+1,[170 -04] 39029,On N Wayne Ave From W Granville Ave To W Devon Ave
+2,[170 -04] 39029,On N Western Ave From W Maypole Ave To W Lake St
+3,[170 -04] 39029,On N Winchester Ave From N Olcott Ave To W Sunnyside Ave
+4,[170 -04] 39029,On N Wolcott Ave From W Kinzie St To W Warren Blvd
+5,[170 -04] 39029,On S Albany Ave From W Cermak Rd To W 26th St
+6,[170 -04] 39029,On S Archer Ave From S Corbett St To S Halsted St
+7,[170 -04] 39029,On S Ashland Ave From W 79th St To W 83rd St
+8,[170 -04] 39029,On S Carpenter St From W 99th St To W 100th St
+9,[170 -04] 39029,On S Central Park Ave From W 28th St To W 32nd St
+10,[170 -04] 39029,On S Clyde Ave From E 99th St To E 100th St
+11,[170 -04] 39029,On S Cottage Grove Ave From E 86th St To E 87th St
+12,[170 -04] 39029,On N Tripp Ave From W Argyle St To W Ainslie St
+13,[170 -04] 39029,On S Dr Martin Luther King Jr Dr From E 101st St To E 103rd St
+14,[170 -04] 39029,On S Essex Ave From E 76th St To E 77th St
+15,[170 -04] 39029,On S Hamlin Ave From W 26th St To W 27th St
+16,[170 -04] 39029,On S Kenneth Ave From W Lexington St To W Fifth Ave
+17,[170 -04] 39029,On S Kingston Ave From S Anthony Ave To S South Chicago Ave
+18,[170 -04] 39029,On S Lawndale Ave From W Cermak Rd To W 26th St
+19,[170 -04] 39029,On S Michigan Ave From E 95th St To E 96th St
+20,[170 -04] 39029,On S Peoria St From W 104th St To W 105th St
+21,[170 -04] 39029,On S Princeton Ave From W 115th St To W 116th St
+22,[170 -04] 39029,On S Racine Ave From W 104th St To W 105th St
+23,[170 -04] 39029,On S Vernon Ave From E 104th St To E 105th St
+24,[170 -04] 39029,On S Wabash Ave From E 111th St To E 110th St
+25,[170 -04] 39029,On S Eggleston Ave From W 107th St To W 108th St
+26,[170 -04] 39029,On N Spaulding Ave From W Ardmore Ave To W Hollywood Ave
+27,[170 -04] 39029,On S Western Ave From W Congress Pkwy To W Harrison St
+28,[170 -04] 39029,On N Ridgeway Ave From N Elston Ave To W Belle Plaine Ave
+29,[170 -04] 39029,On E 79th St From S Clyde Ave To S Merrill Ave
+30,[170 -04] 39029,On N Artesian Ave From W Pratt Blvd To W North Shore Ave
+31,[170 -04] 39029,On N Ashland Ave From W Wellington Ave To W Diversey Pkwy
+32,[170 -04] 39029,On N Austin Ave From W Peterson Ave To N Milwaukee Ave
+33,[170 -04] 39029,On N Central Ave From N Elston Ave To W Catalpa Ave
+34,[170 -04] 39029,On N Harlem Ave From W Peterson Ave To W Talcott Ave
+35,[170 -04] 39029,On N Rogers Ave From N Honore St To N Clark St
+36,[170 -04] 39029,On N Keating Ave From N Kilpatrick Ave To N Caldwell Ave
+37,[170 -04] 39029,On N Keeler Ave From W Belle Plaine Ave To W Irving Park Rd
+38,[170 -04] 39029,On N Lakewood Ave From W Arthur Ave To W Devon Ave
+39,[170 -04] 39029,On N Laramie Ave From W Ferdinand St To W Lake St
+40,[170 -04] 39029,On N Magnolia Ave From N Ridge Ave To W Ardmore Ave
+41,[170 -04] 39029,On N Hermitage Ave From W Thome Ave To W Granville Ave
+42,[170 -04] 39029,On N Mason Ave From W Washington Blvd To W West End Ave
+43,[170 -04] 39029,On N Meade Ave From W Montrose Ave To W Berteau Ave
+44,[170 -04] 39029,On N Merrimac Ave From W Argyle St To W Strong St
+45,[170 -04] 39029,On N Neenah Ave From W Gregory St To W Balmoral Ave
+46,[170 -04] 39029,On N Oak Park Ave From W Grace St To W Addison St
+47,[170 -04] 39029,On N Odell Ave From W Byron St To W Belmont Ave
+48,[170 -04] 39029,On N Olcott Ave From W Ibsen St To W Pratt Ave
+49,[170 -04] 39029,On N Oleander Ave From W Addison St To W Wellington Ave
+50,[170 -04] 39029,On N Orange Ave From W School St To W Belmont Ave
+51,[170 -04] 39029,On N Parkside Ave From W Lake St To W Corcoran Pl
+52,[170 -04] 39029,On N Paulina St From W Devon Ave To W Highland Ave
+53,[170 -04] 39029,On N Magnolia Ave From W Rosemont Ave To W Devon Ave
+54,[170 -04] 39029,On S Clyde Ave From E 81st St To E 82nd St
+55,[170 -04] 39029,On S Central Park Ave From W 26th St To W 28th St
+56,[170 -04] 39029,On S Blackstone Ave From E 83rd St To E 86th St
+57,[170 -04] 39029,On S Archer Ave From W 35th St To W 37th St
+58,[170 -04] 39029,On N Tripp Ave From W Granville Ave To N Sauganash Ave
+59,[170 -04] 39029,On N Wolcott Ave From W Wilson Ave To W Sunnyside Ave
+60,[170 -04] 39029,On N Winchester Ave From W Montrose Ave To W Sunnyside Ave
+61,[170 -04] 39029,On N Whipple St From N Lincoln Ave To W Ardmore Ave
+62,[170 -04] 39029,On N Western Ave From W Lake St To W Warren Blvd
+63,[170 -04] 39029,On S Archer Ave From S Ashland Ave To S Poplar Ave
+64,[170 -04] 39029,On S Constance Ave From E 77th St To E 78th St
+65,[170 -04] 39029,On S Vincennes Ave From S Halsted St To S Summit Ave
+66,[170 -04] 39029,On S Dr Martin Luther King Jr Dr From S Burnside Ave To E 93rd St
+67,[170 -04] 39029,On S Emerald Ave From W 106th St To W 107th St
+68,[170 -04] 39029,On S Hamlin Ave From W 16th St To W 26th St
+69,[170 -04] 39029,On S Harvard Ave From W 118th St To W 119th St
+70,[170 -04] 39029,On S Kilbourn Ave From W Lexington St To W Fifth Ave
+71,[170 -04] 39029,On S Kolmar Ave From W Polk St To W Fifth Ave
+72,[170 -04] 39029,On S Michigan Ave From E 102nd St To E 102nd Pl
+73,[170 -04] 39029,On S Parnell Ave From W 118th St To W 119th St
+74,[170 -04] 39029,On S Princeton Ave From W 102nd St To W 102nd Pl
+75,[170 -04] 39029,On S Princeton Ave From W 99th St To W 100th Pl
+76,[170 -04] 39029,On S Ridgeway Ave From W 26th St To W 27th St
+77,[170 -04] 39029,On N Talman Ave From W Fargo Ave To W Jarvis Ave
+78,[170 -04] 39029,On S Dearborn St From W Congress Pkwy To W Polk St
+79,[170 -04] 39029,On N Rutherford Ave From W Foster Ave To W Carmen Ave
+80,[170 -04] 39029,On N Mason Ave From W Berteau Ave To W Belle Plaine Ave
+81,[170 -04] 39029,On N Pioneer Ave From W Berteau Ave To W Irving Park Rd
+82,[170 -04] 39029,On S Wallace St From W 101st St To W 102nd St
+83,[170 -04] 39029,On E 73rd St From S Eberhart Ave To S Rhodes Ave
+84,[170 -04] 39029,On E 83rd St From S State St To S Dr Martin Luther King Jr Dr
+85,[170 -04] 39029,On N Ashland Ave From W Fulton St To W Lake St
+86,[170 -04] 39029,On N Austin Ave From W Bryn Mawr Ave To N Northwest Hwy
+87,[170 -04] 39029,On N Bernard St From W Granville Ave To W Glenlake Ave
+88,[170 -04] 39029,On N Christiana Ave From W Hollywood Ave To W Bryn Mawr Ave
+89,[170 -04] 39029,On N Hartland Ct From W Ohio St To W Grand Ave
+90,[170 -04] 39029,On N Hiawatha Ave From N Loleta Ave To N Central Ave
+91,[170 -04] 39029,On N Keeler Ave From W Ainslie St To W Lawrence Ave
+92,[170 -04] 39029,On N Kilpatrick Ave From N Knox Ave To N Keating Ave
+93,[170 -04] 39029,On N Rockwell St From W Pratt Blvd To W North Shore Ave
+94,[170 -04] 39029,On N Lakewood Ave From W Rosemont Ave To W Devon Ave
+95,[170 -04] 39029,On N Magnolia Ave From W Arthur Ave To W Devon Ave
+96,[170 -04] 39029,On N Mayfield Ave From W Lake St To W Corcoran Pl
+97,[170 -04] 39029,On N Melvina Ave From W Montrose Ave To W Berteau Ave
+98,[170 -04] 39029,On N Mobile Ave From W Montrose Ave To W Berteau Ave
+99,[170 -04] 39029,On N Normandy Ave From W Higgins Ave To W Berwyn Ave
+100,[170 -04] 39029,On N Octavia Ave From W Byron St To W Cornelia Ave
+101,[170 -04] 39029,On N Oketo Ave From W Addison St To W School St
+102,[170 -04] 39029,On N Olcott Ave From W Palatine Ave To W Myrtle Ave
+103,[170 -04] 39029,On N Oliphant Ave From W Pratt Ave To N Olmsted Ave
+104,[170 -04] 39029,On N Ozark Ave From W Addison St To W Cornelia Ave
+105,[170 -04] 39029,On N Parkside Ave From W Lake St To W Fulton St
+106,[170 -04] 39029,On N Leclaire Ave From W Chicago Ave To W Erie St
+107,[170 -04] 39029,On S Western Ave From W Harrison St To W Polk St
+108,[170 -04] 39029,On W 115th St From S Yale Ave To S Wentworth Ave
+109,[170 -04] 39029,On W Morse Ave From N Greenview Ave To N Wayne Ave
+110,[170 -04] 39029,On W North Ave From N Harlem Ave To N Sayre Ave
+111,[170 -04] 39029,On W Oak St From N Wells St To N La Salle Dr
+112,[170 -04] 39029,On W Ogden Ave From S Drake Ave To S Trumbull Ave
+113,[170 -04] 39029,On W Ogden Ave From S Keeler Ave To S Pulaski Rd
+114,[170 -04] 39029,On W Ogden Ave From S Millard Ave To S Central Park Ave
+115,[170 -04] 39029,On W Polk St From S Independence Blvd To S Central Park Ave
+116,[170 -04] 39029,On W Roosevelt Rd From S Pulaski Rd To S Springfield Ave
+117,[170 -04] 39029,On W Roosevelt Rd From S Washtenaw Ave To S Western Ave
+118,[170 -04] 39029,On W Thome Ave From N Greenview Ave To N Glenwood Ave
+119,[170 -04] 39029,On W Van Buren St From S Western Ave To S Leavitt St
+120,[170 -04] 39029,On W Washington Blvd From N Lamon Ave To N Cicero Ave
+121,[170 -04] 39029,On W Wilcox St From S California Ave To S Washtenaw Ave
+122,[170 -04] 39029,On W Windsor Ave From N Menard Ave To N Major Ave
+123,[170 -04] 39029,N Natchez Ave And W Catalpa Ave
+124,[170 -04] 39029,S Albany Ave And W 21st Pl
+125,[170 -04] 39029,S Harvard Ave And W 81st St
+126,[170 -04] 39029,On W Leland Ave From N Linder Ave To N Long Ave
+127,[170 -04] 39029,On W Institute Pl From N Orleans St To N Wells St
+128,[170 -04] 39029,On W Greenleaf Ave From N Francisco Ave To N California Ave
+129,[170 -04] 39029,On W Gladys Ave From S Kolmar Ave To S Kostner Ave
+130,[170 -04] 39029,On W 23rd St From S Christiana Ave To S Kedzie Ave
+131,[170 -04] 39029,On W 26th St From S Lawndale Ave To S Homan Ave
+132,[170 -04] 39029,On W 77th St From S Wallace St To S Fielding Ave
+133,[170 -04] 39029,On W 85th St From S Damen Ave To S Wood St
+134,[170 -04] 39029,On W 94th St From S Longwood Dr To S Vanderpoel Ave
+135,[170 -04] 39029,On W 95th St From S Normal Ave To S Eggleston Ave
+136,[170 -04] 39029,On W Addison St From N Karlov Ave To N Pulaski Rd
+137,[170 -04] 39029,On W Addison St From N Page Ave To N Pacific Ave
+138,[170 -04] 39029,W Chestnut St And N Orleans St
+139,[170 -04] 39029,On W Arthur Ave From N Sheridan Rd To N Glenwood Ave
+140,[170 -04] 39029,On W Columbia Ave From N Sheridan Rd To N Glenwood Ave
+141,[170 -04] 39029,On W Cullom Ave From N Linder Ave To N Long Ave
+142,[170 -04] 39029,On W Devon Ave From N Ridge Ave To N Ravenswood Ave
+143,[170 -04] 39029,On W Estes Ave From N Sacramento Ave To N California Ave
+144,[170 -04] 39029,On W Fitch Ave From N Francisco Ave To N California Ave
+145,[170 -04] 39029,On W Flournoy St From S Central Ave To S Homan Ave
+146,[170 -04] 39029,On W Forest Preserve Ave From N Osage Ave To N Ozanam Ave
+147,[170 -04] 39029,On W Forest Preserve Ave From N Pontiac Ave To N Panama Ave
+148,[170 -04] 39029,On W Cermak Rd From S Karlov Ave To S Harding Ave
+149,[170 -04] 39029,10400-10450 S State St
+150,[170 -04] 39029,On W 118th St From S Parnell Ave To S Normal Ave
+151,[170 -04] 39029,On W Lexington St From S Independence Blvd To S Central Park Ave
+152,[170 -04] 39029,On W North Ave From N Hamlin Ave To N Kimball Ave
+153,[170 -04] 39029,On W North Shore Ave From N Ravenswood Ave To N Hermitage Ave
+154,[170 -04] 39029,On W Ogden Ave From S California Blvd To S Washtenaw Ave
+155,[170 -04] 39029,On W Ogden Ave From S Homan Ave To S Albany Ave
+156,[170 -04] 39029,On W Ogden Ave From S Millard Ave To S Albany Ave
+157,[170 -04] 39029,On W Palatine Ave From N Olcott Ave To N Avondale Ave
+158,[170 -04] 39029,On W Roosevelt Rd From S Independence Blvd To S Avers Ave
+159,[170 -04] 39029,On W Roosevelt Rd From S St Louis Ave To S Spaulding Ave
+160,[170 -04] 39029,On W Taylor St From S Loomis St To S Laflin St
+161,[170 -04] 39029,On W Thorndale Ave From N Greenview Ave To N Glenwood Ave
+162,[170 -04] 39029,On W Washington Blvd From N Kostner Ave To N Kenton Ave
+163,[170 -04] 39029,On W Washington Blvd From N Talman Ave To N Leavitt St
+164,[170 -04] 39029,On W Wilson Ave From N Menard Ave To N Major Ave
+165,[170 -04] 39029,E 111th St And S Indiana Ave
+166,[170 -04] 39029,N Oleander Ave And W Grace St
+167,[170 -04] 39029,S Emerald Ave And W 106th St
+168,[170 -04] 39029,On W Jarvis Ave From N Oriole Ave To N Harlem Ave
+169,[170 -04] 39029,S Lawndale Ave And W 32nd St
+170,[170 -04] 39029,On W Ibsen St From N Oriole Ave To N Odell Ave
+171,[170 -04] 39029,On W Foster Ave From N Normandy Ave To N Nashville Ave
+172,[170 -04] 39029,On W 26th St From S Keeler Ave To S Pulaski Rd
+173,[170 -04] 39029,On W 69th St From S Wallace St To S Parnell Ave
+174,[170 -04] 39029,On W 79th St From S Maplewood Ave To S Western Ave
+175,[170 -04] 39029,On W 88th St From S Racine Ave To S Halsted St
+176,[170 -04] 39029,On W 95th St From S Morgan St To S Halsted St
+177,[170 -04] 39029,On W 99th St From S Morgan St To S Halsted St
+178,[170 -04] 39029,On W Addison St From N Mobile Ave To N Austin Ave
+179,[170 -04] 39029,On W Ardmore Ave From N New Hampshire Ave To N Newark Ave
+180,[170 -04] 39029,On W Carroll Ave From N St Louis Ave To N Central Park Ave
+181,[170 -04] 39029,On W Chestnut St From N Orleans St To N Orleans St
+182,[170 -04] 39029,On W Corcoran Pl From N Menard Ave To N Parkside Ave
+183,[170 -04] 39029,On W Devon Ave From N Greenview Ave To N Paulina St
+184,[170 -04] 39029,On W Elmdale Ave From N Magnolia Ave To N Broadway
+185,[170 -04] 39029,On W Fargo Ave From N Ashland Ave To N Greenview Ave
+186,[170 -04] 39029,On W Fitch Ave From N Sacramento Ave To N Francisco Ave
+187,[170 -04] 39029,On W Forest Preserve Ave From N Olcott Ave To W Irving Park Rd
+188,[170 -04] 39029,On W Forest Preserve Ave From N Ozanam Ave To N Oketo Ave
+189,[170 -04] 39029,On W Granville Ave From N Greenview Ave To N Glenwood Ave
+190,[170 -04] 39029,W Forest Preserve Ave And N Ottawa Ave
+191,[170 -04] 39743,On E 69th Pl From S Dorchester Ave To S Stony Island Ave
+192,[170 -04] 39743,On N Melvina Ave From W Catalpa Ave To W Rascher Ave
+193,[170 -04] 39743,On N Monitor Ave From N Marmora Ave To W Catalpa Ave
+194,[170 -04] 39743,On N Mozart St From W Ainslie St To W Argyle St
+195,[170 -04] 39743,On N Neva Ave From W Diversey Ave To W Schubert Ave
+196,[170 -04] 39743,On N Northcott Ave From W Hurlbut St To W Somerset Ave
+197,[170 -04] 39743,On N Ottawa Ave From W Ardmore Ave To W Thorndale Ave
+198,[170 -04] 39743,On N Ottawa Ave From W Rosedale Ave To W Peterson Ave
+199,[170 -04] 39743,On N Ozanam Ave From N Kennedy Express Er To W Bryn Mawr Ave
+200,[170 -04] 39743,On N Parkside Ave From W West End Ave To W Fulton St
+201,[170 -04] 39743,On N Racine Ave From W Hubbard St To W Kinzie St
+202,[170 -04] 39743,On N Sacramento Ave From W Logan Blvd To W Altgeld St
+203,[170 -04] 39743,On N Sangamon St From N Milwaukee Ave To W Huron St
+204,[170 -04] 39743,On N Seminary Ave From W Dickens Ave To W Armitage Ave
+205,[170 -04] 39743,On N Springfield Ave From W Ohio St To W Ferdinand St
+206,[170 -04] 39743,On N Talman Ave From W Logan Blvd To W Schubert Ave
+207,[170 -04] 39743,On N Troy St From W Chicago Ave To W Ohio St
+208,[170 -04] 39743,On N Wabash Ave From E Grand Ave To E Superior St
+209,[170 -04] 39743,On N Wabash Ave From W West End Ave  To W Fulton St
+210,[170 -04] 39743,On N Washtenaw Ave From W Albion Ave To W Devon Ave
+211,[170 -04] 39743,On N Washtenaw Ave From W Birchwood Ave To W Fargo Ave
+212,[170 -04] 39743,On N Washtenaw Ave From W Thorndale Ave To W Ardmore Ave
+213,[170 -04] 39743,On N Willard Ct From W Superior St To W Huron St
+214,[170 -04] 39743,On S Aberdeen St From W 77th St To W 79th St
+215,[170 -04] 39743,On N Meade Ave From N Avondale Ave To W Balmoral Ave
+216,[170 -04] 39743,On N Mcvicker Ave From N Northwest Hwy To W Bryn Mawr Ave
+217,[170 -04] 39743,On S Aberdeen St From W 85th St To W 87th St
+218,[170 -04] 39743,On N Marmora Ave From W Bryn Mawr Ave To W Catalpa Ave
+219,[170 -04] 39743,On N May St From W Kinzie St To W Hubbard St
+220,[170 -04] 39743,On E 73rd St From S Cottage Grove Ave To S South Chicago Ave
+221,[170 -04] 39743,On E 73rd St From S Eberhart Ave To S Rhodes Ave
+222,[170 -04] 39743,On E 75th St From S Drexel Ave To S Ingleside Ave
+223,[170 -04] 39743,On N Aberdeen St From W Kinzie St To W Hubbard St
+224,[170 -04] 39743,On N Albany Ave From W Carmen Ave To W Argyle St
+225,[170 -04] 39743,On N Avers Ave From W Ohio St To W Ferdinand St
+226,[170 -04] 39743,On N Canfield Ave From W Bryn Mawr Ave To W Balmoral Ave
+227,[170 -04] 39743,On N Clark St From W Randolph St To W Calhoun Pl
+228,[170 -04] 39743,On N Elizabeth St From W Madison St To W Washington Blvd
+229,[170 -04] 39743,On N Fairfield Ave From W Albion Ave To W Devon Ave
+230,[170 -04] 39743,On N Hamlin Ave From W Belmont Ave To N Milwaukee Ave
+231,[170 -04] 39743,On N California Ave From W Eisenhower Expy To W Harrison St
+232,[170 -04] 39743,On N Janssen Ave From W Grace St To W Addison St
+233,[170 -04] 39743,On N Keeler Ave From W Devon Ave To W Granville Ave
+234,[170 -04] 39743,On N Kenneth Ave From W Carmen Ave To W Ainslie St
+235,[170 -04] 39743,On N Kildare Ave From W Devon Ave To W Granville Ave
+236,[170 -04] 39743,On N Magnolia Ave From W Thorndale Ave To W Rosedale Ave
+237,[170 -04] 39743,On N Kilpatrick Ave From N Sauganash Ave To N Hiawatha Ave
+238,[170 -04] 39743,On N Knox Ave From N Hiawatha Ave To N Ionia Ave
+239,[170 -04] 39743,On N Kolmar Ave From W Rosemont Ave To N Sauganash Ave
+240,[170 -04] 39743,On N Lakewood Ave From W Rosemont Ave To W Granville Ave
+241,[170 -04] 39743,On N Leavitt St From W North Ave To W Division St
+242,[170 -04] 39743,On N Lowell Ave From W Devon Ave To W Granville Ave
+243,[170 -04] 39743,On N Harding Ave From W Ohio St To W Ferdinand St
+244,[170 -04] 39743,On N Ozark Ave From W Peterson Ave To W Rosedale Ave
+245,[170 -04] 39743,On N Overhill Ave From W Higgins Ave To W Bryn Mawr Ave
+246,[170 -04] 39743,On N Ottawa Ave From W Higgins Ave To W Bryn Mawr Ave
+247,[170 -04] 39743,On N Orleans St From W Wisconsin St To W Menomonee St
+248,[170 -04] 39743,On N Meade Ave From N Northwest Hwy To W Bryn Mawr Ave
+249,[170 -04] 39743,On N Neva Ave From N Avondale Ave To W Hood Ave
+250,[170 -04] 39743,On N Moody Ave From N Avondale Ave To W Foster Ave
+251,[170 -04] 39743,On N Melvina Ave From W Foster Ave To W Balmoral Ave
+252,[170 -04] 39743,On N Peoria St From W Erie St To W Huron St
+253,[170 -04] 39743,On N Northcott Ave From N Neva Ave To N Nickerson Ave
+254,[170 -04] 39743,On N Racine Ave From W Kinzie St To W Hubbard St
+255,[170 -04] 39743,On S Aberdeen St From W 73rd St To W 74th St
+256,[170 -04] 39743,On N Sawyer Ave From W Huron St To W Chicago Ave
+257,[170 -04] 39743,On N Seminary Ave From W Diversey School Ct To N Lincoln Ave
+258,[170 -04] 39743,On N Talman Ave From W Albion Ave To W Devon Ave
+259,[170 -04] 39743,On N Throop St From W Chicago Ave To W Huron St
+260,[170 -04] 39743,On N Union Ave From W Grand Ave To W Hubbard St
+261,[170 -04] 39743,On N Wabash Ave From E Wacker Pl To E Madison St
+262,[170 -04] 39743,On N Waller Ave From W Chicago Ave To W Ohio St
+263,[170 -04] 39743,On N Washtenaw Ave From W Belmont Ave To N Elston Ave
+264,[170 -04] 39743,On N Washtenaw Ave From W Fargo Ave To W Jarvis Ave
+265,[170 -04] 39743,On N Western Ave From W Granville Ave To W Devon Ave
+266,[170 -04] 39743,On N Mcvicker Ave From W Foster Ave To W Balmoral Ave
+267,[170 -04] 39743,On N Sacramento Ave From W Sherwin Ave To W Touhy Ave
+268,[170 -04] 39743,On N Mayfield Ave From W West End Ave To W Fulton St
+269,[170 -04] 39743,On N Hermitage Ave From W Waveland Ave To W Addison St
+270,[170 -04] 39743,On N Maplewood Ave From W Birchwood Ave To W Fargo Ave
+271,[170 -04] 39743,On S Aberdeen St From W 83rd St To W 84th St
+272,[170 -04] 39743,On E 72nd Pl From S Dorchester Ave To S Blackstone Ave
+273,[170 -04] 39743,On E 73rd St From S Dorchester Ave To S Stony Island Ave
+274,[170 -04] 39743,On E 73rd St From S Rhodes Ave To S Eberhart Ave
+275,[170 -04] 39743,On E Ontario St From N St Clair St To N Michigan Ave
+276,[170 -04] 39743,On N Ada St From W Chicago Ave To W Huron St
+277,[170 -04] 39743,On N Artesian Ave From W Birchwood Ave To W Fargo Ave
+278,[170 -04] 39743,On N Avondale Ave From W Hurlbut St To W Somerset Ave
+279,[170 -04] 39743,On N California Ave From W Foster Ave To W Carmen Ave
+280,[170 -04] 39743,On N Carpenter St From W Kinzie St To W Hubbard St
+281,[170 -04] 39743,On N Damen Ave From W Warren Blvd To W Monroe St
+282,[170 -04] 39743,On N Mason Ave From N Northwest Hwy To W Bryn Mawr Ave
+283,[170 -04] 39743,On N Elston Ave From N Albany Ave To W Henderson St
+284,[170 -04] 39743,On N Hamlin Ave From W Fullerton Ave To W Wrightwood Ave
+285,[170 -04] 39743,On N Karlov Ave From W Devon Ave To W Granville Ave
+286,[170 -04] 39743,On N Kenmore Ave From W Winona St To W Argyle St
+287,[170 -04] 39743,On N Kerbs Ave From N Caldwell Ave To N Kercheval Ave
+288,[170 -04] 39743,On N Kilpatrick Ave From N Elston Ave To N Kennison Ave
+289,[170 -04] 39743,On N Kimball Ave From W Irving Park Rd To W Byron St
+290,[170 -04] 39743,On N Kolmar Ave From W Bryn Mawr Ave To N Rogers Ave
+291,[170 -04] 39743,On N Kostner Ave From W Devon Ave To W Rosemont Ave
+292,[170 -04] 39743,On N Lavergne Ave From W Ohio St To W Race Ave
+293,[170 -04] 39743,On N Lemont Ave From W Rosemont Ave To N Ionia Ave
+294,[170 -04] 39743,On N Magnolia Ave From W Rosemont Ave To W Granville Ave
+295,[170 -04] 39743,On N Francisco Ave From W Ainslie St To W Argyle St
+296,[170 -04] 39743,On S Aberdeen St From W Adams St To W Monroe St
+297,[170 -04] 39743,On S Ada St From W 79th St To W 80th St
+298,[170 -04] 39743,On S May St From W Marquette Rd To W 69th St
+299,[170 -04] 39743,On S Menard Ave From W 60th St To W 61st St
+300,[170 -04] 39743,On S Menard Ave From W Railroad Ave To W Fillmore St
+301,[170 -04] 39743,On S Miller St From W Polk St To W Taylor St
+302,[170 -04] 39743,On S Morgan St From W 63rd St To W 64th St
+303,[170 -04] 39743,On S Morgan St From W Monroe St To W Adams St
+304,[170 -04] 39743,On S Normal Ave From W 30th St To W 31st St
+305,[170 -04] 39743,On S Oakley Ave From W 33rd St To W 34th St
+306,[170 -04] 39743,On S Paulina St From W 81st St To W 85th St
+307,[170 -04] 39743,On S Peoria Dr From W 63rd St To W 64th St
+308,[170 -04] 39743,On S Perry Ave From W 77th St To W 75th St
+309,[170 -04] 39743,On S Princeton Ave From W 113th St To W 114th St
+310,[170 -04] 39743,On S Racine Ave From W 103rd St To W 104th St
+311,[170 -04] 39743,On S Racine Ave From W 79th St To W 80th St
+312,[170 -04] 39743,On S Richmond St From W 79th St To W 80th St
+313,[170 -04] 39743,On S Rockwell St From W 70th St To W 71st St
+314,[170 -04] 39743,On S Sacramento Ave From W 79th St To W 80th St
+315,[170 -04] 39743,On S Sangamon St From W Monroe St To W Van Buren St
+316,[170 -04] 39743,On S Sawyer Ave From W 46th St To S Archer Ave
+317,[170 -04] 39743,On S Seeley Ave From W 47th St To W 48th St
+318,[170 -04] 39743,On S State St From E 84th St To E 86th St
+319,[170 -04] 39743,On S Talman Ave From W 50th St To W 51st St
+320,[170 -04] 39743,On S Throop St From W 47th St To W 48th St
+321,[170 -04] 39743,On S May St From W 18th Pl To W 19th Pl
+322,[170 -04] 39743,On S Marshfield Ave From W 81st St To W 85th St
+323,[170 -04] 39743,On S Tripp Ave From W 27th St To W 28th St
+324,[170 -04] 39743,On S Major Ave From W 61st St To W 62nd St
+325,[170 -04] 39743,On S Maplewood Ave From W 73rd St To W 74th St
+326,[170 -04] 39743,On S Albany Ave From W 45th St To W 47th St
+327,[170 -04] 39743,On S Albany Ave From W 71st St To W 73rd St
+328,[170 -04] 39743,On S Artesian Ave From W 73rd St To W 74th St
+329,[170 -04] 39743,On S Bell Ave From W 33rd St To W 34th St
+330,[170 -04] 39743,On S California Ave From W Fillmore St To W Roosevelt Rd
+331,[170 -04] 39743,On S Carpenter St From W Polk St To W Taylor St
+332,[170 -04] 39743,On S Dorchester Ave From E 72nd St To E 72nd Pl
+333,[170 -04] 39743,On S Eggleston Ave From W 100th St To W 108th St
+334,[170 -04] 39743,On S Elizabeth St From W 79th St To W 80th St
+335,[170 -04] 39743,On S Emerald Ave From W 45th St To W 46th St
+336,[170 -04] 39743,On S Fairfield Ave From W 50th St To W 52nd St
+337,[170 -04] 39743,On S Clyde Ave From E 99th St To E 100th St
+338,[170 -04] 39743,On S Green St From W Monroe St To W Van Buren St
+339,[170 -04] 39743,On S Hamilton Ave From W 93rd St To W 95th St
+340,[170 -04] 39743,On S Hermitage Ave From W 66th St To W Marquette Rd
+341,[170 -04] 39743,On S Hoyne Ave From W 33rd St To W 34th St
+342,[170 -04] 39743,On S Lowe Ave From W 66th St To W Marquette Rd
+343,[170 -04] 39743,On S Justine St From W 65th St To W 66th St
+344,[170 -04] 39743,On S Kenneth Ave From W Cermak Rd To W Ogden Ave
+345,[170 -04] 39743,On S Kolin Ave From W 27th St To W 28th St
+346,[170 -04] 39743,On S Laflin St From W 65th St To W 66th St
+347,[170 -04] 39743,On S Loomis Blvd From W 74th St To W 76th St
+348,[170 -04] 39743,On S Loomis St From W Taylor St To W Grenshaw St
+349,[170 -04] 39743,On S Francisco Ave From W 79th St To W 80th St
+350,[170 -04] 39743,On S Oakley Ave From W 35th St To W 36th St
+351,[170 -04] 39743,On S Normal Blvd From W 64th St To W 65th St
+352,[170 -04] 39743,On S Mozart St From W 79th St To W 80th St
+353,[170 -04] 39743,On S Morgan St From W 85th St To W 87th St
+354,[170 -04] 39743,On S May St From W 63rd St To W 64th St
+355,[170 -04] 39743,On S Michigan Ave From E 74th St To E 73rd St
+356,[170 -04] 39743,On S Menard Ave From W 62nd St To W 63rd St
+357,[170 -04] 39743,On S Mayfield Ave From W Railroad Ave To W Fillmore St
+358,[170 -04] 39743,On S Paxton Ave From E 79th St To E 80th St
+359,[170 -04] 39743,On S Monitor Ave From W Railroad Ave To W Fillmore St
+360,[170 -04] 39743,On S Peoria St From W 69th St To W 72nd St
+361,[170 -04] 39743,On S Talman Ave From W 55th St To W 56th St
+362,[170 -04] 39743,On S Princeton Ave From W Hollywood Ave To W 89th St
+363,[170 -04] 39743,On S Racine Ave From W 77th St To W 78th St
+364,[170 -04] 39743,On S Richmond St From W 54th St To W 55th St
+365,[170 -04] 39743,On S Rockwell St From W 54th St To W 55th St
+366,[170 -04] 39743,On S Sacramento Ave From W 54th St To W 55th St
+367,[170 -04] 39743,On S Saginaw Ave From E 127th St To E 128th St
+368,[170 -04] 39743,On S Sawyer Ave From W 23rd St To W 24th St
+369,[170 -04] 39743,On S Sawyer Ave From W 51st St To W 52nd St
+370,[170 -04] 39743,On S Seeley Ave From W 50th St To W 51st St
+371,[170 -04] 39743,On S Stewart Ave From W 80th St To W 81st St
+372,[170 -04] 39743,On S May St From W 100th St To W 101st St
+373,[170 -04] 39743,On S Princeton Ave From S Holland Rd To W 89th St
+374,[170 -04] 39743,On S Marquette Ave From E 126th St To E 127th St
+375,[170 -04] 39743,On S Green St From W 70th St To W 71st St
+376,[170 -04] 39743,On S Lowe Ave From W 73rd St To W 74th St
+377,[170 -04] 39743,On S Throop St From W Madison St To W Adams St
+378,[170 -04] 39743,On S Ada St From W Taylor St To W Cabrini St
+379,[170 -04] 39743,On S Albany Ave From W 51st St To W 53rd St
+380,[170 -04] 39743,On S Albany Ave From W 79th St To W 80th St
+381,[170 -04] 39743,On S Artesian Ave From W Gladys Ave To W Van Buren St
+382,[170 -04] 39743,On S Burley Ave From E 133rd St To E 134th St
+383,[170 -04] 39743,On S California Ave From W Harrison St To W Taylor St
+384,[170 -04] 39743,On S Clyde Ave From E 92nd St To E 93rd St
+385,[170 -04] 39743,On S Damen Ave From W 53rd St To W Garfield Blvd
+386,[170 -04] 39743,On S Eberhart Ave From E 72nd St To E 74th St
+387,[170 -04] 39743,On S Elizabeth St From W 47th St To W 48th St
+388,[170 -04] 39743,On S Manistee Ave From E 126th St To S Escanaba Ave
+389,[170 -04] 39743,On S Elizabeth St From W 84th St To W 85th St
+390,[170 -04] 39743,On S Francisco Ave From W 54th St To W 55th St
+391,[170 -04] 39743,On S Halsted St From W Root St To W 47th St
+392,[170 -04] 39743,On S Harvard Ave From W 69th St To W 70th St
+393,[170 -04] 39743,On S Hermitage Ave From W 81st St To W 85th St
+394,[170 -04] 39743,On S Justine St From W 64th St To W 65th St
+395,[170 -04] 39743,On S Karlov Ave From W 45th St To W 46th St
+396,[170 -04] 39743,On S Kenneth Ave From W Lexington St To W Fifth Ave
+397,[170 -04] 39743,On S Laflin St From W 64th St To W 65th St
+398,[170 -04] 39743,On S Lituanica Ave From W 34th St To W 35th St
+399,[170 -04] 39743,On S Loomis Blvd From W 79th St To W 80th St
+400,[170 -04] 39743,On S Lowe Ave From W 45th St To W 46th St
+401,[170 -04] 39743,On S Escanaba Ave From E 127th St To E 128th St
+402,[170 -04] 39743,On S Troy St From W 45th St To W 47th St
+403,[170 -04] 39743,On S Troy St From W 71st St To W 73rd St
+404,[170 -04] 39743,On W Chase Ave From N California Ave To N Washtenaw Ave
+405,[170 -04] 39743,On W Corcoran Pl From N Mayfield Ave To N Menard Ave
+406,[170 -04] 39743,On W Crystal St From N Homan Ave To N Kedzie Ave
+407,[170 -04] 39743,On W Drummond Pl From N Seminary Ave To N Racine Ave
+408,[170 -04] 39743,On W Eddy St From N Lakewood Ave To N Racine Ave
+409,[170 -04] 39743,On W Erie St From N Mayfield Ave To N Menard Ave
+410,[170 -04] 39743,On W Fargo Ave From N Fairfield Ave To N Rockwell St
+411,[170 -04] 39743,On W Flournoy St From S Laflin St To S Racine Ave
+412,[170 -04] 39743,On W Francis Pl From N California Ave To N Point St
+413,[170 -04] 39743,On W George St From N Ashland Ave To N Southport Ave
+414,[170 -04] 39743,On W Gladys Ave From S Laramie Ave To S Lockwood Ave
+415,[170 -04] 39743,On W Granville Ave From N Ravenswood Ave To N Paulina St
+416,[170 -04] 39743,On W Greenleaf Ave From N Oakley Ave To N Bell Ave
+417,[170 -04] 39743,On W Highland Ave From N Glenwood Ave To N Greenview Ave
+418,[170 -04] 39743,On W Jarlath St From N Sacramento Ave To N Albany Ave
+419,[170 -04] 39743,On W Jarvis Ave From N Sacramento Ave To N Albany Ave
+420,[170 -04] 39743,On W Jerome St From N Washtenaw Ave To N Rockwell St
+421,[170 -04] 39743,On W Lake St From N Dearborn St To N State St
+422,[170 -04] 39743,On W Lake St From N Loomis St To N Ada St
+423,[170 -04] 39743,On W Lawrence Ave From N Lavergne Ave To N Cicero Ave
+424,[170 -04] 39743,On W Lill Ave From N Seminary Ave To N Sheffield Ave
+425,[170 -04] 39743,On W Maypole Ave From N Pulaski Rd To N Hamlin Blvd
+426,[170 -04] 39743,On W Mclean Ave From N Central Park Ave To N Lawndale Ave
+427,[170 -04] 39743,On W Catalpa Ave From N Canfield Ave To N Ozanam Ave
+428,[170 -04] 39743,On W Carroll Ave From N Kedzie Ave To N Albany Ave
+429,[170 -04] 39743,On W Monroe St From S Central Ave To S Lotus Ave
+430,[170 -04] 39743,On W Berwyn Ave From N Forest Glen Ave To N Cicero Ave
+431,[170 -04] 39743,On W Bryn Mawr Ave From N Knox Ave To N Kilbourn Ave
+432,[170 -04] 39743,On S Union Ave From W 73rd St To W 74th St
+433,[170 -04] 39743,On S Vincennes Ave From S Halsted St To S Summit Ave
+434,[170 -04] 39743,On S Wallace St From W 44th St To W 47th St
+435,[170 -04] 39743,On S Washtenaw Ave From W 55th St To W 57th St
+436,[170 -04] 39743,On S Wells St From W Madison St To W Monroe St
+437,[170 -04] 39743,On S Winchester Ave From W 47th St To W 48th St
+438,[170 -04] 39743,On W 18th St From S Wolcott Ave To S Paulina St
+439,[170 -04] 39743,On W 38th St From S Homan Ave To S St Louis Ave
+440,[170 -04] 39743,On W 38th St From S Kedzie Ave To S St Louis Ave
+441,[170 -04] 39743,On W 40th St From S Kedzie Ave To S Sacramento Ave
+442,[170 -04] 39743,On W 41st St From S Kedzie Ave To S Sacramento Ave
+443,[170 -04] 39743,On S Wood St From W 73rd St To W 74th St
+444,[170 -04] 39743,On W 51st St From S Peoria St To S Halsted St
+445,[170 -04] 39743,On W 54th St From S Morgan St To S Peoria St
+446,[170 -04] 39743,On W 61st Pl From S Pulaski Rd To S Springfield Ave
+447,[170 -04] 39743,On W 71st Pl From S Ashland Ave To S Bishop St
+448,[170 -04] 39743,On W Barry Ave From N Ashland Ave To N Paulina St
+449,[170 -04] 39743,On W 73rd St From S Ashland Ave To S Bishop St
+450,[170 -04] 39743,On W 82nd St From S Lawndale Ave To S Central Park Ave
+451,[170 -04] 39743,On W 84th Pl From S Pulaski Rd To S Springfield Ave
+452,[170 -04] 39743,On W 88th St From S Winchester Ave To S Ashland Ave
+453,[170 -04] 39743,On W 95th St From S Morgan St To S Halsted St
+454,[170 -04] 39743,On W Adams St From S St Louis Ave To S Homan Ave
+455,[170 -04] 39743,On W 46th St From S Western Ave To S Rockwell St
+456,[170 -04] 39743,On W Forest Preserve Ave From N Panama Ave To N Pacific Ave
+457,[170 -04] 39743,On W Fargo Ave From N Sacramento Ave To N Albany Ave
+458,[170 -04] 39743,On W Estes Ave From N Oakley Ave To N Bell Ave
+459,[170 -04] 39743,On W Eddy St From N Wolcott Ave To N Damen Ave
+460,[170 -04] 39743,On W Catalpa Ave From N Mobile Ave To N Melvina Ave
+461,[170 -04] 39743,On W Division St From N Laramie Ave To N Cicero Ave
+462,[170 -04] 39743,On W Cornelia Ave From N Lakewood Ave To N Seminary Ave
+463,[170 -04] 39743,On W Chase Ave From N Sacramento Ave To N Albany Ave
+464,[170 -04] 39743,On W Fulton St From N Leclaire Ave To N Leamington Ave
+465,[170 -04] 39743,On W Eastwood Ave From N Western Ave To N Campbell Ave
+466,[170 -04] 39743,On W George St From N Mildred Ave To N Sheffield Ave
+467,[170 -04] 39743,On W Maypole Ave From N Wolcott Ave To N Ashland Ave
+468,[170 -04] 39743,On W Granville Ave From N Western Ave To N Oakley Ave
+469,[170 -04] 39743,On W Henderson St From N Greenview Ave To N Southport Ave
+470,[170 -04] 39743,On W Jackson Blvd From S Homan Ave To S St Louis Ave
+471,[170 -04] 39743,On W Jarvis Ave From N Fairfield Ave To N Rockwell St
+472,[170 -04] 39743,On W Jerome St From N Sacramento Ave To N Albany Ave
+473,[170 -04] 39743,On W Kinzie St From N Damen Ave To N Ashland Ave
+474,[170 -04] 39743,On W Lake St From N Kilbourn Ave To N Kildare Ave
+475,[170 -04] 39743,On W Lake St From N Wells St To N Franklin St
+476,[170 -04] 39743,On W Lawrence Ave From N Ravenswood Ave To N Damen Ave
+477,[170 -04] 39743,On W Madison St From N Damen Ave To N Ashland Ave
+478,[170 -04] 39743,On W Carroll Ave From N Sacramento Blvd To N Francisco Ave
+479,[170 -04] 39743,On W Grant Pl From N Geneva Ter To N Cleveland Ave
+480,[170 -04] 39743,On W Carmen Ave From N California Ave To N Washtenaw Ave
+481,[170 -04] 39743,On W 47th St From S Western Ave To S Rockwell St
+482,[170 -04] 39743,On W Barry Ave From N Racine Ave To N Clifton Ave
+483,[170 -04] 39743,On W Melrose St From N Greenview Ave To N Southport Ave
+484,[170 -04] 39743,On S Union Ave From W 65th St To W Marquette Rd
+485,[170 -04] 39743,On S Vernon Ave From E 73rd St To E 74th St
+486,[170 -04] 39743,On S Wabash Ave From E 78th St To E 79th St
+487,[170 -04] 39743,On S Washtenaw Ave From W 50th St To W 51st St
+488,[170 -04] 39743,On S Wells St From W 43rd St To W 44th Pl
+489,[170 -04] 39743,On S Whipple St From W 45th St To W 47th St
+490,[170 -04] 39743,On S Wood St From S Archer Ave To W 33rd Pl
+491,[170 -04] 39743,On W 16th St From S Avers Ave To S Millard Ave
+492,[170 -04] 39743,On W 19th St From S Damen Ave To S Hoyne Ave
+493,[170 -04] 39743,On W 38th St From S Kedzie Ave To S Albany Ave
+494,[170 -04] 39743,On W Bryn Mawr Ave From N Canfield Ave To N Ozanam Ave
+495,[170 -04] 39743,On W 39th Pl From S Kedzie Ave To S Sacramento Ave
+496,[170 -04] 39743,On W 46th Pl From S Princeton Ave To S Wells St
+497,[170 -04] 39743,On W 54th St From S Kedzie Ave To S Sacramento Ave
+498,[170 -04] 39743,On W 55th St From S Rockwell St To S Western Ave
+499,[170 -04] 39743,On W 65th St From S Harvard Ave To S Yale Ave
+500,[170 -04] 39743,On W 72nd Pl From S Ashland Ave To S Bishop St
+501,[170 -04] 39743,On W 78th St From S Morgan St To S Halsted St
+502,[170 -04] 39743,On W 83rd St From S Hermitage Ave To S Ashland Ave
+503,[170 -04] 39743,On W 88th St From S Racine Ave To S Halsted St
+504,[170 -04] 39743,On W 95th Pl From S Throop St To S Racine Ave
+505,[170 -04] 39743,On W Adams St From S California Ave To S Washtenaw Ave
+506,[170 -04] 39743,On W Ardmore Ave From N Bernard St To N Jersey Ave
+507,[170 -04] 39743,On W 41st Pl From S Kedzie Ave To S Sacramento Ave
+508,[170 -04] 39743,On W Monroe St From S Laramie Ave To S Lockwood Ave
+509,[170 -04] 39743,On W Montana St From N Racine Ave To N Seminary Ave
+510,[170 -04] 39743,6500 S Normal Blvd
+511,[170 -04] 39743,5050-5100 S Christiana Ave
+512,[170 -04] 39743,W Olive Ave And N Ozanam Ave
+513,[170 -04] 39743,W Gladys Ave And S Hoyne Ave
+514,[170 -04] 39743,S Menard Ave And W Adams Blvd
+515,[170 -04] 39743,S Damen Ave And W Pershing Rd
+516,[170 -04] 39743,On W Wolfram St From N Greenview Ave To N Southport Ave
+517,[170 -04] 39743,On W Wilson Ave From N Lawler Ave To N Lavergne Ave
+518,[170 -04] 39743,On W Waveland Ave From N Hoyne Ave To N Lincoln Ave
+519,[170 -04] 39743,On W Warren Blvd From N Leavitt St To N Damen Ave
+520,[170 -04] 39743,5100-5258 S Troy St
+521,[170 -04] 39743,On W Wabansia Ave From N Sawyer Ave To N Kedzie Ave
+522,[170 -04] 39743,On W Summerdale Ave From N Ozanam Ave To N Oriole Ave
+523,[170 -04] 39743,On W Sherwin Ave From N California Ave To N Washtenaw Ave
+524,[170 -04] 39743,On W Roosevelt Rd From S Pulaski Rd To S Springfield Ave
+525,[170 -04] 39743,On W Quincy St From S Laramie Ave To S Lockwood Ave
+526,[170 -04] 39743,On W Polk St From S Racine Ave To S Morgan St
+527,[170 -04] 39743,On W Ontario St From N Kingsbury St To N Orleans St
+528,[170 -04] 39743,On W Oakdale Ave From N Ashland Ave To N Greenview Ave
+529,[170 -04] 39743,On W North Ave From N Nagle Ave To N Natoma Ave
+530,[170 -04] 39743,On W Newport Ave From N Wolcott Ave To N Damen Ave
+531,[170 -04] 39743,On W Nelson St From N Lakewood Ave To N Racine Ave
+532,[170 -04] 39743,On W Taylor St From S Loomis St To S Laflin St
+533,[170 -04] 39743,8808-8864 S Yale Ave
+534,[170 -04] 39743,On W Nelson St From N Greenview Ave To N Paulina St
+535,[170 -04] 39743,4700-5300 S Damen Ave
+536,[170 -04] 39743,244 N Post Pl
+537,[170 -04] 39743,W Higgins Ave And N Overhill Ave
+538,[170 -04] 39743,S Waller Ave And W Adams Blvd
+539,[170 -04] 39743,S East End Ave And E 79th St
+540,[170 -04] 39743,On W Wrightwood Ave From N Racine Ave To N Lincoln Ave
+541,[170 -04] 39743,On W Winnemac Ave From N California Ave To N Washtenaw Ave
+542,[170 -04] 39743,On W Webster Ave From N Larrabee St To N Cleveland Ave
+543,[170 -04] 39743,On W Washington Blvd From N Elizabeth St To N Ada St
+544,[170 -04] 39743,On W Walton St From N Kilbourn Ave To N Keeler Ave
+545,[170 -04] 39743,On W Van Buren Stn From S Leavitt St To S Ashland Ave
+546,[170 -04] 39743,On W Summerdale Ave From W Berwyn Ave To N Oketo Ave
+547,[170 -04] 39743,On W Sherwin Ave From N Sacramento Ave To N Albany Ave
+548,[170 -04] 39743,On W School St From N Greenview Ave To N Southport Ave
+549,[170 -04] 39743,On W Rascher Ave From N Mobile Ave To N Melvina Ave
+550,[170 -04] 39743,On W Pope John Paul Ii Dr From S Western Ave To S Rockwell St
+551,[170 -04] 39743,On W Polk St From S Dan Ryan Expy To S Shields Ave
+552,[170 -04] 39743,On W Oakdale Ave From N Racine Ave To N Sheffield Ave
+553,[170 -04] 39743,On W North Shore Ave From N Whipple St To N Sacramento Ave
+554,[170 -04] 39743,On W North Ave From N Austin Ave To N Laramie Ave
+555,[170 -04] 39743,On W Newport Ave From N Seminary Ave To N Lakewood Ave
+556,[170 -04] 39743,5000-5200 S Spaulding Ave
+557,[170 -04] 39743,7514 S Yale Ave
