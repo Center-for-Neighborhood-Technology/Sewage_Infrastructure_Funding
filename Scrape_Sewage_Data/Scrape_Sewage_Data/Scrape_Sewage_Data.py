@@ -25,7 +25,7 @@ import pandas as pd
 from datetime import datetime
 import gc
 import math
-
+import scraper_helper_functions as shf
 
 #initializing the 3 dataframes that we will want to fill in by the end of this 
 #process
@@ -43,7 +43,7 @@ FUNDING_DF = {"Project_#": [],
 LOCATION_DF = {"Project_#": [],
                "Project_Location": []}
 
-def main(filepath, start_page, end_page, to_del, fix_wrap):
+def main(filepath, start_page, end_page, to_del, fix_wrap, start_str):
     '''
     The main of the file. Goes through the entire PDF scraping and analysis 
     process
@@ -58,6 +58,8 @@ def main(filepath, start_page, end_page, to_del, fix_wrap):
             data
         fix_wrap: a list of project numbers that have project titles that
             wrap around to a 2nd line
+        start_str: a string that the project number starts with for the
+            given PDF
 
     Outputs: df: 
         details_df: a Pandas dataframe that has the scraped data from our PDF 
@@ -71,7 +73,7 @@ def main(filepath, start_page, end_page, to_del, fix_wrap):
         #(which would be on the PDF document) we need to subtract 1
         #we will not substract 1 from the end page because range does not 
         #include the last number
-    scrape_PDF(filepath, start_page, end_page, to_del, fix_wrap)
+    scrape_PDF(filepath, start_page, end_page, to_del, fix_wrap, start_str)
 
     #turns our three dfs into Pandas dfs
     details_df = pd.DataFrame(data=DETAILS_DF).drop_duplicates()
@@ -82,7 +84,7 @@ def main(filepath, start_page, end_page, to_del, fix_wrap):
 
     #return(df)
 
-def scrape_PDF(filepath, start_page, end_page, to_del, fix_wrap):
+def scrape_PDF(filepath, start_page, end_page, to_del, fix_wrap, start_str):
     '''
     Scrapes text from a PDF document
 
@@ -97,6 +99,8 @@ def scrape_PDF(filepath, start_page, end_page, to_del, fix_wrap):
             data
         fix_wrap: a list of project numbers that have project titles that
             wrap around to a 2nd line
+        start_str: a string that the project number starts with for the
+            given PDF
 
     Outputs: none, instead it puts data into datasets about project details,
         funding, and location
@@ -132,19 +136,20 @@ def scrape_PDF(filepath, start_page, end_page, to_del, fix_wrap):
                 'Y': [],
                 'Text': [],
                 'Index': []}
-            df = parse_object(layout._objs, df) #extract text from the object
+            df = parse_object(layout._objs, df, start_str) #extract text from the object
             df = pd.DataFrame(data=df)  #turn df into a Pandas df
             
             #return(df)
             #identifies which projects are associated with whcih text
-            tf = "2015-2019" in filepath #are we in the 2015-2019 document?
-            df = identify_project_id(df, tf)
-            #return(df)
+            in_2015 = "2015-2019" in filepath #are we in the 2015-2019 document?
+            in_2014 = "2014-2018" in filepath #are we in the 2014-2018 document?
+            df = shf.identify_project_id(df, in_2015, start_str)
+            return(df)
             #puts the test into the appropriate df
-            categorize_text(df, to_del, fix_wrap, tf)
+            categorize_text(df, to_del, fix_wrap, in_2015, in_2014, start_str)
             del df  #delete the dataframe
 
-def parse_object(layout_objects, df):
+def parse_object(layout_objects, df, start_str):
     '''
     Gets text from objects on a PDF
 
@@ -153,6 +158,8 @@ def parse_object(layout_objects, df):
 
     Inputs: layout_objects: objects from a PDF that need to be scraped
         df: a dataframe where we will store the scraped text from the document
+        start_str: a string that the project number starts with for the
+            given PDF
 
     Outputs: pdf_data_df: a dataframe that has the scraped data from our PDF
     '''
@@ -169,124 +176,20 @@ def parse_object(layout_objects, df):
                 if text != '': #we do not care about the empty string
                     #If we have a project number and project title in the same
                     #entry, we need to separate them
-                    #!!!This includes some hardcoded values
-                    if text.startswith('[') and any(c.isalpha() for c in text):
+                    if text.startswith(start_str) \
+                        and any(c.isalpha() for c in text):
                         lst = text.split() #split the list on whitespaces
                         for item in [' '.join(lst[:3]), ' '.join(lst[3:])]:
-                            df = add_scraped_to_df(df, x, y, item, index)
+                            df = shf.add_scraped_to_df(df, x, y, item, index)
                     else:
-                        df = add_scraped_to_df(df, x, y, text, index)
+                        df = shf.add_scraped_to_df(df, x, y, text, index)
         #if the instance is a container, then we use recursion
         elif isinstance(obj, pdfminer.layout.LTFigure):
-            df = parse_object(obj._objs, df)
+            df = parse_object(obj._objs, df, start_str)
 
     return(df)
 
-def add_scraped_to_df(df, x, y, text, index):
-    '''
-    Adds scraped information to the dataframe
-
-    Inputs:
-        df: the dataframe where we are storing our scraped data
-        x: (float) the x-coordinate of the text
-        y: (float) the y-coordinate of the text
-        text: (string) the text that has been scraped from the PDF
-        index: (int) the index of where this text appeared in the text box
-
-    Outputs: df: the updated dataframe
-    '''
-    df['X'].append(x)
-    df['Y'].append(y)
-    df['Text'].append(text.strip())
-    df['Index'].append(index)
-    return(df)
-
-def identify_project_id(df, in_2015):
-    '''
-    Takes in a Pandas dataframe and adds a column that indicates if an entry
-        belongs to a certain project or not
-
-    Inputs: 
-        df: a pandas dataframe with the raw scraped text from the pdf
-        in_2015: (boolean) indicates if we are in the 2015 PDF or not
-
-    Outputs: df: a pandas dataframe that indicats what project number 
-        the scraped text belongs to
-    '''
-    #create a new df that is a subset of the old df with just the rows that
-    #list the project numbers
-    #!!! Right now I am hard coding in the fact that project numbers begin
-    #!!!with a '[' because of how the document is written
-    proj_num_df = df.loc[df['Text'].str[0] == '[']
-    #We will make sure that the dataframe is sorted in descending order
-    proj_num_df = proj_num_df.sort_values(by=['Y'], ascending=False)
-
-    #if we are in the 2015-2019 document, we need to readjust our Y values
-    #because in the 2015-2019 PDF, some Y values we want are higher than
-    #the project number Y value
-    if in_2015:
-        proj_num_df['Y'] = proj_num_df['Y'].apply(lambda x: x + 0.1)
-
-    all_y = proj_num_df['Y'].tolist() #get a list of all the y values
-    all_lowest_y = [] #an empty list where to store the values of the lowest y
-    num_projs = len(all_y) #the number of projects there are
-    
-    #loop through the number of projects
-    for x in range(num_projs):
-        next = x + 1 #the index of the next y value
-        if next == num_projs:
-            #puts in 0 for the lowest y value of the last project
-            all_lowest_y.append(0)
-        else:
-            #puts in the y value for the next project number
-            all_lowest_y.append(all_y[next])
-
-    #creates a new column in the df for the lowest y values
-    proj_num_df.loc[:, 'Lowest_Y'] = all_lowest_y
-
-    #creates a column that will eventually hold the project number
-    #because we calculate the project number from the y value, we initialize 
-    #the column to be the y value
-    #in order to ensure we get all of the data, we will round the y value to
-    #the 2nd decimal place
-    df['Project_Number'] = df['Y'].apply(lambda x: round(x, 2))
-
-
-    #loops through the projects
-    for index, row in proj_num_df.iterrows():
-        #pulls out the y values we care about and the project number
-        greatest_y, proj_num, lowest_y = row[1], row[2], row[4]
-        #changes the project number column to indicate what project number the
-        #text is associated with
-        df['Project_Number'] = df['Project_Number'].apply(lambda x: proj_num\
-            if in_range(x, greatest_y, lowest_y) else x)
-    
-    #we just want the rows that have a project number
-    #!!!Again, we are hard coding in the project number because of the document
-    #!!!we are currently working with
-    df = df.loc[df['Project_Number'].str[0] == '[']
-    return(df)
-
-def in_range(check, high, low):
-    '''
-    Checks if a float is between two other floats
-
-    Inputs:
-        check: (float) the number we want to check
-        high: (float) the highest number in our range
-        low: (float) the lowest number in our range
-
-    Outputs: a boolean indicating if the number to check is in range
-    '''
-    if type(check) == str:
-        #First, we need to make sure the value we are checking is not a string
-        return(False)
-    elif (check <= high) & (check > low):
-        return(True)
-    else:
-        return(False)
-
-def categorize_text(df, to_delete, fix_wrap, in_2015):
+def categorize_text(df, to_delete, fix_wrap, in_2015, in_2014, start_str):
     '''
     Takes a dataframe and determines what type of data the text refers to and 
         then sends it off to be placed in the appropriate dataset
@@ -300,6 +203,9 @@ def categorize_text(df, to_delete, fix_wrap, in_2015):
             for the 2015 PDF: these have project numbers where the Y values
                 need to be readjusted before we round the Y value
         in_2015: (boolean) indicates if we are in the 2015 PDF or not
+        in_2014: (boolean) indicates if we are in the 2014 PDF or not
+        start_str: a string that the project number starts with for the
+            given PDF
 
     Outputs: this does not output anything, but instead adds project
         information to the datasets regarding project details, project funding,
@@ -331,6 +237,10 @@ def categorize_text(df, to_delete, fix_wrap, in_2015):
     #gets a list of all the project numbers
     proj_nums = df['Project_Number'].unique().tolist()
 
+    #if we are in the 2014 document, we need to categorize things differenely
+    if in_2014:
+        df = shf.categorize_2014(df, proj_nums, start_str)
+
     #loop through the project numbers and create a df for each of the entries
     #associated with a project number
     for proj in proj_nums:
@@ -338,7 +248,7 @@ def categorize_text(df, to_delete, fix_wrap, in_2015):
         #create a list of y values we can split the data on
         y_vals = this_proj_df['Y'].unique().tolist()
         if proj in fix_wrap and not in_2015:
-            this_proj_df = fix_wraparound(this_proj_df, proj)
+            this_proj_df = shf.fix_wraparound(this_proj_df, proj)
         for y in y_vals:
             #creates a new df for the different values of y and ensures the x
             #is sorted in ascending order
@@ -348,7 +258,7 @@ def categorize_text(df, to_delete, fix_wrap, in_2015):
             if proj in this_y_df['Text'].values:
                 #if the project number is in the dataframe, we know this is
                 #where the project dtails are
-                project_details_add(this_y_df, proj)
+                project_details_add(this_y_df, proj, start_str)
             else:
                 #if this is not the project details, we differentiate between
                 #funding and location by seeing if there are spaces in the text
@@ -369,44 +279,7 @@ def categorize_text(df, to_delete, fix_wrap, in_2015):
         #delete df we are no longer using
         del this_proj_df
 
-def fix_wraparound(this_proj_df, proj):
-    '''
-    When we have a project title that wraps to a 2nd line, it causes an error
-    In this code, we fix the df associated with that project
-
-    Inputs: this_proj_df: the dataframe that holds the wraparound error
-        proj: the project number for this df
-
-    Outputs: this_proj_df: the fixed dataframe
-    '''
-    #we find the y value that occurs the least
-    y_to_fix = this_proj_df['Y'].value_counts().argmin()
-    y_to_fix_df = this_proj_df.loc[this_proj_df['Y'] == y_to_fix]
-    new_text_lst = y_to_fix_df['Text'].tolist()
-    new_text = ' '.join(new_text_lst)
-    new_x = y_to_fix_df['X'].min()
-    #the y value needs to be the same as the project number y value
-    new_y = this_proj_df['Y'].\
-        loc[this_proj_df['Text']==proj].tolist()[0]
-    #create a new dataframe with our updated information
-    new_data = {'X': [new_x],
-                    'Y': [new_y],
-                    'Text': [new_text],
-                    'Index': [0],
-                    'Project_Number': [proj],
-                    'Contains_Spaces': [1],
-                    'Contains_Letters': [1]}
-    to_add_df = pd.DataFrame(data=new_data)
-    #add the new data to this project's dataframe
-    this_proj_df = this_proj_df.append(to_add_df)
-    #delete the entries for the y values we don't want
-    this_proj_df = this_proj_df[~this_proj_df['Y'].isin([y_to_fix])]
-    #delete the intermediate data
-    del new_data
-    del to_add_df
-    return(this_proj_df)
-
-def project_details_add(df, project_num):
+def project_details_add(df, project_num, start_str):
     '''
     Adds data to the project details dataframe
 
@@ -419,6 +292,8 @@ def project_details_add(df, project_num):
     Inputs:
         df: a pandas dataframe with information about the project details
         project_num: this project's project number
+        start_str: a string that the project number starts with for the
+            given PDF
 
     Outputs: this does not output anything, but instead adds project
         information to the project details dataset
@@ -428,7 +303,7 @@ def project_details_add(df, project_num):
     #first, we need to check that a location hasn't crept into our data
     #!!!for the 2015 document, there are a few cases where a location sneaks
     #!!!into the list at index 2, so we are removing it here
-    if len(raw_details[2]) > 6:
+    if len(raw_details[2]) > 8:
         txt = raw_details[2]
         new_df = df.loc[df['Text']==txt]
         project_location_add(new_df, project_num)
@@ -456,14 +331,15 @@ def project_details_add(df, project_num):
             datetime.strptime(item, '%b-%y')
             date_lst.append(item)
         except ValueError:
-            if not item.startswith('['):
+            #!!!we will need to fix this
+            if not item.startswith(start_str):
                 project_title = item
     
     if len(date_lst) != 2:
         print("We have too many dates!")
         print(df)
     #finds which date comes first
-    start_date, end_date = check_dates(date_lst[0], date_lst[1])
+    start_date, end_date = shf.check_dates(date_lst[0], date_lst[1])
     
     #adds our project details to the dataframe
     DETAILS_DF["Project_#"].append(project_num)
@@ -473,25 +349,6 @@ def project_details_add(df, project_num):
 
     #delete list we are no longer using
     del details
-
-def check_dates(date1, date2):
-    '''
-    Takes a start date and an end date and determines which comes first
-
-    Inputs:
-        date1: a string with one of the dates
-        date2: a string with another of the dates
-
-    Outputs:
-        date1 and date2 in chronological order
-    '''
-    date_format = '%b-%y'   #this is the format that the dates will be given
-    #check which date comes first and returns it in the appropriate order
-    if datetime.strptime(date1, date_format) < \
-        datetime.strptime(date2, date_format):
-        return(date1, date2)
-    else:
-        return(date2, date1)
 
 def project_funding_add(df, project_num):
     '''
@@ -626,21 +483,22 @@ def project_location_add(df, project_num):
 #FIX_2015 = ['[170 -02] 38786', '[170 -02] 38796', '[170 -02] 38885',
 #            '[170 -02] 38891', '[170 -02] 39562']
 #FIX_2015_REHAB = ['[170 -06] 37890']
+#P15_19_START = '['
+#P14_START = '170 '
 
-#TO_DEL = ["(20)", "Project #      Project Title", "Design/",
-#             "Construction", "Start  End", "Year",
-#             "Fund", "Source", "2016 2020", "Allocation", "2015 2019",
-#             "2017 2021", "2018 2022", "2019 2023"]
+TO_DEL = ["(20)", "Project #      Project Title", "Design/",
+             "Construction", "Start  End", "Year",
+             "Fund", "Source", "2016 2020", "Allocation", "2015 2019",
+             "2017 2021", "2018 2022", "2019 2023"]
 
+#ex_full_pdf = "pdf_documents/2016-2020_cip.pdf"
 
-#ex_full_pdf = "pdf_documents/2015-2019_cip.pdf"
-
-#d, f, l = main(ex_full_pdf, 104, 104, TO_DEL, [])
-#d.to_csv('scraped_data/lining/2015-2019_Sewer_Lining_' +
+#d, f, l = main(ex_full_pdf, 124, 133, TO_DEL, [], 14_START)
+#d.to_csv('scraped_data/older/2014-2018_Sewer_System_Replacement_Construction_' +
 #        'Project_Details.csv')
-#f.to_csv('scraped_data/lining/2015-2019_Sewer_Lining_' +
+#f.to_csv('scraped_data/older/2014-2018_Sewer_System_Replacement_Construction_' +
 #         'Funding.csv')
-#l.to_csv('scraped_data/lining/2015-2019_Sewer_Lining_' +
+#l.to_csv('scraped_data/older/2014-2018_Sewer_System_Replacement_Construction_' +
 #         'Locations.csv')
 
 #gc.collect()
