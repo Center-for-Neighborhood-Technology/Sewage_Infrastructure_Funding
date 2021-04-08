@@ -55,7 +55,13 @@ def identify_project_id(df, in_2015, start_str):
     #the project number Y value
     if in_2015:
         proj_num_df['Y'] = proj_num_df['Y'].apply(lambda x: x + 0.1)
-
+    
+    #!!!we are just trying this
+    #!!!I need to figure out how to not hard code these values
+    for num, new_y in [('170 02 / 39146', 425),
+                            ('170 06 / 39028', 185),
+                            ('170 04 / 39029', 452)]:
+        proj_num_df.at[proj_num_df['Text']==num,'Y']=new_y
     all_y = proj_num_df['Y'].tolist() #get a list of all the y values
     all_lowest_y = [] #an empty list where to store the values of the lowest y
     num_projs = len(all_y) #the number of projects there are
@@ -150,18 +156,18 @@ def fix_wraparound(this_proj_df, proj):
     del to_add_df
     return(this_proj_df)
 
-def check_dates(date1, date2):
+def check_dates(date1, date2, date_format):
     '''
     Takes a start date and an end date and determines which comes first
 
     Inputs:
         date1: a string with one of the dates
         date2: a string with another of the dates
+        date_format: a string that indicates what format the date should be in
 
     Outputs:
         date1 and date2 in chronological order
     '''
-    date_format = '%b-%y'   #this is the format that the dates will be given
     #check which date comes first and returns it in the appropriate order
     if datetime.strptime(date1, date_format) < \
         datetime.strptime(date2, date_format):
@@ -169,7 +175,7 @@ def check_dates(date1, date2):
     else:
         return(date2, date1)
 
-def categorize_2014(df, proj_nums, start_str):
+def categorize_2014(df, fix_proj_nums, start_str):
     '''
     Takes scraped data from the 2014-2018 PDF and indicates which dataset they
     should end up in
@@ -186,12 +192,17 @@ def categorize_2014(df, proj_nums, start_str):
     df['Beginning_Y'] = df['Y'].apply(lambda x: x in y_lst)
     #create a column that indicates if there is a dash
     df['Has_Dash'] = df['Text'].apply(lambda x: '-' in x)
+    df['Project_Title'] = df['Text'].apply(lambda x: x in fix_proj_nums)
     #create a column that is a list of the three things we will use to
     #identify what dataset everything should go in
     df['Categorize_Lst'] = list(zip(df['Contains_Spaces'], \
-       df['Contains_Letters'], df['Beginning_Y'], df['Has_Dash']))
+       df['Contains_Letters'], df['Beginning_Y'], df['Has_Dash'],\
+       df['Project_Title']))
     df['Categorize_Lst']=df['Categorize_Lst']\
         .apply(lambda x: categorize(x))
+    #change 'Contains_Letters' back as it is used later
+    df['Contains_Letters'] = df['Contains_Letters']\
+        .apply(lambda x: 1 if x else 0)
     return(df)
 
 def categorize(cat_lst):
@@ -200,8 +211,9 @@ def categorize(cat_lst):
 
     !!!Inputs and outputs to come later
     '''
-    contains_spaces, contains_letters, beginning_y, has_dash = cat_lst
-    if beginning_y:
+    contains_spaces, contains_letters, beginning_y, has_dash,\
+        proj_title = cat_lst
+    if beginning_y or proj_title:
         return('details')
     elif has_dash and not contains_spaces:
         return('details')

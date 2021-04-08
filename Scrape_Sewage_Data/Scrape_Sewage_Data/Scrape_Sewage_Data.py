@@ -77,8 +77,11 @@ def main(filepath, start_page, end_page, to_del, fix_wrap, start_str):
 
     #turns our three dfs into Pandas dfs
     details_df = pd.DataFrame(data=DETAILS_DF).drop_duplicates()
+    #del(DETAILS_DF)
     funding_df = pd.DataFrame(data=FUNDING_DF).drop_duplicates()
+    #del(FUNDING_DF)
     location_df = pd.DataFrame(data=LOCATION_DF).drop_duplicates()
+    #del(LOCATION_DF)
 
     return(details_df, funding_df, location_df)
 
@@ -136,15 +139,16 @@ def scrape_PDF(filepath, start_page, end_page, to_del, fix_wrap, start_str):
                 'Y': [],
                 'Text': [],
                 'Index': []}
-            df = parse_object(layout._objs, df, start_str) #extract text from the object
+            #extract text from the object
+            df = parse_object(layout._objs, df, start_str) 
             df = pd.DataFrame(data=df)  #turn df into a Pandas df
             
             #return(df)
             #identifies which projects are associated with whcih text
-            in_2015 = "2015-2019" in filepath #are we in the 2015-2019 document?
-            in_2014 = "2014-2018" in filepath #are we in the 2014-2018 document?
+            in_2015 = "2015-2019" in filepath #are we in 2015-2019?
+            in_2014 = "2014-2018" in filepath #are we in 2014-2018?
             df = shf.identify_project_id(df, in_2015, start_str)
-            return(df)
+            #return(df)
             #puts the test into the appropriate df
             categorize_text(df, to_del, fix_wrap, in_2015, in_2014, start_str)
             del df  #delete the dataframe
@@ -239,47 +243,60 @@ def categorize_text(df, to_delete, fix_wrap, in_2015, in_2014, start_str):
 
     #if we are in the 2014 document, we need to categorize things differenely
     if in_2014:
-        df = shf.categorize_2014(df, proj_nums, start_str)
+        df = shf.categorize_2014(df, fix_wrap, start_str)
 
     #loop through the project numbers and create a df for each of the entries
     #associated with a project number
     for proj in proj_nums:
         this_proj_df = df.loc[df['Project_Number'] == proj]
-        #create a list of y values we can split the data on
-        y_vals = this_proj_df['Y'].unique().tolist()
-        if proj in fix_wrap and not in_2015:
-            this_proj_df = shf.fix_wraparound(this_proj_df, proj)
-        for y in y_vals:
-            #creates a new df for the different values of y and ensures the x
-            #is sorted in ascending order
-            this_y_df = this_proj_df.loc[this_proj_df['Y'] == y].sort_values\
-                (by='X', ascending = True)
-            #next, we are going to sort the text in these different y groupings
-            if proj in this_y_df['Text'].values:
-                #if the project number is in the dataframe, we know this is
-                #where the project dtails are
-                project_details_add(this_y_df, proj, start_str)
-            else:
-                #if this is not the project details, we differentiate between
-                #funding and location by seeing if there are spaces in the text
-                if 1 in this_y_df['Contains_Spaces'].values:
-                    #if the strings in this dataframe contain spaces, we know
-                    #they are locations
-                    project_location_add(this_y_df, proj)
+        
+        if in_2014:
+            for item in ['details', 'funding', 'location']:
+                this_item_df = this_proj_df\
+                    .loc[this_proj_df['Categorize_Lst']==item].sort_values\
+                    (by='X', ascending = True)
+                if item == 'details':
+                    project_details_add(this_item_df, proj, start_str,\
+                       in_2015, in_2014)
+                elif item == 'funding':
+                    project_funding_add(this_item_df, proj, in_2014)
+                elif item == 'location':
+                    project_location_add(this_item_df, proj)
+        else:
+            #create a list of y values we can split the data on
+            y_vals = this_proj_df['Y'].unique().tolist()
+            if proj in fix_wrap and not in_2015:
+                this_proj_df = shf.fix_wraparound(this_proj_df, proj)
+            for y in y_vals:
+                #creates a new df for the different values of y and sorts by x
+                this_y_df = this_proj_df.loc[this_proj_df['Y'] == y]\
+                    .sort_values(by='X', ascending = True)
+                if proj in this_y_df['Text'].values:
+                    #if the project number is in the dataframe, we know this is
+                    #where the project dtails are
+                    project_details_add(this_y_df, proj, start_str,\
+                        in_2015, in_2014)
                 else:
-                    #now we will see if any of the entires contains a letter
-                    #if one or more of the entries contains a letter, we know
-                    #this includes a funding source and will include the data
-                    #if none of the entries contain a letter, then we will not
-                    #use the data
-                    if 1 in this_y_df['Contains_Letters'].values:
-                        project_funding_add(this_y_df, proj)
-            #delete df we are no longer using
-            del this_y_df
+                    #if this is not the project details, we differentiate
+                    #between funding and location by seeing if there are spaces
+                    if 1 in this_y_df['Contains_Spaces'].values:
+                        #if the strings in this dataframe contain spaces,
+                        #they are locations
+                        project_location_add(this_y_df, proj)
+                    else:
+                        #now we will see if any of the entires contains a 
+                        #letter if one or more of the entries contains a 
+                        #letter, we know this includes a funding source and 
+                        #will include the data if none of the entries contain
+                        #a letter, then we will not use the data
+                        if 1 in this_y_df['Contains_Letters'].values:
+                            project_funding_add(this_y_df, proj, in_2014)
+                #delete df we are no longer using
+                del this_y_df
         #delete df we are no longer using
         del this_proj_df
 
-def project_details_add(df, project_num, start_str):
+def project_details_add(df, project_num, start_str, in_2015, in_2014):
     '''
     Adds data to the project details dataframe
 
@@ -294,21 +311,23 @@ def project_details_add(df, project_num, start_str):
         project_num: this project's project number
         start_str: a string that the project number starts with for the
             given PDF
+        in_2015: (boolean) lets us know if we are in the 2015 PDF or not
+        in_2014: (boolean) lets us know if we are in the 2014 PDF or not
 
     Outputs: this does not output anything, but instead adds project
         information to the project details dataset
     '''
     raw_details = df['Text'].tolist()
 
-    #first, we need to check that a location hasn't crept into our data
-    #!!!for the 2015 document, there are a few cases where a location sneaks
-    #!!!into the list at index 2, so we are removing it here
-    if len(raw_details[2]) > 8:
-        txt = raw_details[2]
-        new_df = df.loc[df['Text']==txt]
-        project_location_add(new_df, project_num)
-        del new_df
-        raw_details = raw_details[0:2] + raw_details[3:]
+    #for the 2015 document, there are a few cases where a location sneaks
+    #into the list at index 2, so we are removing it here
+    if in_2015:
+        if len(raw_details[2]) > 6:
+            txt = raw_details[2]
+            new_df = df.loc[df['Text']==txt]
+            project_location_add(new_df, project_num)
+            del new_df
+            raw_details = raw_details[0:2] + raw_details[3:]
 
     #here we will do error handling to ensure we are getting what we expect
     if len(raw_details) != 4:
@@ -326,12 +345,16 @@ def project_details_add(df, project_num, start_str):
     date_lst = []
     project_title = ''
 
+    if in_2014:
+        date_format = '%b-%Y'
+    else:
+        date_format = '%b-%y'
+
     for item in details:
         try:
-            datetime.strptime(item, '%b-%y')
+            datetime.strptime(item, date_format)
             date_lst.append(item)
         except ValueError:
-            #!!!we will need to fix this
             if not item.startswith(start_str):
                 project_title = item
     
@@ -339,7 +362,8 @@ def project_details_add(df, project_num, start_str):
         print("We have too many dates!")
         print(df)
     #finds which date comes first
-    start_date, end_date = shf.check_dates(date_lst[0], date_lst[1])
+    start_date, end_date = shf.check_dates(date_lst[0], date_lst[1],\
+        date_format)
     
     #adds our project details to the dataframe
     DETAILS_DF["Project_#"].append(project_num)
@@ -350,7 +374,7 @@ def project_details_add(df, project_num, start_str):
     #delete list we are no longer using
     del details
 
-def project_funding_add(df, project_num):
+def project_funding_add(df, project_num, in_2014):
     '''
     Adds data to the project funding dataframe
 
@@ -365,6 +389,7 @@ def project_funding_add(df, project_num):
     Inputs:
         df: a pandas dataframe with information about the project funding
         project_num: this project's project number
+        in_2014: (boolean) indicates if we are in the 2014 document or not
 
     Outputs: this does not output anything, but instead adds project
         information to the project funding dataset
@@ -376,10 +401,26 @@ def project_funding_add(df, project_num):
     #loop through the different X values
     x_vals = df['X'].unique().tolist()
 
+    #if we are in the 2014 document and the number of funding sources is > 1
+    #we need to delete the 4 entries with the lowest y values as this is the
+    #totals row, which we are not recording
+    if in_2014 and num_funding > 1:
+        target_length = num_funding * 5
+        #while the length of the df is > num_funding * 5
+        while len(df['Text']) > target_length:
+            #we delete the records for the minimum Y value
+            min_y = df['Y'].min()
+            df = df[~df['Y'].isin([min_y])]
+
     #while we still have indices that are too big
     #we will subtract the indices that are too big by 1 until all
     #indices are the appropriate size
     while df['Index'].max() >= num_funding:
+        #!!!we are just trying this
+        #!!!I need to figure out how to not hard code these values
+        if in_2014 and project_num in ['170 02 / 39146', '170 06 / 39028',
+                                       '170 04 / 39029']:
+            df = df[~df['Index'].isin([1,2])]
         #an empty list where we will store the x values that have indices that
         #are higher than the number of funding sources
         error_x_vals = []
@@ -401,7 +442,7 @@ def project_funding_add(df, project_num):
             df['Index'] = list(zip(df['Index'], df['Fix Index']))
             #change the index
             df['Index'] = df['Index'].apply(lambda x: x[0] - 1 if x[1]\
-                else x[0])
+                and x[0] >= num_funding else x[0])
     
     #split the df apart by indices
     indices = df['Index'].unique().tolist()
@@ -448,6 +489,14 @@ def single_funding_source_add(details, project_num):
 
     #puts the funding data into the dataframe
     else:
+        #!!!We are just triyng this
+        #!!!We need to find a way to not hard code these numbers
+        if project_num == '170 02 / 37933':
+            total_alloc = max(details[1], details[2])
+            prev_alloc = min(details[1], details[2])
+            details[1] = total_alloc
+            details[2] = prev_alloc
+        
         FUNDING_DF["Project_#"].append(project_num)
         FUNDING_DF["Funding_Source"].append(details[0])
         FUNDING_DF["Total_Allocation"].append(details[1])
@@ -484,21 +533,34 @@ def project_location_add(df, project_num):
 #            '[170 -02] 38891', '[170 -02] 39562']
 #FIX_2015_REHAB = ['[170 -06] 37890']
 #P15_19_START = '['
-#P14_START = '170 '
+P14_START = '170 '
+FIX_2014_PROJ = ['Albany Ave: 82nd St to 83rd St',
+                 'E. 107th St. / Langley Ave. / Alley West',
+                 'E 92nd St from Anthony to Essex',
+                 'N. Leoti Av./N. Spokane Av./W. Devon Av.',
+                 '2018 Various Projects (PC)',
+                 "2018 - Sewer Main Cleaning & TV'ing",
+                 '2018 - Sewer Main Lining']
+
+FIX_FUNDING_TOTALS = ['170 02 / 39146', '170 06 / 39028', '170 04 / 39029']
+
+FIX_Y_VALS = [('170 02 / 39146', 425),('170 06 / 39028', 185),
+              ('170 04 / 39029', 452)]
+
+#!!!I need to fix the code so that I can just pass it in this list
+#!!!instead of hard coding calues all over the place
+FIX_2014 = [FIX_2014_PROJ, FIX_FUNDING_TOTALS, FIX_Y_VALS]
 
 TO_DEL = ["(20)", "Project #      Project Title", "Design/",
              "Construction", "Start  End", "Year",
              "Fund", "Source", "2016 2020", "Allocation", "2015 2019",
              "2017 2021", "2018 2022", "2019 2023"]
 
-#ex_full_pdf = "pdf_documents/2016-2020_cip.pdf"
+#ex_full_pdf = "pdf_documents/2014-2018_cip.pdf"
 
-#d, f, l = main(ex_full_pdf, 124, 133, TO_DEL, [], 14_START)
-#d.to_csv('scraped_data/older/2014-2018_Sewer_System_Replacement_Construction_' +
-#        'Project_Details.csv')
-#f.to_csv('scraped_data/older/2014-2018_Sewer_System_Replacement_Construction_' +
-#         'Funding.csv')
-#l.to_csv('scraped_data/older/2014-2018_Sewer_System_Replacement_Construction_' +
-#         'Locations.csv')
+#d, f, l = main(ex_full_pdf, 119, 122, TO_DEL, FIX_2014_PROJ, P14_START)
+#d.to_csv('scraped_data/older/2014-2018_Sewer_Lining_Project_Details.csv')
+#f.to_csv('scraped_data/older/2014-2018_Sewer_Lining_Funding.csv')
+#l.to_csv('scraped_data/older/2014-2018_Sewer_Lining_Locations.csv')
 
 #gc.collect()
