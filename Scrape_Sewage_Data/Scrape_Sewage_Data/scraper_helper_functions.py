@@ -30,7 +30,7 @@ def add_scraped_to_df(df, x, y, text, index):
     df['Index'].append(index)
     return(df)
 
-def identify_project_id(df, in_2015, start_str):
+def identify_project_id(df, in_2015, start_str, fix_y):
     '''
     Takes in a Pandas dataframe and adds a column that indicates if an entry
         belongs to a certain project or not
@@ -40,6 +40,9 @@ def identify_project_id(df, in_2015, start_str):
         in_2015: (boolean) indicates if we are in the 2015 PDF or not
         start_str: a string that the project number starts with for the
             given PDF
+        fix_y: a list of tuples that describe a project number that
+            needs a new y value and the y value we want to set that
+            project number to
 
     Outputs: df: a pandas dataframe that indicats what project number 
         the scraped text belongs to
@@ -56,11 +59,7 @@ def identify_project_id(df, in_2015, start_str):
     if in_2015:
         proj_num_df['Y'] = proj_num_df['Y'].apply(lambda x: x + 0.1)
     
-    #!!!we are just trying this
-    #!!!I need to figure out how to not hard code these values
-    for num, new_y in [('170 02 / 39146', 425),
-                            ('170 06 / 39028', 185),
-                            ('170 04 / 39029', 452)]:
+    for num, new_y in fix_y:
         proj_num_df.at[proj_num_df['Text']==num,'Y']=new_y
     all_y = proj_num_df['Y'].tolist() #get a list of all the y values
     all_lowest_y = [] #an empty list where to store the values of the lowest y
@@ -175,12 +174,20 @@ def check_dates(date1, date2, date_format):
     else:
         return(date2, date1)
 
-def categorize_2014(df, fix_proj_nums, start_str):
+def categorize_2014(df, fix_proj_title, start_str):
     '''
     Takes scraped data from the 2014-2018 PDF and indicates which dataset they
     should end up in
 
-    !!!inputs and outputs to come later
+    Inputs:
+        df: the dataframe of scraped text that needs to be categorized
+        fix_proj_title: a list of project titles that are not in the same
+            y-value as the project number and therfore need to specifically
+            be called out as a project detail
+        start_str: the starting string of the project number
+
+    Outputs: df: the dataframe with a column to indicate which table the
+        information should go into
     '''
     proj_num_df = df.loc[df['Text'].str.startswith(start_str)]
     y_lst = proj_num_df['Y'].tolist()
@@ -192,7 +199,8 @@ def categorize_2014(df, fix_proj_nums, start_str):
     df['Beginning_Y'] = df['Y'].apply(lambda x: x in y_lst)
     #create a column that indicates if there is a dash
     df['Has_Dash'] = df['Text'].apply(lambda x: '-' in x)
-    df['Project_Title'] = df['Text'].apply(lambda x: x in fix_proj_nums)
+    #makes sure that project titles get flagged as project titles
+    df['Project_Title'] = df['Text'].apply(lambda x: x in fix_proj_title)
     #create a column that is a list of the three things we will use to
     #identify what dataset everything should go in
     df['Categorize_Lst'] = list(zip(df['Contains_Spaces'], \
@@ -209,7 +217,11 @@ def categorize(cat_lst):
     '''
     Categorizes which dataset a single entry should be in
 
-    !!!Inputs and outputs to come later
+    Inpts: cat_lst: a list of booleans that will identify for us which category
+        a record should be in
+
+    Outputs: a category string, will be 'details', 'funding', or 'location'
+        depending on which table the information needs to be loaded into
     '''
     contains_spaces, contains_letters, beginning_y, has_dash,\
         proj_title = cat_lst

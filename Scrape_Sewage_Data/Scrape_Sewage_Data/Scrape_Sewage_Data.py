@@ -147,7 +147,11 @@ def scrape_PDF(filepath, start_page, end_page, to_del, fix_wrap, start_str):
             #identifies which projects are associated with whcih text
             in_2015 = "2015-2019" in filepath #are we in 2015-2019?
             in_2014 = "2014-2018" in filepath #are we in 2014-2018?
-            df = shf.identify_project_id(df, in_2015, start_str)
+            if in_2014:
+                fix_y = fix_wrap[2]
+            else:
+                fix_y = []
+            df = shf.identify_project_id(df, in_2015, start_str, fix_y)
             #return(df)
             #puts the test into the appropriate df
             categorize_text(df, to_del, fix_wrap, in_2015, in_2014, start_str)
@@ -243,7 +247,7 @@ def categorize_text(df, to_delete, fix_wrap, in_2015, in_2014, start_str):
 
     #if we are in the 2014 document, we need to categorize things differenely
     if in_2014:
-        df = shf.categorize_2014(df, fix_wrap, start_str)
+        df = shf.categorize_2014(df, fix_wrap[0], start_str)
 
     #loop through the project numbers and create a df for each of the entries
     #associated with a project number
@@ -259,7 +263,8 @@ def categorize_text(df, to_delete, fix_wrap, in_2015, in_2014, start_str):
                     project_details_add(this_item_df, proj, start_str,\
                        in_2015, in_2014)
                 elif item == 'funding':
-                    project_funding_add(this_item_df, proj, in_2014)
+                    project_funding_add(this_item_df, proj, in_2014,\
+                       fix_wrap[1], fix_wrap[3])
                 elif item == 'location':
                     project_location_add(this_item_df, proj)
         else:
@@ -290,7 +295,8 @@ def categorize_text(df, to_delete, fix_wrap, in_2015, in_2014, start_str):
                         #will include the data if none of the entries contain
                         #a letter, then we will not use the data
                         if 1 in this_y_df['Contains_Letters'].values:
-                            project_funding_add(this_y_df, proj, in_2014)
+                            project_funding_add(this_y_df, proj, in_2014, [],\
+                                                [])
                 #delete df we are no longer using
                 del this_y_df
         #delete df we are no longer using
@@ -337,7 +343,7 @@ def project_details_add(df, project_num, start_str, in_2015, in_2014):
         #and the remaining entries are funding based
         details = raw_details[:4]
         #create an entry for the funding source
-        single_funding_source_add(raw_details[4:], project_num)
+        single_funding_source_add(raw_details[4:], project_num, [])
     else:
         details = raw_details
 
@@ -374,7 +380,7 @@ def project_details_add(df, project_num, start_str, in_2015, in_2014):
     #delete list we are no longer using
     del details
 
-def project_funding_add(df, project_num, in_2014):
+def project_funding_add(df, project_num, in_2014, totals_lst, swap_fund):
     '''
     Adds data to the project funding dataframe
 
@@ -390,6 +396,12 @@ def project_funding_add(df, project_num, in_2014):
         df: a pandas dataframe with information about the project funding
         project_num: this project's project number
         in_2014: (boolean) indicates if we are in the 2014 document or not
+        totals_lst: a list of project numbers (from the 2014 PDF) that contain
+            the totals for a given project and need the greatest indices
+            removed
+        swap_fund: a list of project numbers where the total allocation
+            and previous allocation have been flipped and need to be
+            corrected
 
     Outputs: this does not output anything, but instead adds project
         information to the project funding dataset
@@ -416,10 +428,7 @@ def project_funding_add(df, project_num, in_2014):
     #we will subtract the indices that are too big by 1 until all
     #indices are the appropriate size
     while df['Index'].max() >= num_funding:
-        #!!!we are just trying this
-        #!!!I need to figure out how to not hard code these values
-        if in_2014 and project_num in ['170 02 / 39146', '170 06 / 39028',
-                                       '170 04 / 39029']:
+        if in_2014 and project_num in totals_lst:
             df = df[~df['Index'].isin([1,2])]
         #an empty list where we will store the x values that have indices that
         #are higher than the number of funding sources
@@ -458,11 +467,11 @@ def project_funding_add(df, project_num, in_2014):
             print(project_num)
             print(df)
         else:
-            single_funding_source_add(details, project_num)
+            single_funding_source_add(details, project_num, swap_fund)
         #delete df we are no longer using
         del this_index_df
 
-def single_funding_source_add(details, project_num):
+def single_funding_source_add(details, project_num, swap_fund):
     '''
     Takes a single funding source and adds the data to a dataframe
 
@@ -477,6 +486,9 @@ def single_funding_source_add(details, project_num):
     Inputs:
         details: a list with information about the project details
         project_num: this project's project number
+        swap_fund: a list of project numbers where the total allocation
+            and previous allocation have been flipped and need to be
+            corrected
 
     Outputs: this does not output anything, but instead adds project
         information to the project details dataset
@@ -489,9 +501,7 @@ def single_funding_source_add(details, project_num):
 
     #puts the funding data into the dataframe
     else:
-        #!!!We are just triyng this
-        #!!!We need to find a way to not hard code these numbers
-        if project_num == '170 02 / 37933':
+        if project_num in swap_fund:
             total_alloc = max(details[1], details[2])
             prev_alloc = min(details[1], details[2])
             details[1] = total_alloc
@@ -547,9 +557,9 @@ FIX_FUNDING_TOTALS = ['170 02 / 39146', '170 06 / 39028', '170 04 / 39029']
 FIX_Y_VALS = [('170 02 / 39146', 425),('170 06 / 39028', 185),
               ('170 04 / 39029', 452)]
 
-#!!!I need to fix the code so that I can just pass it in this list
-#!!!instead of hard coding calues all over the place
-FIX_2014 = [FIX_2014_PROJ, FIX_FUNDING_TOTALS, FIX_Y_VALS]
+SWITCH_FUND = ['170 02 / 37933']
+
+FIX_2014 = [FIX_2014_PROJ, FIX_FUNDING_TOTALS, FIX_Y_VALS, SWITCH_FUND]
 
 TO_DEL = ["(20)", "Project #      Project Title", "Design/",
              "Construction", "Start  End", "Year",
@@ -558,7 +568,7 @@ TO_DEL = ["(20)", "Project #      Project Title", "Design/",
 
 #ex_full_pdf = "pdf_documents/2014-2018_cip.pdf"
 
-#d, f, l = main(ex_full_pdf, 119, 122, TO_DEL, FIX_2014_PROJ, P14_START)
+#d, f, l = main(ex_full_pdf, 119, 122, TO_DEL, FIX_2014, P14_START)
 #d.to_csv('scraped_data/older/2014-2018_Sewer_Lining_Project_Details.csv')
 #f.to_csv('scraped_data/older/2014-2018_Sewer_Lining_Funding.csv')
 #l.to_csv('scraped_data/older/2014-2018_Sewer_Lining_Locations.csv')
