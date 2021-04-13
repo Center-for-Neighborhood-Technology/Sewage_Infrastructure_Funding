@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Parse_Sewage_Locations", "Parse_Sewage_Locations\Parse_Sewage_Locations.pyproj", "{2E6BFCB8-79E4-4763-A95D-A996B50F095F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E6BFCB8-79E4-4763-A95D-A996B50F095F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E6BFCB8-79E4-4763-A95D-A996B50F095F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {57807D00-5460-42A8-BB61-B0D6771322AA}
+	EndGlobalSection
+EndGlobal
