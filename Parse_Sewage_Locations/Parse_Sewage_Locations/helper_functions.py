@@ -9,6 +9,7 @@ Purpose: Functions that are used to aid in the running of other modules
 '''
 
 import psycopg2
+from shapely.geometry import Point, Polygon
 
 def make_connection():
     '''
@@ -91,10 +92,20 @@ def create_point(pt_str):
 
     Outputs: a Point object
     '''
+    return(Point(get_floats(pt_str)))
+
+def get_floats(pt_str):
+    '''
+    Converts a string with latitude and longitude information into a tuple
+    of two floats
+
+    Inputs: pt_str: a string with the latitude and longitude of our points
+
+    Outputs: a tuple with latitude and longitude information
+    '''
     #take off the beginning and ending substrings
     pt_str = pt_str.replace('[','').replace(']','')
     #split apart on the comma
     lat, ln = pt_str.split(', ')
     #create a point and return it
-    return(Point(float(lat),float(ln)))
-
+    return((float(lat),float(ln)))
