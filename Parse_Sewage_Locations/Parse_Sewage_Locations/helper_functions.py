@@ -103,9 +103,27 @@ def get_floats(pt_str):
 
     Outputs: a tuple with latitude and longitude information
     '''
+    #if we have a 'None' value, just return it back
+    if pt_str == 'None':
+        return(pt_str)
     #take off the beginning and ending substrings
     pt_str = pt_str.replace('[','').replace(']','')
     #split apart on the comma
     lat, ln = pt_str.split(', ')
     #create a point and return it
     return((float(lat),float(ln)))
+
+def get_id(blockgroup_id):
+    '''
+    Takes a string and returns the blockgorup ID as an int or returns the
+    string back to you if there is no blockgroup id
+
+    inputs: blockgroup_id: (string) the id you want to convert
+
+    outputs: the converted blockgroup id with a boolean indicating if there
+        is a blockgroup id or not
+    '''
+    if blockgroup_id.startswith('[') or blockgroup_id == 'None':
+        return(blockgroup_id, False)
+    else:
+        return(int(blockgroup_id), True)
