@@ -16,3 +16,11 @@ locations_with_lat_long: the output of Parse_Sewage_Locations. Contains the loca
 	and the latitude and longitude of those points
 locations_with_endpoint_blockgroups_prelim: adds onto the locations_with_lat_long CSV by adding
 	which block group the end point is in
+preliminary_distances_parsed: measures the distances of locations in a given block group for
+	the first round of data
+locations_with_quality: I created this CSV wholly in iPython3. I created it by taking the unique
+	endpoints for each location, creating a geocoder location object and grabbing out the lat/long,
+	the quality, and the address. This file was created after preliminary_distances_parsed when I
+	realized that there were some errors with the pulled in latitude and longitude. I will use this
+	to exclude the "dirty" locations and use it to fix the errors.
+locations_w_correct_lat_long:

@@ -9,20 +9,22 @@ Purpose: Find out the length a location passes through a blockgroup
 '''
 
 import pandas as pd
-from shapely.geometry import Point, Polygon, LineString
+from shapely.geometry import Point, Polygon, LineString, MultiLineString
 from geopy.distance import great_circle
 from helper_functions import convert_multipolygon, create_point, get_floats,\
-    get_id
+    get_id, get_multipolygon
 
 #column titles for the df we will create
 PROJECT = 'project_number'
 YEAR = 'year_range'
 BLOCK = 'block_group'
 DISTANCE = 'distance'
+NAME = 'location_name'
 
 #a dataframe that will store how much distance a project is in a block group
 DISTANCE_DF = {PROJECT: [],
                YEAR: [],
+               NAME: [],
                BLOCK: [],
                DISTANCE: []}
 
@@ -30,10 +32,27 @@ def main():
     '''
     The main of the file
 
-    !!!Better description to come later
+    This function pulls in the necessary data, cleans it, and then iterates
+    through the data and sends each record to the appropriate function to
+    find the length a location passes through a blockgroup
+
+    Inputs: none; it reads data from previously created CSVs
+
+    Outputs:
+        final_df: a dataframe that indicates how far a project in a given year
+            travels in a given blockgroup (only for clean data)
+        error_df: a data frame that indicates which records we were not able 
+            to find any distance for
+        errors_w_bgs: a data frame that indicates which records we were not
+            able to find distance within the indicated blockgroup
     '''
     #load in data linking locations to blockgroups
     df = pd.read_csv('locations_with_endpoint_blockgroups_prelim.csv')
+    #load in the information about quality
+    quality_df = pd.read_csv('locations_with_quality.csv').fillna('None')
+    #grab the locations that have errors in them
+    error_locations = quality_df['all_locations'].loc[quality_df['quality'].\
+        isin(['RoadBlock','PopulatedPlace','None','RailwayStation'])]
     #load all blockgroup data
     blockgroup_df = pd.read_csv('blkgrps_2019_clipped.csv')
 
@@ -42,13 +61,26 @@ def main():
     df = df[['project_number', 'location_name',\
            'year_range', 'from', 'to', 'from_lat_long', 'to_lat_long',\
            'from_blockgroup', 'to_blockgroup']]
+    
+    #remove the locations that have errors in them
+    for col in ['from', 'to']:
+        df_clean = df.loc[~df[col].isin(error_locations)]
+    
+    del(quality_df)
+    del(error_locations)
 
     #a list of the locations that have errors
     error_lst = []
+    #a list of the locations we need to check all blockgroups for
+    #and a list of the lines we need to check
+    check_all_lst = []
+    line_lst = []
 
-    for index, row in df.iterrows():
+    print('Going through initial iterrows')
+    for index, row in df_clean.iterrows():
         #get the pertinent information from the row
         proj_num = row[0]
+        name = row[1]
         years = row[2]
         from_pt = get_floats(row[5])
         to_pt = get_floats(row[6])
@@ -66,14 +98,16 @@ def main():
             line = LineString([from_pt, to_pt])
             #get the distance of the whole line
             distance = great_circle(from_pt, to_pt).km
-
+        
+        error = False
+        check_all = False
         #check if the 2nd blockgroup is None or distance is 0
         #means we have a single point and we are coding the distance as a 
         #pre-determined length
         if blockgroup2_id == 'None' or distance == 0.0:
             #make sure the 1st blockgroup is valid
             if type(blockgroup1_id) == int:
-                add_to_df(proj_num, years, blockgroup1_id, 0.001)
+                add_to_df(proj_num, years, blockgroup1_id, 0.001, name)
                 error = False
             else:
                 error = True
@@ -83,96 +117,205 @@ def main():
             error = True
         #check if we begin and end in the same blockgroup
         elif blockgroup1_id == blockgroup2_id:
-            error = same_from_to_add(line, blockgroup1_multipolygon, proj_num,\
-                years, blockgroup1_id, distance, blockgroup_df)
+            error, check_all = same_from_to_add(line,\
+                blockgroup1_multipolygon, proj_num,\
+                years, blockgroup1_id, distance, name)
         else:
-            error = diff_from_to_add(line, blockgroup1_multipolygon,\
+            error, check_all = diff_from_to_add(line,\
+                blockgroup1_multipolygon,\
                 blockgroup2_multipolygon, proj_num, years,\
-                blockgroup1_id, blockgroup2_id, distance, blockgroup_df)
+                blockgroup1_id, blockgroup2_id, distance, name)
 
         if error:
             #if there is an error, add the index to our list of errors
             error_lst.append(index)
-    
-    final_df = pd.DataFrame(data=DISTANCE_DF)
-    print(error_lst)
-    error_df = df.iloc[error_lst, :]
-    return(final_df, error_df)
+        if check_all:
+            check_all_lst.append(index)
+            line_lst.append(line)
 
-def add_to_df(proj, years, block, dist):
+    error_df = df.iloc[error_lst, :]
+    check_all_df = df.iloc[check_all_lst, :]
+    #add the line information in so we don't have to re-create a line
+    #every time we check to see if it intersects with a blockgroup
+    check_all_df.loc[:, 'line'] = line_lst
+    print('Going through 2nd iterrows')
+    new_errors, error_bgs = check_all_bg(check_all_df, blockgroup_df)
+    #create a df with errors that only occurred in a given location for
+    #a given blockgroup
+    errors_w_bgs = df.iloc[new_errors, :]
+    errors_w_bgs.loc[:, 'error_blockgorups'] = error_bgs
+    final_df = pd.DataFrame(data=DISTANCE_DF)
+    return(final_df, error_df, errors_w_bgs)
+
+def add_to_df(proj, years, block, dist, name):
     '''
     Adds a single entry to the final df
 
-    !!!Better description plus inputs and outputs come later
+    Inputs:
+        proj: (string) the project number
+        years: (string) the year range for the project
+        block: (int) the blockgroup id
+        dist: (float) the number of kilometers the given project has
+            passed throigh the blockgroup (for a given location)
+
+    Outputs: none, it writes our data directly to our dataframe
     '''
     DISTANCE_DF[PROJECT].append(proj)
     DISTANCE_DF[YEAR].append(years)
+    DISTANCE_DF[NAME].append(name)
     DISTANCE_DF[BLOCK].append(block)
     DISTANCE_DF[DISTANCE].append(dist)
 
 def same_from_to_add(line, blockgroup_multipolygon, proj_num, years,\
-    blockgroup_id, distance, blockgroup_df):
+    blockgroup_id, distance, name):
     '''
-    Scenario 2: the beginning and ending points are in the same block group
-        this scenario has 2 sub-scenarios
-        scenario has 1,829 occurrences
-        Sub-Scenario 1: the location remains in the block group for all its
-        length
-            in this sub-scenario, we will find the length of the whole line
-            and attribute it to the single block group
-        Sub-Scenario 2: the location intersects with the block group at some 
-        point
-            in this sub-scenario, we will have to find out which other block
-            groups the location intersects with and determine the length
-            in each block group
-    !!!Better description plus inputs and outputs come later
+    This function looks at the scenario where a line begins and ends in the
+    same block group. Checks to make sure the line never exits the block
+    group and if it does not, adds the ditance information to the final df. If
+    the line does exit the block group, indicates that we need to check all
+    other block groups.
+
+    Inputs:
+        line: (LineString) the line between the beginning and ending points
+        blockgroup_multipolygon: (Polygon) the polygon representation of the
+            blockgroup that the line begins and ends in
+        proj_num: (string) the project number
+        years: (string) the year range for the project
+        blockgroup_id: (int) the blockgroup id for the blockgroup the line
+            begins and ends in
+        distance: (float) the length (in km) of the line
+
+    Outputs:
+        error: (boolean) if there was an error in finding the distance
+        check_all: (boolean) if we need to check all the blockgroups
+            to see if this line passes through them
     '''
 
-    #iterate through the rows and add them to the dataframe
     try:
         #attempt to find the intersection line in the blockgroup
         intersection = line.intersection(blockgroup_multipolygon)
     except:
         #if we can't get an intersection,we will add to the error_df
-        return(True)
+        return(True, False)
         
     #if the intersection line is a single LineString and it equals
     #the original line, we know the entire location is in the blockgroup
     if type(intersection) == LineString and line == intersection:
-        add_to_df(proj_num, years, blockgroup_id, distance)
-        return(False)
+        add_to_df(proj_num, years, blockgroup_id, distance, name)
+        return(False, False)
     else:
-        #!!!need to send to other function to find all the dfs it
-        #!!!intersects with
-        return(False)
+        return(False, True)
 
 def diff_from_to_add(line, blockgroup1_multipolygon, blockgroup2_multipolygon,\
-   proj_num, years, blockgroup1_id, blockgroup2_id, distance, blockgroup_df):
+   proj_num, years, blockgroup1_id, blockgroup2_id, distance, name):
     '''
-    #Scenario 3: the beginning and ending points are in different block groups
-    #in this scenario, we will need to find out where it intersects with the
-    #two block groups. If the location intersects with each block group only
-    #once and those points have the same latitude and longitude, then
-    #we can safely say that the length in each block group is the length from
-    #the point inside the block group to the intersection point
-    #however, if the intersection points do not match up, then we will need to
-    #find which other block groups the location intersects with and we will
-    #find the length the location is in each block group using a similar method
-    #to what has just been described
-    #scenario has 2,013 occurrences (including records where we do not have
-    #the blockgroup)
+    This function looks at the scenario where the line begins and ends in two
+    separate block groups. Checks to see if the lines pass through only those
+    two block groups. If the line is contained in just the beginning and ending
+    block groups, adds the distance information to the final dataframe. if not,
+    indicates that we need to check all block groups to see if the line
+    passes through it.
 
-    !!!Better description plus inputs and outputs come later
-    '''
-    #list(line.coords) gives a list of tuples of a line's endpoints
-    return(False)
+    Inputs:
+        line: (LineString) the line between the beginning and ending points
+        blockgroup1_multipolygon: (Polygon) the polygon representation of the
+            blockgroup that the line begins in
+        blockgroup2_multipolygon: (Polygon) the polygon representation of the
+            blockgroup that the line ends in
+        proj_num: (string) the project number
+        years: (string) the year range for the project
+        blockgroup1_id: (int) the blockgroup id for the blockgroup the line
+            begins in
+        blockgroup2_id: (int) the blockgroup id for the blockgroup the line
+            ends in
+        distance: (float) the length (in km) of the line
 
-def get_multipolygon(blockgroup_id, blockgroup_df):
+    Outputs:
+        error: (boolean) if there was an error in finding the distance
+        check_all: (boolean) if we need to check all the blockgroups
+            to see if this line passes through them
     '''
-    #get a single blockgroup
-    !!!Better description plus inputs and outputs come later
+    try:
+        #get the intersection lines with the multipolygon
+        intersection1 = line.intersection(blockgroup1_multipolygon)
+        intersection2 = line.intersection(blockgroup2_multipolygon)
+    except:
+        #if we can't get an intersection,we will add to the error_df
+        return(True, False)
+
+    #make sure we did not get a series back
+    if type(intersection1) == LineString and type(intersection2) == LineString:
+        #get the coordinates from the intersection strings
+        from1, to1 = list(intersection1.coords)
+        from2, to2 = list(intersection2.coords)
+        #get the distance of both lines
+        dist1 = great_circle(from1, to1).km
+        dist2 = great_circle(from2, to2).km
+        #check that the distances of the two intersection lines are within 1
+        #meter of the total distance
+        if abs(distance - (dist1 + dist2)) < 0.001:
+            #add the values and distances to the final dataframe
+            for tup in [(blockgroup1_id, dist1),(blockgroup2_id, dist2)]:
+                block, dist = tup
+                add_to_df(proj_num, years, block, dist, name)
+            return(False, False)
+        else:
+            return(False, True)
+    else:
+        return(False, True)
+
+def check_all_bg(check_all_df, blockgroup_df):
     '''
-    blockgroup = blockgroup_df.\
-        loc[blockgroup_df['stfid']==blockgroup_id, 'geom'].iloc[0]
-    return(convert_multipolygon(blockgroup))
+    Goes through all the blockgroups and sees which of the lines we have marked
+    intersects with it. If a line intersects with a blockgroup, adds the the
+    distance to the final_df
+
+    Inputs:
+        check_all_df: a dataframe with all the lines that we need to check all
+            blockgroups for
+        blockgroup_df: a dataframe with all the blockgroup information
+
+    Outputs:
+        error_lst: a list of indexes of locations where there were errors for
+            one or more blockgroup
+        error_blockgroups: a list of blockgroup ids where there were errors
+            finding the intersecting line
+    '''
+    #a list of all the error entries there are
+    error_lst = []
+    #a list of the blockgroup id where the errors occur
+    error_blockgroups = []
+    #iterate through the blockgroups
+    for bg_index, bg_row in blockgroup_df.iterrows():
+        blockgroup_id = bg_row[2]
+        print(blockgroup_id)
+        mp = convert_multipolygon(bg_row[1])
+        #iterate through all the entries we need to check
+        for line_index, line_row in check_all_df.iterrows():
+            proj_num = line_row[0]
+            name = line_row[1]
+            years = line_row[2]
+            line = line_row[9]
+            #check if the line intersects the blockgroup
+            if line.intersects(mp):
+                #try to find the intersection line
+                try:
+                    intersection = line.intersection(mp)
+                    error = False
+                except:
+                    error_lst.append(line_index)
+                    error_blockgroups.append(blockgroup_id)
+                    error = True
+                if not error:
+                     if type(intersection) == LineString:
+                         lines_lst = [intersection]
+                     else:
+                         lines_lst = list(intersection)
+                     for l in lines_lst:
+                         from_pt, to_pt = list(l.coords)
+                         distance = great_circle(from_pt, to_pt).km
+                         add_to_df(proj_num, years, blockgroup_id, distance,\
+                             name)
+
+    return(error_lst, error_blockgroups)
 

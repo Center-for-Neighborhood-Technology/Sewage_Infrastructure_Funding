@@ -127,3 +127,18 @@ def get_id(blockgroup_id):
         return(blockgroup_id, False)
     else:
         return(int(blockgroup_id), True)
+
+def get_multipolygon(blockgroup_id, blockgroup_df):
+    '''
+    create a Polygon object for a given blockgroup id
+
+    Inputs:
+        blockgroup_id: the blockgroup id we want a Polygon for
+        blockgroup_df: a dataframe with all blockgroup information
+
+    Outputs: the Polygon representation of the blockgroup we were looking for
+    '''
+    blockgroup = blockgroup_df.\
+        loc[blockgroup_df['stfid']==blockgroup_id, 'geom'].iloc[0]
+    return(convert_multipolygon(blockgroup))
+

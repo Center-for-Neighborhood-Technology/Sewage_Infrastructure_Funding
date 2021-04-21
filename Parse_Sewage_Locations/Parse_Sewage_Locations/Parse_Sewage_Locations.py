@@ -48,14 +48,16 @@ def main():
         #now we get the latitude and longitude of the endpoints
         for col in ['from', 'to']:
             print("Geocoding " + col)
-            new_col = col + '_lat_long'
-            df[new_col] = df[col].apply(get_lat_long)
+            new_col_latln = col + '_lat_long'
+            new_col_qual = col + '_quality'
+            df[new_col_latln],df[new_col_qual] = df[col].apply(get_lat_long)
             print(col + " geocoded!")
     
         #save data in csv for use at a later time
         #!!!Note: there were some locations where the API did not pull in the
         #!!!latitude and longitude. I have gone in to enter those by hand
         df.to_csv('locations_with_lat_long.csv')
+        #return(df)
 
     else:
         print("We received no data")
@@ -134,7 +136,7 @@ def get_lat_long(address):
     Outputs: a tuple with the lat and long
     '''
     #!!!whoever is running this code will have to enter in their own API key
-    api_key = ''
+    api_key = 'Arkb2MGtDe7oesoWIjiTSfwYWQlJUe3dYMQFJNYe_FAD-2yo-ZfoHAoaqyy_23bZ'
     if address != None:
         #add the fact that we are in Chicago to make sure there are no errors
         address = address + ', Chicago, IL'
