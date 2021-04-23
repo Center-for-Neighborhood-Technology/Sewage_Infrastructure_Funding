@@ -52,7 +52,7 @@ def main():
     quality_df = pd.read_csv('locations_with_quality.csv').fillna('None')
     #grab the locations that have errors in them
     error_locations = quality_df['all_locations'].loc[quality_df['quality'].\
-        isin(['RoadBlock','PopulatedPlace','None','RailwayStation'])]
+        isin(['RoadBlock','PopulatedPlace','None','RailwayStation'])].tolist()
     #load all blockgroup data
     blockgroup_df = pd.read_csv('blkgrps_2019_clipped.csv')
 
@@ -63,25 +63,24 @@ def main():
            'from_blockgroup', 'to_blockgroup']]
     
     #remove the locations that have errors in them
-    for col in ['from', 'to']:
-        df_clean = df.loc[~df[col].isin(error_locations)]
+    df_clean = df.loc[~df[['from', 'to']].isin(error_locations).any(axis=1)]
     
     del(quality_df)
     del(error_locations)
 
     #a list of the locations that have errors
     error_lst = []
-    #a list of the locations we need to check all blockgroups for
-    #and a list of the lines we need to check
-    check_all_lst = []
-    line_lst = []
+
+    #get a list of all the locations
+    full_locations = df_clean['location_name'].unique().tolist()
 
     print('Going through initial iterrows')
-    for index, row in df_clean.iterrows():
+    for name in full_locations:
+        #get a df with all the records for this location
+        this_loc_df = df_clean.loc[df_clean['location_name']==name]
+        #pull out the first row with the location
+        row = this_loc_df[0]
         #get the pertinent information from the row
-        proj_num = row[0]
-        name = row[1]
-        years = row[2]
         from_pt = get_floats(row[5])
         to_pt = get_floats(row[6])
         blockgroup1_id, one_tf = get_id(row[7])
@@ -100,21 +99,23 @@ def main():
             distance = great_circle(from_pt, to_pt).km
         
         error = False
-        check_all = False
-        #check if the 2nd blockgroup is None or distance is 0
-        #means we have a single point and we are coding the distance as a 
-        #pre-determined length
-        if blockgroup2_id == 'None' or distance == 0.0:
+        #check if the 2nd blockgroup is None means we have a single point and
+        #we are coding the distance as a pre-determined length
+        if blockgroup2_id == 'None':
             #make sure the 1st blockgroup is valid
             if type(blockgroup1_id) == int:
-                add_to_df(proj_num, years, blockgroup1_id, 0.001, name)
+                add_to_df(this_loc_df, {blockgroup1_id: 0.001}, name)
                 error = False
             else:
                 error = True
         #check if either block group is a string (means it doesn't have a
         #block group
         elif type(blockgroup1_id) == str or type(blockgroup2_id) == str:
-            error = True
+            #!!!Writing it this way means that if a location is on the 
+            #!!!border of 2 blockgroups, we will count the entire
+            #!!!distance for both block groups, instead of cutting the
+            #!!!distance in half as Peter wanted
+            check_all = True
         #check if we begin and end in the same blockgroup
         elif blockgroup1_id == blockgroup2_id:
             error, check_all = same_from_to_add(line,\
@@ -128,24 +129,21 @@ def main():
 
         if error:
             #if there is an error, add the index to our list of errors
-            error_lst.append(index)
-        if check_all:
-            check_all_lst.append(index)
-            line_lst.append(line)
+            error_lst.append(name)
 
-    error_df = df.iloc[error_lst, :]
-    check_all_df = df.iloc[check_all_lst, :]
-    #add the line information in so we don't have to re-create a line
-    #every time we check to see if it intersects with a blockgroup
-    check_all_df.loc[:, 'line'] = line_lst
-    print('Going through 2nd iterrows')
-    new_errors, error_bgs = check_all_bg(check_all_df, blockgroup_df)
-    #create a df with errors that only occurred in a given location for
-    #a given blockgroup
-    errors_w_bgs = df.iloc[new_errors, :]
-    errors_w_bgs.loc[:, 'error_blockgorups'] = error_bgs
+    error_df = df_clean.loc[df_clean['location_name'].isin(error_lst)]
     final_df = pd.DataFrame(data=DISTANCE_DF)
-    return(final_df, error_df, errors_w_bgs)
+    return(final_df, error_df)
+
+def loop_through_loc_df(this_loc_df, dist_dict, name):
+    '''
+    Loops through a location dataframe and adds the various block groups and
+    distances that are associated with that location to the final df
+
+    !!!Better description plus inputs and outputs come later
+    '''
+    for index, row in this_loc_df.iterrows():
+        for blockgorup, distance in dist_dict.items():
 
 def add_to_df(proj, years, block, dist, name):
     '''
@@ -309,6 +307,9 @@ def check_all_bg(check_all_df, blockgroup_df):
                 if not error:
                      if type(intersection) == LineString:
                          lines_lst = [intersection]
+                     elif type(intersection) == Point:
+                         print(name)
+                         lines_lst = []
                      else:
                          lines_lst = list(intersection)
                      for l in lines_lst:

@@ -23,4 +23,13 @@ locations_with_quality: I created this CSV wholly in iPython3. I created it by t
 	the quality, and the address. This file was created after preliminary_distances_parsed when I
 	realized that there were some errors with the pulled in latitude and longitude. I will use this
 	to exclude the "dirty" locations and use it to fix the errors.
-locations_w_correct_lat_long:
+locations_w_correct_lat_long: Individual beginning or ending points that have the correct latitude
+	and longitude. Some of the entries are using the Bing api and some use the mapquest api. I
+	created this csv wholly in iPython3
+locations_w_incorrect_lat_long: I created this csv wholly in iPython3. This contains all the records
+	for locations where either the beginning or ending point (or both) had dirty data
+no_distance_errors: this csv was created from the Find_Length Python file. It is a file that holds
+	all the records where we were not able to get any distance for a location because of various errors.
+single_bg_errors: this csv was created from the Find_Length Python file. It is a file that holds all
+	the records where we were not able to find the distance of a location in a single blockgroup, but
+	where we may have found the distance for that location in other blockgroups.
