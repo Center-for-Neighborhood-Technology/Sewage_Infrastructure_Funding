@@ -1,0 +1,198 @@
+,location_name,from,from_lat_long,to,to_lat_long,Status
+1672,150-200 E 109th St,150 E 109th St,"[41.69627056975157, -87.62282250384179]",200 E 109th St,"[41.6940017, -87.5993933]",Both Bad
+1970,1525-1532 S Throop St,1525 S Throop St,"[41.86138027140655, -87.6589163046786]",1532 S Throop St,"[41.85370862482409, -87.65880621514992]",Both Bad
+1152,1600-1950 W Roosevelt Rd,1600 W Roosevelt Rd,"[41.8636517, -87.6615283]",1950 W Roosevelt Rd,"[41.867318, -87.674987]",Both Bad
+796,2000-2344 W Kinzie St,2000 W Kinzie St,"[41.888733, -87.677305]",2344 W Kinzie St,"[41.8886211002893, -87.68564540092879]",All Good
+2020,2221-2545 S Ashland Ave,2221 S Ashland Ave,"[41.851778, -87.665808]",2545 S Ashland Ave,"[41.845669, -87.665254]",All Good
+1969,2226-2545 S Ashland Ave,2226 S Ashland Ave,"[41.851325, -87.666304]",2545 S Ashland Ave,"[41.845669, -87.665254]",All Good
+1162,2316-2700 W Roosevelt Rd,2316 W Roosevelt Rd,"[41.866923, -87.684269]",2700 W Roosevelt Rd,"[41.867359, -87.6944]",All Good
+1138,2400-3140 S Kedzie Ave,2400 S Kedzie Ave,"[41.847935, -87.70549]",3140 S Kedzie Ave,"[41.83581015388985, -87.7048210135158]",All Good
+917,2400-2144 W Bross Ave,2400 W Bross Ave,"[41.834317, -87.68549]",2144 W Bross Ave,"[41.895900853280516, -87.68132965618157]",To Bad
+880,On W Adams St From W 2600 To W 2622,2600 W Adams St,"[41.878363307324264, -87.70043297097116]",2622 W Adams St,"[41.8786464, -87.6922394]",From Bad
+1159,2723-3100 S Archer Ave,2723 S Archer Ave,"[41.843964, -87.652559]",3100 S Archer Ave,"[41.83762047488891, -87.66599581207548]",All Good
+822,3110-3900 S Ashland Ave,3110 S Ashland Ave,"[41.83592480294399, -87.66581251598492]",3900 S Ashland Ave,"[41.822585, -87.666444]",All Good
+901,340-22 E Illinois St,340 E Illinois St,"[41.891100553886055, -87.61748692001967]",22 E Illinois St,"[41.8904867, -87.6274133]",All Good
+828,340-0 W Illinois St,340 W Illinois St,"[41.89080618849169, -87.63724668775484]",W Illinois St And State St,"[41.890882, -87.628025]",All Good
+1156,3600-3940 N Pioneer Ave,3600 N Pioneer Ave,"[41.945031956708576, -87.83156713194157]",3940 N Pioneer Ave,"[41.9515535, -87.8319408]",All Good
+812,3615-3941 N Cumberland Ave,3615 N Cumberland Ave,"[41.945339, -87.836062]",3941 N Cumberland Ave,"[41.951475, -87.836293]",All Good
+1857,On N Keating Ave From N 4700 To N 4647,4700 N Keating Ave,"[41.973467632300256, -87.74697507738549]",4647 N Keating Ave,"[41.965802, -87.746093]",From Bad
+1628,4700-5300 S Damen Ave,4700 S Damen Ave,"[41.808391897644064, -87.67473880650923]",5300 S Damen Ave,"[41.797433, -87.674815]",All Good
+1140,4700-5440 S Morgan St,4700 S Morgan St,"[41.80779089709728, -87.65040426149247]",5440 S Morgan St,"[41.794852, -87.650382]",All Good
+810,4863-5500 N Ashland Ave,4863 N Ashland Ave,"[41.970733, -87.669122]",5500 N Ashland Ave,"[41.982101, -87.670163]",All Good
+889,5240-5600 W 63rd St,5240 W 63rd St,"[41.7796317, -87.75363]",5600 W 63rd St,"[41.778329, -87.76204]",From Bad
+815,5300-5500 N Milwaukee Ave,5300 N Milwaukee Ave,"[41.9764521, -87.7682148]",5500 N Milwaukee Ave,"[41.9815546, -87.7735327]",All Good
+2021,5516-5900 S Aberdeen St,5516 S Aberdeen St,"[41.793254, -87.652778]",5900 S Aberdeen St,"[41.78647967570422, -87.65233604800382]",All Good
+795,5700-6342 W Grace St,5700 W Grace St,"[41.949759, -87.769516]",6342 W Grace St,"[41.949566, -87.785718]",All Good
+814,6075-6374 N Lincoln Ave,6075 N Lincoln Ave,"[41.992899, -87.711023]",6374 N Lincoln Ave,"[41.996996, -87.718652]",All Good
+1977,On S State St From W 725 To W Taylor St,725 S State St,"[41.872262, -87.627193]",S State St And W Taylor St,"[41.831029, -87.626539]",To Bad
+1170,7400-7749 W Forest Preserve Ave,7400 W Forest Preserve Ave,"[41.95166446495063, -87.81206716140765]",7749 W Forest Preserve Ave,"[41.946547, -87.821408]",All Good
+129,7503-7859 S Emerald Ave,7503 S Emerald Ave,"[41.7576024537777, -87.6429517375863]",7859 S Emerald Ave,"[41.7489633, -87.64263]",To Bad
+257,On E 104th St From S Avenue O To S Avenue E,E 104th St And S Avenue O,"[41.706372, -87.540135]",E 104th St And S Avenue E,"[41.70638, -87.529201]",All Good
+1657,On E 107th St From S Avenue O To S State Line Rd,E 107th St And S Avenue O,"[41.70094, -87.540083]",E 107th St And S State Line Rd,"[41.70085, -87.524538]",All Good
+227,On E 110th St From S Avenue L To S State Line Rd,E 110th St And S Avenue L,"[41.695481, -87.536465]",E 110th St And S State Line Rd,"[41.695418, -87.524625]",All Good
+229,On E 110th St From S Avenue O To S Avenue B,E 110th St And S Avenue O,"[41.695493, -87.540106]",E 110th St And S Avenue B,"[41.695429, -87.525812]",All Good
+417,On E 80th St From S Evans Ave To S Vernon Ave,E 80th St And S Evans Ave,"[41.749415, -87.606412]",E 80th St And S Vernon Ave,"[41.749307, -87.613657]",All Good
+270,On E 81st St From S Vernon Ave To S Evans Ave,E 81st St And S Vernon Ave,"[41.7474205, -87.6136365]",E 81st St And S Evans Ave,"[41.7476564, -87.6063498]",All Good
+1238,On E 83rd St From S State St To S Dr Martin Luther King Jr Dr,E 83rd St And S State St,"[41.743727, -87.624366]",E 83rd St And S Dr Martin Luther King Jr Dr,"[41.743813, -87.614757]",All Good
+431,On E 85th St From S Indiana Ave To S St Lawrence Ave,E 85th St And S Indiana Ave,"[41.7400879, -87.6195382]",E 85th St And S St Lawrence Ave,"[41.7402392, -87.6097909]",All Good
+410,On E 94th St From S Dr Martin Luther King Jr Dr To S Wabash Ave,E 94th St And S Dr Martin Luther King Jr Dr,"[41.723716, -87.614201]",E 94th St And S Wabash Ave,"[41.723573, -87.62227]",All Good
+259,On E 96th St From S Houston Ave To S Marquette Ave,E 96th St And S Houston Ave,"[41.720949, -87.549677]",E 96th St And S Marquette Ave,"[41.720853, -87.55798]",All Good
+1887,On E Chicago Ave From E 38  To N Clark St,E Chicago Ave And E 38 ,"[41.8969151, -87.6265341]",E Chicago Ave And N Clark St,"[42.019424, -87.676265]",Both Bad
+652,On N Ada St From N Ogden Ave To W Madison St,N Ada St And N Ogden Ave,"[41.888011, -87.6610115]",N Ada St And W Madison St,"[41.8815137, -87.6605694]",All Good
+966,On N Central Ave From N Elston Ave To W Foster Ave,N Central Ave And N Elston Ave,"[41.9850181, -87.7683136]",N Central Ave And W Foster Ave,"[41.975686, -87.76848]",All Good
+1012,On N Central Ave From N Northwest Hwy To N Kennedy Expy Ob,N Central Ave And N Northwest Hwy,"[41.975197, -87.768486]",N Central Ave And N Kennedy Expy Ob,"[41.9439845, -87.7173535]",To Bad
+553,On N Central Ave From W Berteau Ave To W Sunnyside Ave,N Central Ave And W Berteau Ave,"[41.9568465, -87.7670961]",N Central Ave And W Sunnyside Ave,"[41.962368, -87.767271]",All Good
+554,On N Central Ave From W Berteau Ave To W Wilson Ave,N Central Ave And W Berteau Ave,"[41.9568465, -87.7670961]",N Central Ave And W Wilson Ave,"[41.964583, -87.767348]",All Good
+1895,On N Central Park Ave From W Diversey Ave To W Fullerton Ave,N Central Park Ave And W Diversey Ave,"[41.931932, -87.717187]",N Central Park Ave And W Fullerton Ave,"[41.924663, -87.716992]",All Good
+609,On N Clark St From W Arthur Ave To W Edgewater Ave,N Clark St And W Arthur Ave,"[42.0006075, -87.6715287]",N Clark St And W Edgewater Ave,"[42.019424, -87.676265]",To Bad
+604,On N Damen Ave From W Carroll Ave To W Warren Blvd,N Damen Ave And W Carroll Ave,"[41.8876991, -87.6768196]",N Damen Ave And W Warren Blvd,"[41.8822439, -87.6767199]",All Good
+1930,On N Elston Ave From W School St To W Diversey Ave,N Elston Ave And W School St,"[41.941363, -87.701141]",N Elston Ave And W Diversey Ave,"[41.932196, -87.687818]",All Good
+1016,On N Hiawatha Ave From N Loleta Ave To N Central Ave,N Hiawatha Ave And N Loleta Ave,"[42.003764, -87.7712245]",N Hiawatha Ave And N Central Ave,"[41.999807, -87.762929]",All Good
+14,On N Lavergne Ave From W Lawrence Ave To W Montrose Ave,N Lavergne Ave And W Lawrence Ave,"[41.9679628, -87.7526526]",N Lavergne Ave And W Montrose Ave,"[41.960674, -87.752378]",All Good
+1357,On N Leavitt St From W North Ave To W Division St,N Leavitt St And W North Ave,"[41.910408, -87.682346]",N Leavitt St And W Division St,"[41.903126, -87.682146]",All Good
+1950,On N Leclaire Ave From W Lawrence Ave To W Alley N. Of Lawrence,N Leclaire Ave And W Lawrence Ave,"[41.9679994, -87.7551493]",N Leclaire Ave And W Alley N. Of Lawrence,"[42.0703601, -87.75781710000001]",To Bad
+365,On N Leclaire Ave From W Parker Ave To W Montana St,N Leclaire Ave And W Parker Ave,"[41.930524, -87.753933]",N Leclaire Ave And W Montana St,"[41.925088, -87.753707]",All Good
+672,On N Lincoln Ave From N Whipple St To W Bryn Mawr Ave,N Lincoln Ave And N Whipple St,"[41.988983, -87.705137]",N Lincoln Ave And W Bryn Mawr Ave,"[41.983139, -87.695232]",All Good
+649,On N Lincoln Ave From W Devon Ave To N Jersey Ave,N Lincoln Ave And W Devon Ave,"[41.997237, -87.718706]",N Lincoln Ave And N Jersey Ave,"[41.993006, -87.711602]",All Good
+568,On N Milwaukee Ave From W Catalpa Ave To W Farragut Ave,N Milwaukee Ave And W Catalpa Ave,"[41.9810422, -87.7726298]",N Milwaukee Ave And W Farragut Ave,"[41.9765241, -87.76845825000001]",All Good
+624,On N Nordica Ave From W Waveland Ave To W Roscoe St,N Nordica Ave And W Waveland Ave,"[41.9471513, -87.8033813]",N Nordica Ave And W Roscoe St,"[41.941704, -87.8031827]",All Good
+972,On N Oakley Blvd From W Kinzie St To W Adams St,N Oakley Blvd And W Kinzie St,"[41.8886053, -87.6841668]",N Oakley Blvd And W Adams St,"[41.878645, -87.683905]",To Bad
+973,On N Octavia Ave From W Byron St To W Cornelia Ave,N Octavia Ave And W Byron St,"[41.95067, -87.80959]",N Octavia Ave And W Cornelia Ave,"[41.943398, -87.809342]",All Good
+974,On N Odell Ave From W Byron St To W Belmont Ave,N Odell Ave And W Byron St,"[41.9506502, -87.8108634]",N Odell Ave And W Belmont Ave,"[41.93799, -87.810367]",All Good
+1023,On N Oketo Ave From W Addison St To W School St,N Oketo Ave And W Addison St,"[41.945175, -87.811794]",N Oketo Ave And W School St,"[41.9397339, -87.8114265]",All Good
+977,On N Oleander Ave From W Addison St To W Wellington Ave,N Oleander Ave And W Addison St,"[41.945109, -87.815525]",N Oleander Ave And W Wellington Ave,"[41.934349, -87.815145]",All Good
+952,On N Opal Ave From W Addison St To W School St,N Opal Ave And W Addison St,"[41.945139, -87.822892]",N Opal Ave And W School St,"[41.939502, -87.822657]",All Good
+1014,On N Oriole Ave From W Waveland Ave To W Belmont Ave,N Oriole Ave And W Waveland Ave,"[41.946579, -87.816796]",N Oriole Ave And W Belmont Ave,"[41.937955, -87.816498]",All Good
+960,On N Osceola Ave From W Forest Preserve Ave To W Wellington Ave,N Osceola Ave And W Forest Preserve Ave,"[41.950678, -87.813661]",N Osceola Ave And W Wellington Ave,"[41.934412, -87.812709]",All Good
+998,On N Overhill Ave From W Addison St To W Belmont Ave,N Overhill Ave And W Addison St,"[41.945227, -87.819572]",N Overhill Ave And W Belmont Ave,"[41.937906, -87.818935]",All Good
+937,On N Ozanam Ave From W Addison St To W School St,N Ozanam Ave And W Addison St,"[41.945173, -87.821663]",N Ozanam Ave And W School St,"[41.939528, -87.82145]",All Good
+926,On N Page Ave From W Irving Park Rd To W Addison St,N Page Ave And W Irving Park Rd,"[41.95226, -87.82811]",N Page Ave And W Addison St,"[41.945001, -87.8279076]",All Good
+987,On N Panama Ave From W Irving Park Rd To W Addison St,N Panama Ave And W Irving Park Rd,"[41.9522292, -87.8293724]",N Panama Ave And W Addison St,"[41.944965, -87.82905]",All Good
+1868,On N Pulaski Rd From W Peterson Ave To W Bryn Mawr Ave,N Pulaski Rd And W Peterson Ave,"[41.9901482, -87.7286502]",N Pulaski Rd And W Bryn Mawr Ave,"[41.9828425, -87.7284579]",All Good
+1178,On N Racine Ave From W Madison St To W Carroll Ave,N Racine Ave And W Madison St,"[41.8816877, -87.6566836]",N Racine Ave And W Carroll Ave,"[41.887718, -87.656875]",All Good
+929,On N Ravenswood Ave From W Lawrence Ave To W Sunnyside Ave,N Ravenswood Ave And W Lawrence Ave,"[41.9687823, -87.6747132]",N Ravenswood Ave And W Sunnyside Ave,"[41.96336, -87.674003]",All Good
+565,On N Sheridan Rd From W Birchwood Ave To W Devon Ave,N Sheridan Rd And W Birchwood Ave,"[42.018218, -87.665768]",N Sheridan Rd And W Devon Ave,"[41.9981901, -87.6606673]",To Bad
+1917,On N Southport Ave From W Byron St To W Addison St,N Southport Ave And W Byron St,"[41.952551, -87.66414]",N Southport Ave And W Addison St,"[41.947096, -87.664008]",All Good
+1928,On N St Louis Ave From W Chicago Ave To W Carroll Ave,N St Louis Ave And W Chicago Ave,"[41.895518, -87.713906]",N St Louis Ave And W Carroll Ave,"[41.8874215, -87.7136254]",All Good
+1827,On N State St From W Chicago Ave To N 333,N State St And W Chicago Ave,"[41.8966859, -87.6281876]",333 N State St,"[41.888583499800504, -87.62803620289388]",All Good
+1921,On N Western Ave From W Logan Blvd To N Kennedy Expy Ob,N Western Ave And W Logan Blvd,"[41.9286598, -87.6876714]",N Western Ave And N Kennedy Expy Ob,"[41.9247095, -87.682326]",To Bad
+932,On N Wolcott Ave From W Huron St To W Warren Blvd,N Wolcott Ave And W Huron St,"[41.8941352, -87.674551]",N Wolcott Ave And W Warren Blvd,"[41.8822811, -87.674214]",All Good
+1184,On N Wolcott Ave From W Kinzie St To W Warren Blvd,N Wolcott Ave And W Kinzie St,"[41.8887582, -87.6744513]",N Wolcott Ave And W Warren Blvd,"[41.8822811, -87.674214]",All Good
+9,On N Wolcott Ave From W Lawrence Ave To W Balmoral Ave,N Wolcott Ave And W Lawrence Ave,"[41.9687684, -87.6762189]",N Wolcott Ave And W Balmoral Ave,"[41.979728, -87.676518]",All Good
+1779,On N Wolcott Ave From W Winnemac Ave To W Balmoral Ave,N Wolcott Ave And W Winnemac Ave,"[41.973329, -87.676322]",N Wolcott Ave And W Balmoral Ave,"[41.979728, -87.676518]",All Good
+981,On S Albany Ave From W Cermak Rd To W 26th St,S Albany Ave And W Cermak Rd,"[41.851816, -87.702818]",S Albany Ave And W 26th St,"[41.844599, -87.702554]",All Good
+1224,On S Archer Ave From S Ashland Ave To S Poplar Ave,S Archer Ave And S Ashland Ave,"[41.837762, -87.665687]",S Archer Ave And S Poplar Ave,"[41.844338, -87.652341]",All Good
+639,On S Archer Ave From S Damen Ave To S Paulina St,S Archer Ave And S Damen Ave,"[41.831904, -87.675336]",S Archer Ave And S Paulina St,"[41.836226, -87.668164]",All Good
+288,On S Archer Ave From S Rockwell St To S Sacramento Ave,S Archer Ave And S Rockwell St,"[41.823049, -87.689719]",S Archer Ave And S Sacramento Ave,"[41.817103, -87.699388]",All Good
+1663,On S Archer Ave From S Western Ave To W 37th St,S Archer Ave And S Western Ave,"[41.825931, -87.684894]",S Archer Ave And W 37th St,"[41.829971, -87.678525]",To Bad
+640,On S Ashland Ave From S Archer Ave To W Pershing Rd,S Ashland Ave And S Archer Ave,"[41.837762, -87.665687]",S Ashland Ave And W Pershing Rd,"[41.8231271, -87.6653327]",All Good
+979,On S Ashland Ave From W 79th St To W 83rd St,S Ashland Ave And W 79th St,"[41.750346, -87.663386]",S Ashland Ave And W 83rd St,"[41.743071, -87.663358]",All Good
+587,On S Ashland Ave From W Congress Pkwy To W Roosevelt Rd,S Ashland Ave And W Congress Pkwy,"[41.8752, -87.666715]",S Ashland Ave And W Roosevelt Rd,"[41.866928, -87.666477]",All Good
+1784,On S Austin Ave From W 59th St To W 63rd St,S Austin Ave And W 59th St,"[41.7852006, -87.7717542]",S Austin Ave And W 63rd St,"[41.777902, -87.771484]",All Good
+1876,On S Bishop St From W 109th Pl To W 112th Pl,S Bishop St And W 109th Pl,"[41.694875, -87.658609]",S Bishop St And W 112th Pl,"[41.689291, -87.65849]",All Good
+988,On S Blackstone Ave From E 83rd St To E 86th St,S Blackstone Ave And E 83rd St,"[41.744163, -87.588179]",S Blackstone Ave And E 86th St,"[41.738696, -87.587922]",All Good
+936,On S Central Park Ave From W 28th St To W 32nd St,S Central Park Ave And W 28th St,"[41.840727, -87.714694]",S Central Park Ave And W 32nd St,"[41.83526, -87.71458]",All Good
+72,On S Central Park Ave From W 75th St To W 78th St,S Central Park Ave And W 75th St,"[41.7568928, -87.7120345]",S Central Park Ave And W 78th St,"[41.7514803, -87.7119487]",All Good
+999,On S Central Park Ave From W Cermak Rd To W 28th St,S Central Park Ave And W Cermak Rd,"[41.851699, -87.715008]",S Central Park Ave And W 28th St,"[41.840727, -87.714694]",All Good
+477,On S Constance Ave From E 87th St To E 90th St,S Constance Ave And E 87th St,"[41.736999, -87.579361]",S Constance Ave And E 90th St,"[41.731547, -87.579237]",All Good
+536,On S Drexel Ave From E 90th St To E 93rd St,S Drexel Ave And E 90th St,"[41.7312076, -87.6006995]",S Drexel Ave And E 93rd St,"[41.725759, -87.600936]",From Bad
+1448,On S Eggleston Ave From W 100th St To W 108th St,S Eggleston Ave And W 100th St,"[41.712509, -87.633688]",S Eggleston Ave And W 108th St,"[41.697917, -87.634127]",All Good
+507,On S Emerald Ave From W 75th St To W 79th St,S Emerald Ave And W 75th St,"[41.757845, -87.643019]",S Emerald Ave And W 79th St,"[41.750643, -87.64284]",All Good
+130,On S Green Bay Ave From E 103rd St To E 106th St,S Green Bay Ave And E 103rd St,"[41.708192, -87.541328]",S Green Bay Ave And E 106th St,"[41.702754, -87.54132]",All Good
+1500,On S Halsted St From W Root St To W 47th St,S Halsted St And W Root St,"[41.818669, -87.645766]",S Halsted St And W 47th St,"[41.8089053, -87.6455368]",All Good
+995,On S Hamlin Ave From W 16th St To W 26th St,S Hamlin Ave And W 16th St,"[41.8589242, -87.7200639]",S Hamlin Ave And W 26th St,"[41.844322, -87.719659]",All Good
+1502,On S Hermitage Ave From W 81st St To W 85th St,S Hermitage Ave And W 81st St,"[41.746651, -87.667019]",S Hermitage Ave And W 85th St,"[41.73937, -87.666834]",All Good
+943,On S Homan Ave From W 16th St To W 26th St,S Homan Ave And W 16th St,"[41.8590254, -87.7103414]",S Homan Ave And W 26th St,"[41.844478, -87.709893]",All Good
+1800,On S Honore St From W 48th St To W 45th St,S Honore St And W 48th St,"[41.806724, -87.671015]",S Honore St And W 45th St,"[41.8121442, -87.6711304]",All Good
+1783,On S Hoyne Ave From W Cermak Rd To W 18th St,S Hoyne Ave And W Cermak Rd,"[41.85216, -87.6783015]",S Hoyne Ave And W 18th St,"[41.8576896, -87.6784551]",All Good
+1835,On S Indiana Ave From E 107th St To E 111th St,S Indiana Ave And E 107th St,"[41.699939, -87.618445]",S Indiana Ave And E 111th St,"[41.692648, -87.61826]",All Good
+1880,On S Jefferson St From W Harrison St To W Monroe St,S Jefferson St And W Harrison St,"[41.874329, -87.6424446]",S Jefferson St And W Monroe St,"[41.880541, -87.64261]",All Good
+1836,On S Jeffery Blvd From E 80th St To E 83rd St,S Jeffery Blvd And E 80th St,"[41.749793, -87.575957]",S Jeffery Blvd And E 83rd St,"[41.744338, -87.575863]",All Good
+1761,On S Keeler Ave From W 55th St To W 58th St,S Keeler Ave And W 55th St,"[41.793185, -87.728032]",S Keeler Ave And W 58th St,"[41.7876941, -87.727874]",All Good
+1796,On S Keeler Ave From W 58th St To W 55th St,S Keeler Ave And W 58th St,"[41.7876941, -87.727874]",S Keeler Ave And W 55th St,"[41.793185, -87.728032]",All Good
+945,On S Lawndale Ave From W 26th St To W 31st St,S Lawndale Ave And W 26th St,"[41.844361, -87.717233]",S Lawndale Ave And W 31st St,"[41.837016, -87.717025]",All Good
+1754,On S Lawndale Ave From W 59th St To W 63rd St,S Lawndale Ave And W 59th St,"[41.786065, -87.715607]",S Lawndale Ave And W 63rd St,"[41.778768, -87.715402]",All Good
+997,On S Lawndale Ave From W Cermak Rd To W 26th St,S Lawndale Ave And W Cermak Rd,"[41.851664, -87.7174892]",S Lawndale Ave And W 26th St,"[41.844361, -87.717233]",All Good
+466,On S Longwood Dr From W 119th St To W 116th St,S Longwood Dr And W 119th St,"[41.67728, -87.675225]",S Longwood Dr And W 116th St,"[41.682878, -87.674099]",All Good
+1437,On S Marshfield Ave From W 81st St To W 85th St,S Marshfield Ave And W 81st St,"[41.746688, -87.664587]",S Marshfield Ave And W 85th St,"[41.739399, -87.664378]",All Good
+277,On S Normal Ave From W 35th St To W Pershing Rd,S Normal Ave And W 35th St,"[41.830874, -87.638813]",S Normal Ave And W Pershing Rd,"[41.823541, -87.638617]",All Good
+1421,On S Paulina St From W 81st St To W 85th St,S Paulina St And W 81st St,"[41.746667, -87.6658]",S Paulina St And W 85th St,"[41.739373, -87.665587]",All Good
+1473,On S Peoria St From W 69th St To W 72nd St,S Peoria St And W 69th St,"[41.768811, -87.646929]",S Peoria St And W 72nd St,"[41.763354, -87.646801]",All Good
+1484,On S Princeton Ave From S Holland Rd To W 89th St,S Princeton Ave And S Holland Rd,"[41.743527, -87.63187049999999]",S Princeton Ave And W 89th St,"[41.732564, -87.631839]",From Bad
+1110,On S Ridgeway Ave From W 15th St To W Ogden Ave,S Ridgeway Ave And W 15th St,"[41.86077, -87.718907]",S Ridgeway Ave And W Ogden Ave,"[41.853165, -87.718713]",All Good
+2063,On S St Louis Ave From W 26th St To W 31st St,S St Louis Ave And W 26th St,"[41.8444335, -87.7123412]",S St Louis Ave And W 31st St,"[41.837139, -87.712103]",All Good
+2064,On S Throop St From W 31st St To S Archer Ave,S Throop St And W 31st St,"[41.837892, -87.6584553]",S Throop St And S Archer Ave,"[41.843514, -87.654134]",All Good
+1768,On S Throop St From W 95th St To W 98th St,S Throop St And W 95th St,"[41.721361, -87.655395]",S Throop St And W 98th St,"[41.7158674, -87.6552362]",All Good
+722,On S Union Ave From W 72nd St To W 33rd St,S Union Ave And W 72nd St,"[41.763436, -87.641514]",S Union Ave And W 33rd St,"[41.834428, -87.643742]",All Good
+0,On S Vincennes Ave From W 103rd St To W 10600 S. Vincennes Ave,S Vincennes Ave And W 103rd St,"[41.7067852, -87.6560249]",S Vincennes Ave And W 10600 S. Vincennes Ave,"[41.701163, -87.658739]",All Good
+1540,On S Wallace St From W 44th St To W 47th St,S Wallace St And W 44th St,"[41.8144417, -87.6408133]",S Wallace St And W 47th St,"[41.80898, -87.640657]",All Good
+2071,On S Wood St From W 63rd St To W Marquette Rd,S Wood St And W 63rd St,"[41.77944, -87.669093]",S Wood St And W Marquette Rd,"[41.7721444, -87.6688998]",All Good
+1983,On W 103rd St From S Springfield Ave To S St Louis Ave,W 103rd St And S Springfield Ave,"[41.705983, -87.718504]",W 103rd St And S St Louis Ave,"[41.706051, -87.708761]",All Good
+2033,On W 111th St From S Throop St To S Morgan St,W 111th St And S Throop St,"[41.692204, -87.654552]",W 111th St And S Morgan St,"[41.692291, -87.647248]",All Good
+1981,On W 122nd St From S Ashland Ave To S Racine Ave,W 122nd St And S Ashland Ave,"[41.672064, -87.661144]",W 122nd St And S Racine Ave,"[41.6722172, -87.6514585]",All Good
+550,On W 125th St From S Parnell Ave To S Wentworth Ave,W 125th St And S Parnell Ave,"[41.6669049, -87.6364202]",W 125th St And S Wentworth Ave,"[41.667055, -87.627123]",All Good
+1104,On W 23rd St From S Marshall Blvd To S Rockwell St,W 23rd St And S Marshall Blvd,"[41.850028, -87.699021]",W 23rd St And S Rockwell St,"[41.8501573, -87.6905052]",All Good
+1071,On W 26th St From S Keeler Ave To S Hamlin Ave,W 26th St And S Keeler Ave,"[41.844183, -87.729424]",W 26th St And S Hamlin Ave,"[41.844322, -87.719659]",All Good
+1120,On W 26th St From S Lawndale Ave To S Christiana Ave,W 26th St And S Lawndale Ave,"[41.844361, -87.717233]",W 26th St And S Christiana Ave,"[41.844493, -87.708693]",All Good
+1293,On W 26th St From S Lawndale Ave To S Homan Ave,W 26th St And S Lawndale Ave,"[41.844361, -87.717233]",W 26th St And S Homan Ave,"[41.844478, -87.709893]",All Good
+1122,On W 31st St From S Lawndale Ave To S Homan Ave,W 31st St And S Lawndale Ave,"[41.837016, -87.717025]",W 31st St And S Homan Ave,"[41.837179, -87.709691]",All Good
+1664,On W 37th St From S Archer Ave To S Paulina St,W 37th St And S Archer Ave,"[41.8298016, -87.6787968]",W 37th St And S Paulina St,"[41.826823, -87.667855]",From Bad
+1546,On W 38th St From S Kedzie Ave To S St Louis Ave,W 38th St And S Kedzie Ave,"[41.824439, -87.704444]",W 38th St And S St Louis Ave,"[41.8243039, -87.7117925]",All Good
+560,On W 43rd St From S Drake Ave To S Kedzie Ave,W 43rd St And S Drake Ave,"[41.81524255, -87.7126583]",W 43rd St And S Kedzie Ave,"[41.815422, -87.7042608]",All Good
+346,On W 54th St From S Kedzie Ave To S St Louis Ave,W 54th St And S Kedzie Ave,"[41.795378, -87.7036]",W 54th St And S St Louis Ave,"[41.7952034, -87.7109268]",All Good
+676,On W 54th St From S Linder Ave To S Laramie Ave,W 54th St And S Linder Ave,"[41.7945773, -87.759905]",W 54th St And S Laramie Ave,"[41.794705, -87.752506]",All Good
+677,On W 55th St From S Central Ave To S Laramie Ave,W 55th St And S Central Ave,"[41.792736, -87.762197]",W 55th St And S Laramie Ave,"[41.792913, -87.752448]",All Good
+140,On W 56th St From S Natoma Ave To S Neva Ave,W 56th St And S Natoma Ave,"[41.790433, -87.787807]",W 56th St And S Neva Ave,"[41.7902299, -87.8001942]",All Good
+2042,On W 57th St From S Hamilton Ave To S Wood St,W 57th St And S Hamilton Ave,"[41.7902378, -87.6777406]",W 57th St And S Wood St,"[41.7903315, -87.6693396]",All Good
+679,On W 57th St From S Mobile Ave To S Mason Ave,W 57th St And S Mobile Ave,"[41.7887352, -87.7786351]",W 57th St And S Mason Ave,"[41.788912, -87.770652]",All Good
+680,On W 59th St From S Kedzie Ave To S Rockwell St,W 59th St And S Kedzie Ave,"[41.786253, -87.703351]",W 59th St And S Rockwell St,"[41.786519, -87.688729]",All Good
+878,On W 63rd St From S Laramie Ave To S Cicero Ave,W 63rd St And S Laramie Ave,"[41.778224, -87.752004]",W 63rd St And S Cicero Ave,"[41.778467, -87.742388]",All Good
+2068,On W 63rd St From S Sacramento Ave To S Rockwell St,W 63rd St And S Sacramento Ave,"[41.7790463, -87.6982654]",W 63rd St And S Rockwell St,"[41.779191, -87.688532]",All Good
+484,On W 70th St From S Ashland Ave To S Justine St,W 70th St And S Ashland Ave,"[41.766374, -87.691865]",W 70th St And S Justine St,"[41.766755, -87.662681]",From Bad
+730,On W 71st St From S Bell Ave To S Halsted St,W 71st St And S Bell Ave,"[41.764752, -87.679489]",W 71st St And S Halsted St,"[41.76521, -87.644424]",All Good
+879,On W 71st St From S Hoyne Ave To S Halsted St,W 71st St And S Hoyne Ave,"[41.764779, -87.675962]",W 71st St And S Halsted St,"[41.76521, -87.644424]",All Good
+686,On W 87th St From S Paulina St To S Ashland Ave,W 87th St And S Paulina St,"[41.7359425, -87.67281514999999]",W 87th St And S Ashland Ave,"[41.735849, -87.662999]",From Bad
+1125,On W 88th St From S Racine Ave To S Halsted St,W 88th St And S Racine Ave,"[41.7341, -87.653296]",W 88th St And S Halsted St,"[41.734306, -87.643522]",All Good
+2070,On W 95th St From S Ada St To S Morgan St,W 95th St And S Ada St,"[41.721213, -87.656603]",W 95th St And S Morgan St,"[41.721432, -87.648065]",All Good
+1269,On W Addison St From N Mobile Ave To N Austin Ave,W Addison St And N Mobile Ave,"[41.945712, -87.783777]",W Addison St And N Austin Ave,"[41.945791, -87.776466]",All Good
+1780,On W Bryn Mawr Ave From N Kedzie Ave To N St Louis Ave,W Bryn Mawr Ave And N Kedzie Ave,"[41.983062, -87.708879]",W Bryn Mawr Ave And N St Louis Ave,"[41.982946, -87.716201]",All Good
+692,On W Carroll Ave From N Homan Ave To N Albany Ave,W Carroll Ave And N Homan Ave,"[41.887478, -87.711221]",W Carroll Ave And N Albany Ave,"[41.8875501, -87.7038568]",All Good
+1055,On W Cermak Rd From S Marshall Blvd To S Rockwell St,W Cermak Rd And S Marshall Blvd,"[41.851873, -87.699086]",W Cermak Rd And S Rockwell St,"[41.851995, -87.690562]",All Good
+1989,On W Chestnut St From N Dearborn St To N Orleans St,W Chestnut St And N Dearborn St,"[41.897992, -87.629809]",W Chestnut St And N Orleans St,"[41.898194, -87.637226]",All Good
+748,On W Columbus Ave From S Kedzie Ave To W 77th St,W Columbus Ave And S Kedzie Ave,"[41.750484, -87.702428]",W Columbus Ave And W 77th St,"[41.753538, -87.6956577]",All Good
+340,On W Cullerton St From S Karlov Ave To S Kostner Ave,W Cullerton St And S Karlov Ave,"[41.8543508, -87.7272642]",W Cullerton St And S Kostner Ave,"[41.85427, -87.734591]",All Good
+1565,On W Division St From N Laramie Ave To N Cicero Ave,W Division St And N Laramie Ave,"[41.90226775, -87.7555956]",W Division St And N Cicero Ave,"[41.9023721, -87.7459834]",All Good
+1305,On W Flournoy St From S Central Ave To S Homan Ave,W Flournoy St And S Central Ave,"[41.871829, -87.7645011]",W Flournoy St And S Homan Ave,"[41.872736, -87.710762]",All Good
+1519,On W Flournoy St From S Laflin St To S Racine Ave,W Flournoy St And S Laflin St,"[41.8733243, -87.6641966]",W Flournoy St And S Racine Ave,"[41.873267, -87.656913]",All Good
+1277,On W Forest Preserve Ave From N Ozanam Ave To N Oketo Ave,W Forest Preserve Ave And N Ozanam Ave,"[41.946638, -87.822075]",W Forest Preserve Ave And N Oketo Ave,"[41.951441, -87.812195]",All Good
+750,On W Fulton Blvd From N Homan Ave To N Albany Ave,W Fulton Blvd And N Homan Ave,"[41.886382, -87.711185]",W Fulton Blvd And N Albany Ave,"[41.8864518, -87.7038138]",All Good
+2008,On W Grand Ave From N Monticello Ave To W Chicago Ave,W Grand Ave And N Monticello Ave,"[41.902773, -87.717776]",W Grand Ave And W Chicago Ave,"[41.895643, -87.69993]",All Good
+2006,On W Grand Ave From W Chicago Ave To N Spaulding Ave,W Grand Ave And W Chicago Ave,"[41.895643, -87.69993]",W Grand Ave And N Spaulding Ave,"[41.899406, -87.709424]",All Good
+2007,On W Grand Ave From W North Ave To N Cicero Ave,W Grand Ave And W North Ave,"[41.895643, -87.69993]",W Grand Ave And N Cicero Ave,"[41.913969, -87.746043]",From Bad
+751,On W Gunnison St From N Nagle Ave To N Mason Ave,W Gunnison St And N Nagle Ave,"[41.9684117, -87.7880289]",W Gunnison St And N Mason Ave,"[41.9685548, -87.7771074]",All Good
+905,On W Harrison St From S Albany Ave To S California Ave,W Harrison St And S Albany Ave,"[41.8737166, -87.7034596]",W Harrison St And S California Ave,"[41.873818, -87.696109]",All Good
+896,On W Harrison St From S Western Ave To S Hoyne Ave,W Harrison St And S Western Ave,"[41.873935, -87.6861501]",W Harrison St And S Hoyne Ave,"[41.874002, -87.67888]",All Good
+1086,On W Ibsen St From N Oriole Ave To N Harlem Ave,W Ibsen St And N Oriole Ave,"[42.0060043, -87.8164539]",W Ibsen St And N Harlem Ave,"[42.006307, -87.80669]",All Good
+2003,On W Illinois St From N Kingsbury St To E 19,W Illinois St And N Kingsbury St,"[41.890702, -87.639195]",19 W Illinois St,"[41.89081487907993, -87.62895152664959]",All Good
+1262,On W Jarvis Ave From N Oriole Ave To N Harlem Ave,W Jarvis Ave And N Oriole Ave,"[42.015095, -87.816376]",W Jarvis Ave And N Harlem Ave,"[42.015331, -87.8066]",All Good
+1577,On W Kinzie St From N Damen Ave To N Ashland Ave,W Kinzie St And N Damen Ave,"[41.8887301, -87.6767984]",W Kinzie St And N Ashland Ave,"[41.8888377, -87.6670209]",All Good
+699,On W Lake St From N Central Park Ave To N Sacramento Blvd,W Lake St And N Central Park Ave,"[41.8850454, -87.7168238]",W Lake St And N Sacramento Blvd,"[41.884076, -87.701307]",All Good
+1581,On W Madison St From N Damen Ave To N Ashland Ave,W Madison St And N Damen Ave,"[41.8813371, -87.6766987]",W Madison St And N Ashland Ave,"[41.8814808, -87.6668921]",All Good
+816,On W Madison St From N Sacramento Blvd To N Homan Blvd,W Madison St And N Sacramento Blvd,"[41.881051, -87.701231]",W Madison St And N Homan Blvd,"[41.88094, -87.711019]",To Bad
+1571,On W Maypole Ave From N Wolcott Ave To N Ashland Ave,W Maypole Ave And N Wolcott Ave,"[41.8841452, -87.674273]",W Maypole Ave And N Ashland Ave,"[41.884283, -87.666981]",All Good
+137,On W Montrose Ave From N Narragansett Ave To N Austin Ave,W Montrose Ave And N Narragansett Ave,"[41.9602162, -87.786825]",W Montrose Ave And N Austin Ave,"[41.9603599, -87.7770283]",All Good
+1643,On W North Ave From N Austin Ave To N Laramie Ave,W North Ave And N Austin Ave,"[41.909322, -87.775501]",W North Ave And N Laramie Ave,"[41.909467, -87.755801]",All Good
+1084,On W North Ave From N Hamlin Ave To N Kimball Ave,W North Ave And N Hamlin Ave,"[41.909914, -87.721678]",W North Ave And N Kimball Ave,"[42.002811, -87.714248]",To Bad
+1036,On W Ogden Ave From S Homan Ave To S Albany Ave,W Ogden Ave And S Homan Ave,"[41.856286, -87.710261]",W Ogden Ave And S Albany Ave,"[41.858617, -87.702908]",All Good
+1037,On W Ogden Ave From S Millard Ave To S Albany Ave,W Ogden Ave And S Millard Ave,"[41.8542393, -87.716274]",W Ogden Ave And S Albany Ave,"[41.858617, -87.702908]",All Good
+1080,On W Ogden Ave From S Millard Ave To S Central Park Ave,W Ogden Ave And S Millard Ave,"[41.8542393, -87.716274]",W Ogden Ave And S Central Park Ave,"[41.817949, -87.86978]",To Bad
+1039,On W Pershing Rd From S Damen Ave To S Paulina St,W Pershing Rd And S Damen Ave,"[41.8232785, -87.6751065]",W Pershing Rd And S Paulina St,"[41.8232244, -87.6677811]",All Good
+1998,On W Pershing Rd From S Normal Ave To W 208,W Pershing Rd And S Normal Ave,"[41.823541, -87.638617]",208 W Pershing Rd,"[41.82378844311417, -87.62639792694345]",To Bad
+1640,On W Polk St From S Dan Ryan Expy To S Shields Ave,W Polk St And S Dan Ryan Expy,"[41.8719689, -87.6446372]",W Polk St And S Shields Ave,"[41.871468050000004, -87.6781956]",Both Bad
+1286,On W Roosevelt Rd From S Washtenaw Ave To S Western Ave,W Roosevelt Rd And S Washtenaw Ave,"[41.866573, -87.693418]",W Roosevelt Rd And S Western Ave,"[41.866698, -87.686116]",All Good
+838,On W Strong St From N Lockwood Ave To N Cicero Ave,W Strong St And N Lockwood Ave,"[41.9707992, -87.7600351]",W Strong St And N Cicero Ave,"[41.9707651, -87.7479207]",All Good
+533,On W Talcott Ave From N Harlem Ave To N Ozanam Ave,W Talcott Ave And N Harlem Ave,"[41.985822, -87.806927]",W Talcott Ave And N Ozanam Ave,"[41.99274, -87.820869]",All Good
+532,On W Talcott Ave From N Neva Ave To N Ozanam Ave,W Talcott Ave And N Neva Ave,"[41.985043, -87.805246]",W Talcott Ave And N Ozanam Ave,"[41.99274, -87.820869]",All Good
+566,On W Thorndale Ave From N Sheridan Rd To N Glenwood Ave,W Thorndale Ave And N Sheridan Rd,"[41.9901119, -87.6553792]",W Thorndale Ave And N Glenwood Ave,"[41.9899626, -87.6651244]",All Good
+1634,On W Van Buren Stn From S Leavitt St To S Ashland Ave,W Van Buren Stn And S Leavitt St,"[41.876187, -87.681416]",W Van Buren Stn And S Ashland Ave,"[41.876388, -87.666746]",All Good
+1045,On W Washington Blvd From N Talman Ave To N Leavitt St,W Washington Blvd And N Talman Ave,"[41.882967, -87.69225]",W Washington Blvd And N Leavitt St,"[41.8830685, -87.6816033]",All Good

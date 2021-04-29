@@ -9,7 +9,8 @@ Purpose: Functions that are used to aid in the running of other modules
 '''
 
 import psycopg2
-from shapely.geometry import Point, Polygon
+from shapely.geometry import Point, Polygon, LineString
+from geopy.distance import great_circle
 
 def make_connection():
     '''
@@ -141,4 +142,16 @@ def get_multipolygon(blockgroup_id, blockgroup_df):
     blockgroup = blockgroup_df.\
         loc[blockgroup_df['stfid']==blockgroup_id, 'geom'].iloc[0]
     return(convert_multipolygon(blockgroup))
+
+def get_line_dist(line):
+    '''
+    Finds the distance of a line
+
+    Inputs:
+        line: LineString object we want to find the distance for
+
+    Outputs: (float) the distance of the line
+    '''
+    pt1, pt2 = line.coords
+    return(great_circle(pt1, pt2).km)
 

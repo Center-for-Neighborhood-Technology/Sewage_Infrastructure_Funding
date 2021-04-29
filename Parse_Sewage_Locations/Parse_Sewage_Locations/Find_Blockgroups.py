@@ -20,7 +20,7 @@ def main():
     #we have already created a csv of our locations with their lat and long
     #!!!the lat and long list I stored here is stored as a string
     #!!!needs to be converted black to list of floats
-    sewage_locations = pd.read_csv('locations_with_lat_long.csv')\
+    sewage_locations = pd.read_csv('unique_locations_w_lat_long.csv')\
         .fillna('None')
     #we have already downloaded the blockgroups data
     blockgroups = pd.read_csv('blkgrps_2019_clipped.csv')
@@ -42,7 +42,7 @@ def main():
             sewage_locations[col] = sewage_locations[col].\
                 apply(lambda x: pt_in_poly(x, multipolygon, blockgroup))
 
-    sewage_locations.to_csv('locations_with_endpoint_blockgroups_prelim.csv')
+    sewage_locations.to_csv('unique_locations_with_endpoint_blockgroups.csv')
 
 def pt_in_poly(pt_str, multipolygon, blockgroup):
     '''
