@@ -17,11 +17,22 @@ def main():
     Determines the blockgroups of the beginning and endpoints of our
     locations. Saves the results to a csv file.
     '''
-    #we have already created a csv of our locations with their lat and long
-    #!!!the lat and long list I stored here is stored as a string
-    #!!!needs to be converted black to list of floats
-    sewage_locations = pd.read_csv('unique_locations_w_lat_long.csv')\
+    #we have already created a csv of our locations
+    sewage_locations = pd.read_csv('unique_locations_w_endpoints.csv')\
         .fillna('None')
+    #read in the csv with our lat and long for the endpoints
+    lat_long = pd.read_csv('endpoints_w_correct_lat_long.csv')
+    #now we fill in the lat and long
+    for col in ['from', 'to']:
+        new_col = col + '_lat_long'
+        sewage_locations[new_col] = sewage_locations[col].\
+            apply(lambda x: lat_long.\
+            loc[lat_long['all_locations'] == x, 'lat_long'].iloc[0])
+
+    #now we need to delete the records where we did not have a lat and long
+    sewage_locations = sewage_locations.\
+        loc[~sewage_locations[['from_lat_long', 'to_lat_long']].\
+        isin(['[]']).any(axis=1)]
     #we have already downloaded the blockgroups data
     blockgroups = pd.read_csv('blkgrps_2019_clipped.csv')
 
