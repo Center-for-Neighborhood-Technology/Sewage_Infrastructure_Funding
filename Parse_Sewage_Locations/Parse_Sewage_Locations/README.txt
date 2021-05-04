@@ -30,6 +30,8 @@ locations_w_long_distance: at one point, the Find_Length py file also kept track
 	previously.
 locations_w_parsed_distances: this csv comes from the Find_Lengh py file. It is a list of all the
 	unique locations and the length that they pass through each block group.
+projects_w_no_locations: this CSV lists the projects that don't have any location information, but whose
+	titles provide some location information.
 single_point_locations: this csv indicates which locations are merely at a single point and which
 	block group that point is in
 unique_locations_w_endpoints: this csv holds all the unique locations scraped from the PDFs and has
