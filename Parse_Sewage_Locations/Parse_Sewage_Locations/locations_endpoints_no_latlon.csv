@@ -1,85 +1,85 @@
 ,location_name,from,from_latln,to,to_latln,from_no_latlon,to_no_latlon
 1904,150-200 E 109th St,150 E 109th St,--,200 E 109th St,--,TRUE,TRUE
-2250,1525-1532 S Throop St,1525 S Throop St,"[41.86116981711107, -87.65888441355622]",1532 S Throop St,"[41.86056667436423, -87.65892209554954]",TRUE,TRUE
 1346,1600-1950 W Roosevelt Rd,1600 W Roosevelt Rd,--,1950 W Roosevelt Rd,--,TRUE,TRUE
-1105,2400-2144 W Bross Ave,2400 W Bross Ave,"[41.834317, -87.68549]",2144 W Bross Ave,"[41.83543365694016, -87.6811670138124]",FALSE,TRUE
 1107,2600-2622 W Adams St,2600 W Adams St,--,2622 W Adams St,"[41.8786464, -87.6922394]",TRUE,FALSE
-1013,3110-3200 W Logan Blvd,3110 W Logan Blvd,"[41.92886, -87.705445]",3200 W Logan Blvd,--,FALSE,TRUE
 1245,3900-3714 N Orleans St,3900 N Orleans St,--,3714 N Orleans St,--,TRUE,TRUE
 1322,4000-3914 N Orleans St,4000 N Orleans St,--,3914 N Orleans St,--,TRUE,TRUE
-1077,5240-5600 W 63rd St,5240 W 63rd St,"[41.77853819458933, -87.75376736075859]",5600 W 63rd St,"[41.778329, -87.76204]",TRUE,FALSE
-177,7503-7859 S Emerald Ave,7503 S Emerald Ave,"[41.7576024537777, -87.6429517375863]",7859 S Emerald Ave,--,FALSE,TRUE
-2085,On E 95th St From S Torrence Ave To S Calhoun Ave,E 95th St And S Torrence Ave,"[41.72255115, -87.55989654999999]",E 95th St And S Calhoun Ave,"[41.72258613527178, -87.56235752194824]",FALSE,TRUE
 2162,On E Chicago Ave From E 38  To N Clark St,E Chicago Ave And E 38 ,--,E Chicago Ave And N Clark St,--,TRUE,TRUE
 1554,On N California Ave From W Eisenhower Expy To W Harrison St,N California Ave And W Eisenhower Expy,--,N California Ave And W Harrison St,"[41.873818, -87.696109]",TRUE,FALSE
-1201,On N Central Ave From N Northwest Hwy To N Kennedy Expy Ob,N Central Ave And N Northwest Hwy,"[41.975197, -87.768486]",N Central Ave And N Kennedy Expy Ob,"[41.97374443854318, -87.7685626477969]",FALSE,TRUE
-2216,On N Central Ave From N Prescott To N Hennepin,N Central Ave And N Prescott,"[41.992534, -87.765564]",N Central Ave And N Hennepin,"[41.9936583052951, -87.76791361680367]",FALSE,TRUE
 837,On N Claremont Ave From N Division St To N Potomac Ave,N Claremont Ave And N Division St,--,N Claremont Ave And N Potomac Ave,"[41.9048995, -87.6858963]",TRUE,FALSE
-789,On N Clark St From W Arthur Ave To W Edgewater Ave,N Clark St And W Arthur Ave,"[42.0006075, -87.6715287]",N Clark St And W Edgewater Ave,"[41.986297894205954, -87.66939636501777]",FALSE,TRUE
-1604,On N Damen Ave From W Warren Blvd To W Monroe St,N Damen Ave And W Warren Blvd,"[41.8822439, -87.6767199]",N Damen Ave And W Monroe St,"[41.88000245643053, -87.6766117219801]",FALSE,TRUE
-2130,On N Keating Ave From N 4700 To N 4647,4700 N Keating Ave,"[41.96624760800947, -87.74642912405052]",4647 N Keating Ave,"[41.965802, -87.746093]",TRUE,FALSE
-2227,On N Leclaire Ave From W Lawrence Ave To W Alley N. Of Lawrence,N Leclaire Ave And W Lawrence Ave,"[41.9679994, -87.7551493]",N Leclaire Ave And W Alley N. Of Lawrence,--,FALSE,TRUE
 1043,On N Loomis St From W Arbour Pl To W Fulton St,N Loomis St And W Arbour Pl,--,N Loomis St And W Fulton St,"[41.886604, -87.662471]",TRUE,FALSE
-1206,On N Lynch Ave From N Laramie Ave To N Elston Ave,N Lynch Ave And N Laramie Ave,"[41.9787716445398, -87.75756752359169]",N Lynch Ave And N Elston Ave,"[41.981074, -87.7612222]",TRUE,FALSE
-2110,On N Nagel From W Gregory St To W Catalpa Ave,N Nagel And W Gregory St,"[41.982081805193594, -87.7877437730204]",N Nagel And W Catalpa Ave,"[41.981089178014976, -87.78778551077072]",FALSE,TRUE
-1160,On N Oakley Blvd From W Kinzie St To W Adams St,N Oakley Blvd And W Kinzie St,"[41.8886053, -87.6841668]",N Oakley Blvd And W Adams St,--,FALSE,TRUE
-328,On N Octavia Ave From W Ibsen St To W Estes Ave,N Octavia Ave And W Ibsen St,"[42.006213, -87.809138]",N Octavia Ave And W Estes Ave,--,FALSE,TRUE
-745,On N Sheridan Rd From W Birchwood Ave To W Devon Ave,N Sheridan Rd And W Birchwood Ave,"[42.018218, -87.665768]",N Sheridan Rd And W Devon Ave,"[41.99819401731007, -87.66055598775898]",FALSE,TRUE
 1532,On N Wabash Ave From W West End Ave  To W Fulton St,N Wabash Ave And W West End Ave ,--,N Wabash Ave And W Fulton St,--,TRUE,TRUE
-2196,On N Western Ave From W Logan Blvd To N Kennedy Expy Ob,N Western Ave And W Logan Blvd,"[41.9286598, -87.6876714]",N Western Ave And N Kennedy Expy Ob,"[41.927813680403716, -87.68776796123873]",FALSE,TRUE
-1176,On N Western Ave From W Madison St To W Van Buren St,N Western Ave And W Madison St,"[41.881197, -87.686391]",N Western Ave And W Van Buren St,"[41.87610347168946, -87.6861651786988]",FALSE,TRUE
-1378,On N Winchester Ave From N Olcott Ave To W Sunnyside Ave,N Winchester Ave And N Olcott Ave,"[41.963338360978256, -87.67604392627386]",N Winchester Ave And W Sunnyside Ave,"[41.963318, -87.677525]",TRUE,FALSE
-1890,On S Archer Ave From S Western Ave To W 37th St,S Archer Ave And S Western Ave,"[41.825931, -87.684894]",S Archer Ave And W 37th St,"[41.826726227149535, -87.68355369672607]",FALSE,TRUE
-1122,On S Archer Ave From W 35th St To W 37th St,S Archer Ave And W 35th St,"[41.830427, -87.677624]",S Archer Ave And W 37th St,"[41.826726227149535, -87.68355369672607]",FALSE,TRUE
 72,On S Clark St From W 21st St To S Archer Ave,S Clark St And W 21st St,--,S Clark St And S Archer Ave,"[41.855159, -87.630161]",TRUE,FALSE
-2152,On S Clinton St From W Madison St To W Kinzie St,S Clinton St And W Madison St,"[41.881867, -87.641176]",S Clinton St And W Kinzie St,"[41.889052274385215, -87.6413427068609]",FALSE,TRUE
-2105,On S Desplaines St From W Madison St To W Kinzie St,S Desplaines St And W Madison St,"[41.881815, -87.644116]",S Desplaines St And W Kinzie St,"[41.889055000279626, -87.64436830701396]",FALSE,TRUE
-710,On S Drexel Ave From E 90th St To E 93rd St,S Drexel Ave And E 90th St,"[41.73120426689825, -87.60068632495704]",S Drexel Ave And E 93rd St,"[41.725759, -87.600936]",TRUE,FALSE
-1058,On S Hamilton Ave From W Adams St To W Gladys Ave,S Hamilton Ave And W Adams St,"[41.8786833, -87.6802835]",S Hamilton Ave And W Gladys Ave,--,FALSE,TRUE
-2154,On S Harper Ave From E 58th St To E 59th St,S Harper Ave And E 58th St,"[41.789606204492735, -87.58899442079274]",S Harper Ave And E 59th St,"[41.787924, -87.589127]",TRUE,FALSE
-513,On S Ingleside Ave From E 65th St To E 64th St,S Ingleside Ave And E 65th St,"[41.7768021, -87.6022268]",S Ingleside Ave And E 64th St,"[41.778620643987395, -87.60226167580615]",FALSE,TRUE
 1059,On S Lytle St From W Harrison St To W Lexington St,S Lytle St And W Harrison St,--,S Lytle St And W Lexington St,"[41.872232, -87.658376]",TRUE,FALSE
 1709,On S Manistee Ave From E 126th St To S Escanaba Ave,S Manistee Ave And E 126th St,--,S Manistee Ave And S Escanaba Ave,--,TRUE,TRUE
-2231,On S Michigan Ave From S 200  To S 220,S Michigan Ave And S 200 ,"[41.87949077970375, -87.62449853597654]",220 S Michigan Ave,"[41.878992, -87.625074]",TRUE,FALSE
-2322,On S Michigan Ave From S 200  To S 221,S Michigan Ave And S 200 ,"[41.87949077970375, -87.62449853597654]",221 S Michigan Ave,"[41.87813013200934, -87.62413217801692]",TRUE,FALSE
-1694,On S Princeton Ave From S Holland Rd To W 89th St,S Princeton Ave And S Holland Rd,"[41.73527, -87.63194]",S Princeton Ave And W 89th St,"[41.732564, -87.631839]",TRUE,FALSE
 1684,On S Princeton Ave From W Hollywood Ave To W 89th St,S Princeton Ave And W Hollywood Ave,--,S Princeton Ave And W 89th St,"[41.732564, -87.631839]",TRUE,FALSE
-678,On S Scottsdale Ave From W 81st St To S Knox Ave,S Scottsdale Ave And W 81st St,"[41.74553114926469, -87.73708212374778]",S Scottsdale Ave And S Knox Ave,"[41.7462465, -87.7378105]",TRUE,FALSE
-956,On S South Chicago Ave From E 71st St To S Drexel Ave,S South Chicago Ave And E 71st St,"[41.7656871, -87.60506795]",S South Chicago Ave And S Drexel Ave,--,FALSE,TRUE
-2258,On S State St From W 725 To W Taylor St,725 S State St,"[41.872262, -87.627193]",S State St And W Taylor St,--,FALSE,TRUE
 1,On S Wallace St From W 58th St To W 59th St,S Wallace St And W 58th St,--,S Wallace St And W 59th St,"[41.7871295, -87.6401719]",TRUE,FALSE
-2260,On S Wallace St From W Garfield Blvd To W 57th St,S Wallace St And W Garfield Blvd,"[41.7944375, -87.6403819]",S Wallace St And W 57th St,--,FALSE,TRUE
-2357,On W 111th St From S Bell Ave To W 1800,W 111th St And S Bell Ave,"[41.6918258, -87.677516]",1800 W 111th St,"[41.691922300578184, -87.67049174690699]",FALSE,TRUE
-1891,On W 37th St From S Archer Ave To S Paulina St,W 37th St And S Archer Ave,"[41.82669217907362, -87.68350661815441]",W 37th St And S Paulina St,"[41.826823, -87.667855]",TRUE,FALSE
-1910,On W 60th St From S Hamlin Ave To S Hale Ave,W 60th St And S Hamlin Ave,"[41.78419, -87.718014]",W 60th St And S Hale Ave,--,FALSE,TRUE
-2077,On W 60th St From S Nashville Ave To S Neenah Ave,W 60th St And S Nashville Ave,"[41.7830959, -87.7863762]",W 60th St And S Neenah Ave,"[41.78312254612129, -87.78516534660169]",FALSE,TRUE
-2078,On W 60th St From S Neenah Ave To S Natchez Ave,W 60th St And S Neenah Ave,"[41.78312254612129, -87.78516534660169]",W 60th St And S Natchez Ave,"[41.7831279, -87.7839139]",TRUE,FALSE
-1893,On W 62nd St From S Knox Ave To S Cicero Ave,W 62nd St And S Knox Ave,"[41.7802989, -87.738679]",W 62nd St And S Cicero Ave,"[41.7802751679891, -87.7422418691481]",FALSE,TRUE
-653,On W 70th St From S Ashland Ave To S Justine St,W 70th St And S Ashland Ave,"[41.76673510614107, -87.66374945645765]",W 70th St And S Justine St,"[41.766755, -87.662681]",TRUE,FALSE
-1266,On W 83rd St From S State St To S Martin St Luther King Dr,W 83rd St And S State St,"[41.743598, -87.62436]",W 83rd St And S Martin St Luther King Dr,"[41.7437759533995, -87.61479901493092]",FALSE,TRUE
-867,On W 87th St From S Paulina St To S Ashland Ave,W 87th St And S Paulina St,"[41.73577384749615, -87.66549280801932]",W 87th St And S Ashland Ave,"[41.735849, -87.662999]",TRUE,FALSE
-1068,On W Adams St From W 2600 To W 2622,2600 W Adams St,"[41.878606800493735, -87.69121036857192]",2622 W Adams St,"[41.8786464, -87.6922394]",TRUE,FALSE
 2269,On W Ardmore Ave From N Lake Shore Dr To N Broadway,W Ardmore Ave And N Lake Shore Dr,--,W Ardmore Ave And N Broadway,"[41.9872642, -87.6601771]",TRUE,FALSE
-2,On W Balmoral Ave From N California Ave To N North Shore Channel,W Balmoral Ave And N California Ave,"[41.97947, -87.699049]",W Balmoral Ave And N North Shore Channel,"[41.979439731719104, -87.70455652100738]",FALSE,TRUE
-100,On W Carmen Ave From N Ravenswood Ave To N Paulina St,W Carmen Ave And N Ravenswood Ave,"[41.973816, -87.6743601]",W Carmen Ave And N Paulina St,--,FALSE,TRUE
 378,On W Eddy St From N Lamon Ave To N Leclaire Ave,W Eddy St And N Lamon Ave,--,W Eddy St And N Leclaire Ave,--,TRUE,TRUE
 522,On W Eddy St From W Cornelia Ave To W Newport Ave,W Eddy St And W Cornelia Ave,--,W Eddy St And W Newport Ave,--,TRUE,TRUE
-2338,On W Edmunds St From W Goodman St To N Milwaukee Ave,W Edmunds St And W Goodman St,"[41.970878, -87.766444]",W Edmunds St And N Milwaukee Ave,"[41.9715639100582, -87.76496239542377]",FALSE,TRUE
-2262,On W Elm St From N Cleveland Ave To N Sedgwick St,W Elm St And N Cleveland Ave,"[41.9027135, -87.6411855]",W Elm St And N Sedgwick St,--,FALSE,TRUE
-2319,On W Germania Pl From N La Salle Dr To N Clark St,W Germania Pl And N La Salle Dr,"[41.91045289224367, -87.63304632880227]",W Germania Pl And N Clark St,"[41.910429, -87.6316719]",TRUE,FALSE
-2292,On W Grand Ave From W North Ave To N Cicero Ave,W Grand Ave And W North Ave,"[41.909663245173085, -87.74604123573333]",W Grand Ave And N Cicero Ave,"[41.913969, -87.746043]",TRUE,FALSE
-2290,On W Gunnison St From N Laramie Ave To N Leamington Ave,W Gunnison St And N Laramie Ave,"[41.968804, -87.756418]",W Gunnison St And N Leamington Ave,--,FALSE,TRUE
-2234,On W Hubbard St From W 164 To N Michigan Ave,164 W Hubbard St,"[41.89007184675981, -87.63029129567798]",W Hubbard St And N Michigan Ave,"[41.890097156111636, -87.62424874142401]",FALSE,TRUE
-2236,On W Lithuanian Plaza Ct From S California Ave To S Oakley Ave,W Lithuanian Plaza Ct And S California Ave,"[41.768194, -87.693124]",W Lithuanian Plaza Ct And S Oakley Ave,"[41.768377386601585, -87.68086908676567]",FALSE,TRUE
-965,On W Madison St From N Homan Blvd To S St Louis Ave,W Madison St And N Homan Blvd,"[41.880936240045955, -87.7109883207448]",W Madison St And S St Louis Ave,"[41.8808972, -87.7135859]",TRUE,FALSE
-999,On W Madison St From N Sacramento Blvd To N Homan Blvd,W Madison St And N Sacramento Blvd,"[41.881051, -87.701231]",W Madison St And N Homan Blvd,"[41.880936240045955, -87.7109883207448]",FALSE,TRUE
-1277,On W North Ave From N Hamlin Ave To N Kimball Ave,W North Ave And N Hamlin Ave,"[41.909914, -87.721678]",W North Ave And N Kimball Ave,--,FALSE,TRUE
 1273,On W Ogden Ave From S Kenton Ave To S Pulaski Rd,W Ogden Ave And S Kenton Ave,--,W Ogden Ave And S Pulaski Rd,"[41.851089, -87.72474]",TRUE,FALSE
-1272,On W Ogden Ave From S Millard Ave To S Central Park Ave,W Ogden Ave And S Millard Ave,"[41.8542393, -87.716274]",W Ogden Ave And S Central Park Ave,"[41.854674061837535, -87.71506667437585]",FALSE,TRUE
-2282,On W Pershing Rd From S Normal Ave To W 208,W Pershing Rd And S Normal Ave,"[41.823541, -87.638617]",208 W Pershing Rd,"[41.82367284915363, -87.63221553986463]",FALSE,TRUE
-281,On W Peterson Ave From N North Shore Channel To N Kedvale Ave,W Peterson Ave And N North Shore Channel,"[41.99038791517836, -87.70916057236485]",W Peterson Ave And N Kedvale Ave,"[41.9900786, -87.7324997]",TRUE,FALSE
 1863,On W Polk St From S Dan Ryan Expy To S Shields Ave,W Polk St And S Dan Ryan Expy,--,W Polk St And S Shields Ave,--,TRUE,TRUE
+2252,On W Thorndale Ave From N Keystone Ave To N Pulaski Rd,W Thorndale Ave And N Keystone Ave,--,W Thorndale Ave And N Pulaski Rd,"[41.988805, -87.728602]",TRUE,FALSE
+2357,On W 111th St From S Bell Ave To W 1800,W 111th St And S Bell Ave,"[41.6918258, -87.677516]",1800 W 111th St,"[41.691922300578184, -87.67049174690699]",FALSE,TRUE
+2085,On E 95th St From S Torrence Ave To S Calhoun Ave,E 95th St And S Torrence Ave,"[41.72255115, -87.55989654999999]",E 95th St And S Calhoun Ave,"[41.72258613527178, -87.56235752194824]",FALSE,TRUE
+710,On S Drexel Ave From E 90th St To E 93rd St,S Drexel Ave And E 90th St,"[41.73120426689825, -87.60068632495704]",S Drexel Ave And E 93rd St,"[41.725759, -87.600936]",TRUE,FALSE
+1694,On S Princeton Ave From S Holland Rd To W 89th St,S Princeton Ave And S Holland Rd,"[41.73527, -87.63194]",S Princeton Ave And W 89th St,"[41.732564, -87.631839]",TRUE,FALSE
+867,On W 87th St From S Paulina St To S Ashland Ave,W 87th St And S Paulina St,"[41.73577384749615, -87.66549280801932]",W 87th St And S Ashland Ave,"[41.735849, -87.662999]",TRUE,FALSE
+1266,On W 83rd St From S State St To S Martin St Luther King Dr,W 83rd St And S State St,"[41.743598, -87.62436]",W 83rd St And S Martin St Luther King Dr,"[41.7437759533995, -87.61479901493092]",FALSE,TRUE
+678,On S Scottsdale Ave From W 81st St To S Knox Ave,S Scottsdale Ave And W 81st St,"[41.74553114926469, -87.73708212374778]",S Scottsdale Ave And S Knox Ave,"[41.7462465, -87.7378105]",TRUE,FALSE
+177,7503-7859 S Emerald Ave,7503 S Emerald Ave,"[41.7576024537777, -87.6429517375863]",7859 S Emerald Ave,--,FALSE,TRUE
+956,On S South Chicago Ave From E 71st St To S Drexel Ave,S South Chicago Ave And E 71st St,"[41.7656871, -87.60506795]",S South Chicago Ave And S Drexel Ave,--,FALSE,TRUE
+653,On W 70th St From S Ashland Ave To S Justine St,W 70th St And S Ashland Ave,"[41.76673510614107, -87.66374945645765]",W 70th St And S Justine St,"[41.766755, -87.662681]",TRUE,FALSE
+2236,On W Lithuanian Plaza Ct From S California Ave To S Oakley Ave,W Lithuanian Plaza Ct And S California Ave,"[41.768194, -87.693124]",W Lithuanian Plaza Ct And S Oakley Ave,"[41.768377386601585, -87.68086908676567]",FALSE,TRUE
+513,On S Ingleside Ave From E 65th St To E 64th St,S Ingleside Ave And E 65th St,"[41.7768021, -87.6022268]",S Ingleside Ave And E 64th St,"[41.778620643987395, -87.60226167580615]",FALSE,TRUE
+1077,5240-5600 W 63rd St,5240 W 63rd St,"[41.77853819458933, -87.75376736075859]",5600 W 63rd St,"[41.778329, -87.76204]",TRUE,FALSE
+1893,On W 62nd St From S Knox Ave To S Cicero Ave,W 62nd St And S Knox Ave,"[41.7802989, -87.738679]",W 62nd St And S Cicero Ave,"[41.7802751679891, -87.7422418691481]",FALSE,TRUE
+2077,On W 60th St From S Nashville Ave To S Neenah Ave,W 60th St And S Nashville Ave,"[41.7830959, -87.7863762]",W 60th St And S Neenah Ave,"[41.78312254612129, -87.78516534660169]",FALSE,TRUE
+2078,On W 60th St From S Neenah Ave To S Natchez Ave,W 60th St And S Neenah Ave,"[41.78312254612129, -87.78516534660169]",W 60th St And S Natchez Ave,"[41.7831279, -87.7839139]",TRUE,FALSE
+1910,On W 60th St From S Hamlin Ave To S Hale Ave,W 60th St And S Hamlin Ave,"[41.78419, -87.718014]",W 60th St And S Hale Ave,--,FALSE,TRUE
+2154,On S Harper Ave From E 58th St To E 59th St,S Harper Ave And E 58th St,"[41.789606204492735, -87.58899442079274]",S Harper Ave And E 59th St,"[41.787924, -87.589127]",TRUE,FALSE
+2260,On S Wallace St From W Garfield Blvd To W 57th St,S Wallace St And W Garfield Blvd,"[41.7944375, -87.6403819]",S Wallace St And W 57th St,--,FALSE,TRUE
+2282,On W Pershing Rd From S Normal Ave To W 208,W Pershing Rd And S Normal Ave,"[41.823541, -87.638617]",208 W Pershing Rd,"[41.82367284915363, -87.63221553986463]",FALSE,TRUE
+1890,On S Archer Ave From S Western Ave To W 37th St,S Archer Ave And S Western Ave,"[41.825931, -87.684894]",S Archer Ave And W 37th St,"[41.826726227149535, -87.68355369672607]",FALSE,TRUE
+1891,On W 37th St From S Archer Ave To S Paulina St,W 37th St And S Archer Ave,"[41.82669217907362, -87.68350661815441]",W 37th St And S Paulina St,"[41.826823, -87.667855]",TRUE,FALSE
+1122,On S Archer Ave From W 35th St To W 37th St,S Archer Ave And W 35th St,"[41.830427, -87.677624]",S Archer Ave And W 37th St,"[41.826726227149535, -87.68355369672607]",FALSE,TRUE
+1105,2400-2144 W Bross Ave,2400 W Bross Ave,"[41.834317, -87.68549]",2144 W Bross Ave,"[41.83543365694016, -87.6811670138124]",FALSE,TRUE
+1272,On W Ogden Ave From S Millard Ave To S Central Park Ave,W Ogden Ave And S Millard Ave,"[41.8542393, -87.716274]",W Ogden Ave And S Central Park Ave,"[41.854674061837535, -87.71506667437585]",FALSE,TRUE
+2250,1525-1532 S Throop St,1525 S Throop St,"[41.86116981711107, -87.65888441355622]",1532 S Throop St,"[41.86056667436423, -87.65892209554954]",TRUE,TRUE
 1840,On W Polk St From S Racine Ave To S Morgan St,W Polk St And S Racine Ave,"[41.871812, -87.656822]",W Polk St And S Morgan St,--,FALSE,TRUE
 193,On W Polk St From S Wells St To S S Branch Chicago River,W Polk St And S Wells St,"[41.8721357, -87.6335759]",W Polk St And S S Branch Chicago River,--,FALSE,TRUE
-2252,On W Thorndale Ave From N Keystone Ave To N Pulaski Rd,W Thorndale Ave And N Keystone Ave,--,W Thorndale Ave And N Pulaski Rd,"[41.988805, -87.728602]",TRUE,FALSE
+2258,On S State St From W 725 To W Taylor St,725 S State St,"[41.872262, -87.627193]",S State St And W Taylor St,--,FALSE,TRUE
+1068,On W Adams St From W 2600 To W 2622,2600 W Adams St,"[41.878606800493735, -87.69121036857192]",2622 W Adams St,"[41.8786464, -87.6922394]",TRUE,FALSE
+1058,On S Hamilton Ave From W Adams St To W Gladys Ave,S Hamilton Ave And W Adams St,"[41.8786833, -87.6802835]",S Hamilton Ave And W Gladys Ave,--,FALSE,TRUE
+2231,On S Michigan Ave From S 200  To S 220,S Michigan Ave And S 200 ,"[41.87949077970375, -87.62449853597654]",220 S Michigan Ave,"[41.878992, -87.625074]",TRUE,FALSE
+2322,On S Michigan Ave From S 200  To S 221,S Michigan Ave And S 200 ,"[41.87949077970375, -87.62449853597654]",221 S Michigan Ave,"[41.87813013200934, -87.62413217801692]",TRUE,FALSE
+965,On W Madison St From N Homan Blvd To S St Louis Ave,W Madison St And N Homan Blvd,"[41.880936240045955, -87.7109883207448]",W Madison St And S St Louis Ave,"[41.8808972, -87.7135859]",TRUE,FALSE
+999,On W Madison St From N Sacramento Blvd To N Homan Blvd,W Madison St And N Sacramento Blvd,"[41.881051, -87.701231]",W Madison St And N Homan Blvd,"[41.880936240045955, -87.7109883207448]",FALSE,TRUE
+1176,On N Western Ave From W Madison St To W Van Buren St,N Western Ave And W Madison St,"[41.881197, -87.686391]",N Western Ave And W Van Buren St,"[41.87610347168946, -87.6861651786988]",FALSE,TRUE
+2105,On S Desplaines St From W Madison St To W Kinzie St,S Desplaines St And W Madison St,"[41.881815, -87.644116]",S Desplaines St And W Kinzie St,"[41.889055000279626, -87.64436830701396]",FALSE,TRUE
+2152,On S Clinton St From W Madison St To W Kinzie St,S Clinton St And W Madison St,"[41.881867, -87.641176]",S Clinton St And W Kinzie St,"[41.889052274385215, -87.6413427068609]",FALSE,TRUE
+1604,On N Damen Ave From W Warren Blvd To W Monroe St,N Damen Ave And W Warren Blvd,"[41.8822439, -87.6767199]",N Damen Ave And W Monroe St,"[41.88000245643053, -87.6766117219801]",FALSE,TRUE
+1160,On N Oakley Blvd From W Kinzie St To W Adams St,N Oakley Blvd And W Kinzie St,"[41.8886053, -87.6841668]",N Oakley Blvd And W Adams St,--,FALSE,TRUE
+2234,On W Hubbard St From W 164 To N Michigan Ave,164 W Hubbard St,"[41.89007184675981, -87.63029129567798]",W Hubbard St And N Michigan Ave,"[41.890097156111636, -87.62424874142401]",FALSE,TRUE
+2262,On W Elm St From N Cleveland Ave To N Sedgwick St,W Elm St And N Cleveland Ave,"[41.9027135, -87.6411855]",W Elm St And N Sedgwick St,--,FALSE,TRUE
+2292,On W Grand Ave From W North Ave To N Cicero Ave,W Grand Ave And W North Ave,"[41.909663245173085, -87.74604123573333]",W Grand Ave And N Cicero Ave,"[41.913969, -87.746043]",TRUE,FALSE
+1277,On W North Ave From N Hamlin Ave To N Kimball Ave,W North Ave And N Hamlin Ave,"[41.909914, -87.721678]",W North Ave And N Kimball Ave,--,FALSE,TRUE
+2319,On W Germania Pl From N La Salle Dr To N Clark St,W Germania Pl And N La Salle Dr,"[41.91045289224367, -87.63304632880227]",W Germania Pl And N Clark St,"[41.910429, -87.6316719]",TRUE,FALSE
+2196,On N Western Ave From W Logan Blvd To N Kennedy Expy Ob,N Western Ave And W Logan Blvd,"[41.9286598, -87.6876714]",N Western Ave And N Kennedy Expy Ob,"[41.927813680403716, -87.68776796123873]",FALSE,TRUE
+1013,3110-3200 W Logan Blvd,3110 W Logan Blvd,"[41.92886, -87.705445]",3200 W Logan Blvd,--,FALSE,TRUE
+1378,On N Winchester Ave From N Olcott Ave To W Sunnyside Ave,N Winchester Ave And N Olcott Ave,"[41.963338360978256, -87.67604392627386]",N Winchester Ave And W Sunnyside Ave,"[41.963318, -87.677525]",TRUE,FALSE
 2311,On W Wilson Ave From N Rockwell St To N North Branch Chicago River,W Wilson Ave And N Rockwell St,"[41.9648336, -87.6936758]",W Wilson Ave And N North Branch Chicago River,--,FALSE,TRUE
+2130,On N Keating Ave From N 4700 To N 4647,4700 N Keating Ave,"[41.96624760800947, -87.74642912405052]",4647 N Keating Ave,"[41.965802, -87.746093]",TRUE,FALSE
+2227,On N Leclaire Ave From W Lawrence Ave To W Alley N. Of Lawrence,N Leclaire Ave And W Lawrence Ave,"[41.9679994, -87.7551493]",N Leclaire Ave And W Alley N. Of Lawrence,--,FALSE,TRUE
+2290,On W Gunnison St From N Laramie Ave To N Leamington Ave,W Gunnison St And N Laramie Ave,"[41.968804, -87.756418]",W Gunnison St And N Leamington Ave,--,FALSE,TRUE
+2338,On W Edmunds St From W Goodman St To N Milwaukee Ave,W Edmunds St And W Goodman St,"[41.970878, -87.766444]",W Edmunds St And N Milwaukee Ave,"[41.9715639100582, -87.76496239542377]",FALSE,TRUE
+100,On W Carmen Ave From N Ravenswood Ave To N Paulina St,W Carmen Ave And N Ravenswood Ave,"[41.973816, -87.6743601]",W Carmen Ave And N Paulina St,--,FALSE,TRUE
+1201,On N Central Ave From N Northwest Hwy To N Kennedy Expy Ob,N Central Ave And N Northwest Hwy,"[41.975197, -87.768486]",N Central Ave And N Kennedy Expy Ob,"[41.97374443854318, -87.7685626477969]",FALSE,TRUE
+1206,On N Lynch Ave From N Laramie Ave To N Elston Ave,N Lynch Ave And N Laramie Ave,"[41.9787716445398, -87.75756752359169]",N Lynch Ave And N Elston Ave,"[41.981074, -87.7612222]",TRUE,FALSE
+2,On W Balmoral Ave From N California Ave To N North Shore Channel,W Balmoral Ave And N California Ave,"[41.97947, -87.699049]",W Balmoral Ave And N North Shore Channel,"[41.979439731719104, -87.70455652100738]",FALSE,TRUE
+2110,On N Nagel From W Gregory St To W Catalpa Ave,N Nagel And W Gregory St,"[41.982081805193594, -87.7877437730204]",N Nagel And W Catalpa Ave,"[41.981089178014976, -87.78778551077072]",FALSE,TRUE
+281,On W Peterson Ave From N North Shore Channel To N Kedvale Ave,W Peterson Ave And N North Shore Channel,"[41.99038791517836, -87.70916057236485]",W Peterson Ave And N Kedvale Ave,"[41.9900786, -87.7324997]",TRUE,FALSE
+2216,On N Central Ave From N Prescott To N Hennepin,N Central Ave And N Prescott,"[41.992534, -87.765564]",N Central Ave And N Hennepin,"[41.9936583052951, -87.76791361680367]",FALSE,TRUE
+789,On N Clark St From W Arthur Ave To W Edgewater Ave,N Clark St And W Arthur Ave,"[42.0006075, -87.6715287]",N Clark St And W Edgewater Ave,"[41.986297894205954, -87.66939636501777]",FALSE,TRUE
+328,On N Octavia Ave From W Ibsen St To W Estes Ave,N Octavia Ave And W Ibsen St,"[42.006213, -87.809138]",N Octavia Ave And W Estes Ave,--,FALSE,TRUE
+745,On N Sheridan Rd From W Birchwood Ave To W Devon Ave,N Sheridan Rd And W Birchwood Ave,"[42.018218, -87.665768]",N Sheridan Rd And W Devon Ave,"[41.99819401731007, -87.66055598775898]",FALSE,TRUE
