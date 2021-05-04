@@ -110,10 +110,9 @@ def main():
             #if there is an error, add the index to our list of errors
             error_lst.append(name)
 
-    error_df = df.loc[df['location_name'].isin(error_lst)]
-    final_df = pd.DataFrame(data=DISTANCE_DF)
-    single_point_df = pd.DataFrame(data=SINGLE_PT_DF)
-    return(final_df, single_point_df, error_df)
+    df.loc[df['location_name'].isin(error_lst)].to_csv('locations_errors.csv')
+    pd.DataFrame(data=DISTANCE_DF).to_csv('locations_w_parsed_distances.csv')
+    pd.DataFrame(data=SINGLE_PT_DF).to_csv('single_point_locations.csv')
 
 def loop_through_loc_df(dist_dict, name):
     '''
@@ -178,7 +177,7 @@ def same_from_to_add(line, blockgroup_multipolygon, \
     #if the intersection line is a single LineString and it equals
     #the original line, we know the entire location is in the blockgroup
     if type(intersection) == LineString and line == intersection:
-        loop_through_loc_df({blockgroup_id: distance}, name)
+        loop_through_loc_df({str(blockgroup_id): distance}, name)
         return(False)
     else:
         return(check_all_bg(line, distance, name, blockgroup_df))
@@ -228,7 +227,8 @@ def diff_from_to_add(line, blockgroup1_multipolygon, blockgroup2_multipolygon,\
         #meter of the total distance
         if abs(distance - (dist1 + dist2)) < 0.001:
             #add the values and distances to the final dataframe
-            dist_dict = {blockgroup1_id: dist1,blockgroup2_id: dist2}
+            dist_dict = {str(blockgroup1_id): dist1,\
+                str(blockgroup2_id): dist2}
             loop_through_loc_df(dist_dict, name)
             return(False)
         else:
@@ -274,7 +274,7 @@ def check_all_bg(line, distance, name, blockgroup_df):
             for this_line in lines_lst:
                 this_line_dist = get_line_dist(this_line)
                 #create a dictionary to hold information about this line
-                line_dict = {'blockgroup_id': blockgroup_id,\
+                line_dict = {'blockgroup_id': str(blockgroup_id),\
                     'line': this_line, 'full_distance': this_line_dist, \
                     'to_half': 0}
                 #see if the current line intersects with a previous line
