@@ -1,0 +1,82 @@
+Num,Status,location_name,from,to,from_lat_long,to_lat_long,from_lat,from_long,to_lat,to_long
+2305,Complete,2221-2545 S Ashland Ave,2221 S Ashland Ave,2545 S Ashland Ave,"[41.851778, -87.665808]","[41.845669, -87.665254]",41.851778,-87.665808,41.845669,-87.665254
+2249,Complete,2226-2545 S Ashland Ave,2226 S Ashland Ave,2545 S Ashland Ave,"[41.851325, -87.666304]","[41.845669, -87.665254]",41.851325,-87.666304,41.845669,-87.665254
+1332,Complete,2400-3140 S Kedzie Ave,2400 S Kedzie Ave,3140 S Kedzie Ave,"[41.847935, -87.70549]","[41.83581015388985, -87.7048210135158]",41.847935,-87.70549,41.83581015,-87.70482101
+1353,Complete,2723-3100 S Archer Ave,2723 S Archer Ave,3100 S Archer Ave,"[41.843964, -87.652559]","[41.83762047488891, -87.66599581207548]",41.843964,-87.652559,41.83762047,-87.66599581
+1367,Complete,3200-3236 S Lawndale Ave,3200 S Lawndale Ave,3236 S Lawndale Ave,"[41.83505, -87.717328]","[41.834076, -87.717214]",41.83505,-87.717328,41.834076,-87.717214
+1089,Complete,340-22 E Illinois St,340 E Illinois St,22 E Illinois St,"[41.891100553886055, -87.61748692001967]","[41.8904867, -87.6274133]",41.89110055,-87.61748692,41.8904867,-87.6274133
+177,Complete,7503-7859 S Emerald Ave,7503 S Emerald Ave,7859 S Emerald Ave,"[41.7576024537777, -87.6429517375863]",[],41.75760245,-87.64295174,None,None
+378,Complete,On W Eddy St From N Lamon Ave To N Leclaire Ave,W Eddy St And N Lamon Ave,W Eddy St And N Leclaire Ave,[],[],None,None,None,None
+1034,Complete,7612-7760 W Touhy Ave,7612 W Touhy Ave,7760 W Touhy Ave,"[42.011703, -87.816989]","[42.011420358939176, -87.81995877508338]",42.011703,-87.816989,42.01142036,-87.81995878
+14,Complete,On E 130th St From S Torrence Ave To S Brandon Ave,E 130th St And S Torrence Ave,E 130th St And S Brandon Ave,"[41.6585765, -87.5591909]","[41.6591146948932, -87.5459318306496]",41.6585765,-87.5591909,41.65911469,-87.54593183
+1988,Complete,On E 131st St From S Exchange Ave To S Marquette Ave,E 131st St And S Exchange Ave,E 131st St And S Marquette Ave,"[41.657371, -87.551988]","[41.657377, -87.556863]",41.657371,-87.551988,41.657377,-87.556863
+1886,Complete,On E 67th St From S Paxton Ave To S Crandon Ave,E 67th St And S Paxton Ave,E 67th St And S Crandon Ave,"[41.773515, -87.571604]","[41.773535, -87.569984]",41.773515,-87.571604,41.773535,-87.569984
+1888,Complete,On E 67th St From S Paxton Ave To S Merrill Ave,E 67th St And S Paxton Ave,E 67th St And S Merrill Ave,"[41.773515, -87.571604]","[41.773498, -87.572821]",41.773515,-87.571604,41.773498,-87.572821
+1554,Complete,On N California Ave From W Eisenhower Expy To W Harrison St,N California Ave And W Eisenhower Expy,N California Ave And W Harrison St,[],"[41.873818, -87.696109]",None,None,41.873818,-87.696109
+837,Complete,On N Claremont Ave From N Division St To N Potomac Ave,N Claremont Ave And N Division St,N Claremont Ave And N Potomac Ave,[],"[41.9048995, -87.6858963]",None,None,41.9048995,-87.6858963
+2182,Complete,On N Cumberland Ave From W Lawrence Ave To W Sunnyside Ave,N Cumberland Ave And W Lawrence Ave,N Cumberland Ave And W Sunnyside Ave,"[41.9666233, -87.8366769]","[41.961603, -87.836735]",41.9666233,-87.8366769,41.961603,-87.836735
+2174,Complete,On N Halsted St From W Evergreen Ave To N 1534,N Halsted St And W Evergreen Ave,1534 N Halsted St,"[41.906417, -87.64814]","[41.909713, -87.64836]",41.906417,-87.64814,41.909713,-87.64836
+1043,Complete,On N Loomis St From W Arbour Pl To W Fulton St,N Loomis St And W Arbour Pl,N Loomis St And W Fulton St,[],"[41.886604, -87.662471]",None,None,41.886604,-87.662471
+1160,Complete,On N Oakley Blvd From W Kinzie St To W Adams St,N Oakley Blvd And W Kinzie St,N Oakley Blvd And W Adams St,"[41.8886053, -87.6841668]",[],41.8886053,-87.6841668,None,None
+328,Complete,On N Octavia Ave From W Ibsen St To W Estes Ave,N Octavia Ave And W Ibsen St,N Octavia Ave And W Estes Ave,"[42.006213, -87.809138]",[],42.006213,-87.809138,None,None
+1174,Complete,On N Pioneer Ave From W Berteau Ave To W Irving Park Rd,N Pioneer Ave And W Berteau Ave,N Pioneer Ave And W Irving Park Rd,"[41.9558489, -87.8318321]","[41.9521744, -87.8316532]",41.9558489,-87.8318321,41.9521744,-87.8316532
+1650,Complete,On S Albany Ave From W 71st St To W 73rd St,S Albany Ave And W 71st St,S Albany Ave And W 73rd St,"[41.764419, -87.700374]","[41.7607749, -87.7002706]",41.764419,-87.700374,41.7607749,-87.7002706
+1419,Complete,On S Archer Ave From S Ashland Ave To S Poplar Ave,S Archer Ave And S Ashland Ave,S Archer Ave And S Poplar Ave,"[41.837762, -87.665687]","[41.844338, -87.652341]",41.837762,-87.665687,41.844338,-87.652341
+1380,Complete,On S Archer Ave From S Corbett St To S Halsted St,S Archer Ave And S Corbett St,S Archer Ave And S Halsted St,"[41.845864, -87.649163]","[41.8472125, -87.6465235]",41.845864,-87.649163,41.8472125,-87.6465235
+1168,Complete,On S Archer Ave From S Senour Ave To S Halsted St,S Archer Ave And S Senour Ave,S Archer Ave And S Halsted St,"[41.845204, -87.650591]","[41.8472125, -87.6465235]",41.845204,-87.650591,41.8472125,-87.6465235
+598,Complete,On S Avenue O From E 133rd St To E 135th St,S Avenue O And E 133rd St,S Avenue O And E 135th St,"[41.6536643, -87.5398392]","[41.650015, -87.539887]",41.6536643,-87.5398392,41.650015,-87.539887
+15,Complete,On S Brandon Ave From E 130th St To S Brainard Ave,S Brandon Ave And E 130th St,S Brandon Ave And S Brainard Ave,"[41.6591146948932, -87.5459318306496]","[41.648535, -87.546007]",41.65911469,-87.54593183,41.648535,-87.546007
+1124,Complete,On S Central Park Ave From W 28th St To W 32nd St,S Central Park Ave And W 28th St,S Central Park Ave And W 32nd St,"[41.840727, -87.714694]","[41.83526, -87.71458]",41.840727,-87.714694,41.83526,-87.71458
+1346,Complete,1600-1950 W Roosevelt Rd,1600 W Roosevelt Rd,1950 W Roosevelt Rd,[],[],None,None,None,None
+72,Complete,On S Clark St From W 21st St To S Archer Ave,S Clark St And W 21st St,S Clark St And S Archer Ave,[],"[41.855159, -87.630161]",None,None,41.855159,-87.630161
+1721,Complete,On S Escanaba Ave From E 127th St To E 128th St,S Escanaba Ave And E 127th St,S Escanaba Ave And E 128th St,"[41.664705, -87.552501]","[41.66284, -87.553214]",41.664705,-87.552501,41.66284,-87.553214
+1058,Complete,On S Hamilton Ave From W Adams St To W Gladys Ave,S Hamilton Ave And W Adams St,S Hamilton Ave And W Gladys Ave,"[41.8786833, -87.6802835]",[],41.8786833,-87.6802835,None,None
+1059,Complete,On S Lytle St From W Harrison St To W Lexington St,S Lytle St And W Harrison St,S Lytle St And W Lexington St,[],"[41.872232, -87.658376]",None,None,41.872232,-87.658376
+1925,Complete,On S Muskegon Ave From E 130th St To E 131st St,S Muskegon Ave And E 130th St,S Muskegon Ave And E 131st St,"[41.659179, -87.554423]","[41.657366, -87.554433]",41.659179,-87.554423,41.657366,-87.554433
+1887,Complete,On S Paxton Ave From E 69th St To E 67th St,S Paxton Ave And E 69th St,S Paxton Ave And E 67th St,"[41.76989, -87.57152]","[41.773515, -87.571604]",41.76989,-87.57152,41.773515,-87.571604
+1636,Complete,On S Rockwell St From W 70th St To W 71st St,S Rockwell St And W 70th St,S Rockwell St And W 71st St,"[41.766445, -87.688205]","[41.764616, -87.688148]",41.766445,-87.688205,41.764616,-87.688148
+2354,Complete,On S Throop St From W 31st St To S Archer Ave,S Throop St And W 31st St,S Throop St And S Archer Ave,"[41.837892, -87.6584553]","[41.843514, -87.654134]",41.837892,-87.6584553,41.843514,-87.654134
+1709,Complete,On S Manistee Ave From E 126th St To S Escanaba Ave,S Manistee Ave And E 126th St,S Manistee Ave And S Escanaba Ave,[],[],None,None,None,None
+1723,Complete,On S Troy St From W 71st St To W 73rd St,S Troy St And W 71st St,S Troy St And W 73rd St,"[41.764402, -87.701601]","[41.7607429, -87.7015152]",41.764402,-87.701601,41.7607429,-87.7015152
+1,Complete,On S Wallace St From W 58th St To W 59th St,S Wallace St And W 58th St,S Wallace St And W 59th St,[],"[41.7871295, -87.6401719]",None,None,41.7871295,-87.6401719
+2260,Complete,On S Wallace St From W Garfield Blvd To W 57th St,S Wallace St And W Garfield Blvd,S Wallace St And W 57th St,"[41.7944375, -87.6403819]",[],41.7944375,-87.6403819,None,None
+1863,Complete,On W Polk St From S Dan Ryan Expy To S Shields Ave,W Polk St And S Dan Ryan Expy,W Polk St And S Shields Ave,[],[],None,None,None,None
+660,Complete,On W 123rd St From S Carpenter St To S Peoria St,W 123rd St And S Carpenter St,W 123rd St And S Peoria St,"[41.670445, -87.647756]","[41.6705106, -87.6440745]",41.670445,-87.647756,41.6705106,-87.6440745
+2330,Complete,On W 123rd St From S Laflin St To S Loomis St,W 123rd St And S Laflin St,W 123rd St And S Loomis St,"[41.6703192, -87.6587309]","[41.6703126, -87.656266]",41.6703192,-87.6587309,41.6703126,-87.656266
+962,Complete,On W 31st St From S Wood St To S Damen Ave,W 31st St And S Wood St,W 31st St And S Damen Ave,"[41.837721, -87.670564]","[41.83764, -87.675491]",41.837721,-87.670564,41.83764,-87.675491
+1904,Complete,150-200 E 109th St,150 E 109th St,200 E 109th St,[],[],None,None,None,None
+2360,Complete,On W 71st St From S California Ave To S Maplewood Ave,W 71st St And S California Ave,W 71st St And S Maplewood Ave,"[41.764541, -87.693048]","[41.764638, -87.686928]",41.764541,-87.693048,41.764638,-87.686928
+2267,Complete,On W 71st St From S Homan Ave To S Kedzie Ave,W 71st St And S Homan Ave,W 71st St And S Kedzie Ave,"[41.764308, -87.707729]","[41.764394, -87.702829]",41.764308,-87.707729,41.764394,-87.702829
+1497,Complete,On W 77th St From S Wallace St To S Fielding Ave,W 77th St And S Wallace St,W 77th St And S Fielding Ave,"[41.754349, -87.639858]","[41.75436, -87.6377307]",41.754349,-87.639858,41.75436,-87.6377307
+387,Complete,On W Albion Ave From N Sayre Ave To N Nixon Ave,W Albion Ave And N Sayre Ave,W Albion Ave And N Nixon Ave,"[42.0015351, -87.801613]","[42.0015122, -87.8041383]",42.0015351,-87.801613,42.0015122,-87.8041383
+2269,Complete,On W Ardmore Ave From N Lake Shore Dr To N Broadway,W Ardmore Ave And N Lake Shore Dr,W Ardmore Ave And N Broadway,[],"[41.9872642, -87.6601771]",None,None,41.9872642,-87.6601771
+100,Complete,On W Carmen Ave From N Ravenswood Ave To N Paulina St,W Carmen Ave And N Ravenswood Ave,W Carmen Ave And N Paulina St,"[41.973816, -87.6743601]",[],41.973816,-87.6743601,None,None
+2340,Complete,On W Division St From N North Branch St To N Hickory Ave,W Division St And N North Branch St,W Division St And N Hickory Ave,"[41.903552, -87.65543]","[41.9036, -87.652517]",41.903552,-87.65543,41.9036,-87.652517
+2262,Complete,On W Elm St From N Cleveland Ave To N Sedgwick St,W Elm St And N Cleveland Ave,W Elm St And N Sedgwick St,"[41.9027135, -87.6411855]",[],41.9027135,-87.6411855,None,None
+2290,Complete,On W Gunnison St From N Laramie Ave To N Leamington Ave,W Gunnison St And N Laramie Ave,W Gunnison St And N Leamington Ave,"[41.968804, -87.756418]",[],41.968804,-87.756418,None,None
+933,Complete,On W Howard St From N Oconto Ave To N Odell Ave,W Howard St And N Oconto Ave,W Howard St And N Odell Ave,"[42.018934, -87.807783]","[42.018886, -87.810223]",42.018934,-87.807783,42.018886,-87.810223
+2236,Complete,On W Lithuanian Plaza Ct From S California Ave To S Oakley Ave,W Lithuanian Plaza Ct And S California Ave,W Lithuanian Plaza Ct And S Oakley Ave,"[41.768194, -87.693124]","[41.768377386601585, -87.68086908676567]",41.768194,-87.693124,41.76837739,-87.68086909
+1277,Complete,On W North Ave From N Hamlin Ave To N Kimball Ave,W North Ave And N Hamlin Ave,W North Ave And N Kimball Ave,"[41.909914, -87.721678]",[],41.909914,-87.721678,None,None
+1223,Complete,On W North Ave From N Harlem Ave To N Sayre Ave,W North Ave And N Harlem Ave,W North Ave And N Sayre Ave,"[41.9088, -87.805845]","[41.909025, -87.800203]",41.9088,-87.805845,41.909025,-87.800203
+2281,Complete,On W North Ave From N Oak Park Ave To N Rutherford Ave,W North Ave And N Oak Park Ave,W North Ave And N Rutherford Ave,"[41.908999, -87.794769]","[41.909114, -87.793513]",41.908999,-87.794769,41.909114,-87.793513
+1273,Complete,On W Ogden Ave From S Kenton Ave To S Pulaski Rd,W Ogden Ave And S Kenton Ave,W Ogden Ave And S Pulaski Rd,[],"[41.851089, -87.72474]",None,None,41.851089,-87.72474
+1840,Complete,On W Polk St From S Racine Ave To S Morgan St,W Polk St And S Racine Ave,W Polk St And S Morgan St,"[41.871812, -87.656822]",[],41.871812,-87.656822,None,None
+193,Complete,On W Polk St From S Wells St To S S Branch Chicago River,W Polk St And S Wells St,W Polk St And S S Branch Chicago River,"[41.8721357, -87.6335759]",[],41.8721357,-87.6335759,None,None
+2294,Complete,On W St James Pl From N Clark St To N Lakeview Ave,W St James Pl And N Clark St,W St James Pl And N Lakeview Ave,"[41.927833, -87.641811]","[41.9287021, -87.6392266]",41.927833,-87.641811,41.9287021,-87.6392266
+2252,Complete,On W Thorndale Ave From N Keystone Ave To N Pulaski Rd,W Thorndale Ave And N Keystone Ave,W Thorndale Ave And N Pulaski Rd,[],"[41.988805, -87.728602]",None,None,41.988805,-87.728602
+2052,Complete,S May St And W 34th Pl,S May St And W 34th Pl,None,[],None,None,None,None,None
+1409,Complete,On N Parkside Ave From W Lake St To W Corcoran Pl,N Parkside Ave And W Lake St,N Parkside Ave And W Corcoran Pl,"[41.887198, -87.766732]","[41.887198, -87.766732]",41.887198,-87.766732,41.887198,-87.766732
+1470,Complete,On W Chestnut St From N Orleans St To N Orleans St,W Chestnut St And N Orleans St,W Chestnut St And N Orleans St,"[41.898194, -87.637226]","[41.898194, -87.637226]",41.898194,-87.637226,41.898194,-87.637226
+2258,Complete,On S State St From W 725 To W Taylor St,725 S State St,S State St And W Taylor St,"[41.872262, -87.627193]",[],41.872262,-87.627193,None,None
+1245,Street Numbers Don't Exist,3900-3714 N Orleans St,3900 N Orleans St,3714 N Orleans St,[],[],None,None,None,None
+1322,Street Numbers Don't Exist,4000-3914 N Orleans St,4000 N Orleans St,3914 N Orleans St,[],[],None,None,None,None
+522,Streets are Parallel,On W Eddy St From W Cornelia Ave To W Newport Ave,W Eddy St And W Cornelia Ave,W Eddy St And W Newport Ave,[],[],None,None,None,None
+405,Streets are Parallel,W 60th St And W 62nd St,W 60th St And W 62nd St,None,[],None,None,None,None,None
+1532,Streets far Apart,On N Wabash Ave From W West End Ave  To W Fulton St,N Wabash Ave And W West End Ave ,N Wabash Ave And W Fulton St,[],[],None,None,None,None
+1013,Unclear 2nd Point,3110-3200 W Logan Blvd,3110 W Logan Blvd,3200 W Logan Blvd,"[41.92886, -87.705445]",[],41.92886,-87.705445,None,None
+2227,Unclear 2nd Point,On N Leclaire Ave From W Lawrence Ave To W Alley N. Of Lawrence,N Leclaire Ave And W Lawrence Ave,N Leclaire Ave And W Alley N. Of Lawrence,"[41.9679994, -87.7551493]",[],41.9679994,-87.7551493,None,None
+1684,Unclear 2nd Point,On S Princeton Ave From W Hollywood Ave To W 89th St,S Princeton Ave And W Hollywood Ave,S Princeton Ave And W 89th St,[],"[41.732564, -87.631839]",None,None,41.732564,-87.631839
+956,Unclear 2nd Point,On S South Chicago Ave From E 71st St To S Drexel Ave,S South Chicago Ave And E 71st St,S South Chicago Ave And S Drexel Ave,"[41.7656871, -87.60506795]",[],41.7656871,-87.60506795,None,None
+1910,Unclear 2nd Point,On W 60th St From S Hamlin Ave To S Hale Ave,W 60th St And S Hamlin Ave,W 60th St And S Hale Ave,"[41.78419, -87.718014]",[],41.78419,-87.718014,None,None
+2162,Unclear 2nd Point,On E Chicago Ave From E 38  To N Clark St,E Chicago Ave And E 38 ,E Chicago Ave And N Clark St,[],[],None,None,None,None
+2311,Unclear 2nd Point,On W Wilson Ave From N Rockwell St To N North Branch Chicago River,W Wilson Ave And N Rockwell St,W Wilson Ave And N North Branch Chicago River,"[41.9648336, -87.6936758]",[],41.9648336,-87.6936758,None,None
